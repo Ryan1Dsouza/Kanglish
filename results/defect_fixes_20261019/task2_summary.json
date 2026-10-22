@@ -1,0 +1,36 @@
+{
+  "stage": "task2",
+  "diff": [
+    {
+      "file": "app/src/main/AndroidManifest.xml",
+      "added": 3,
+      "removed": 2
+    },
+    {
+      "file": "app/src/main/java/org/kanglish/app/overlay/ClipboardTrampolineActivity.kt",
+      "added": 21,
+      "removed": 4
+    },
+    {
+      "file": "app/src/main/java/org/kanglish/app/overlay/FloatingSidebarService.kt",
+      "added": 6,
+      "removed": 5
+    },
+    {
+      "file": "app/src/main/res/values/themes.xml",
+      "added": 8,
+      "removed": 0
+    },
+    {
+      "file": "app/src/test/java/org/kanglish/app/ClipboardEntryTest.kt",
+      "added": 13,
+      "removed": 0
+    }
+  ],
+  "unit_tests": {
+    "tests": 29,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}

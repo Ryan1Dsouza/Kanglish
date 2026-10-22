@@ -1,0 +1,542 @@
+[
+  {
+    "model": "gemma2:2b",
+    "prompt_version": "v1_baseline",
+    "baseline_score": "0/3",
+    "glossary_score": "3/3",
+    "details": [
+      {
+        "row": 1,
+        "text": "naale college ge barthira?",
+        "expected": "Are you coming to college tomorrow?",
+        "keywords": [
+          "coming",
+          "college",
+          "tomorrow"
+        ],
+        "baseline_out": "Are you going to college with us?",
+        "baseline_passed": false,
+        "baseline_score": 0.6666666666666666,
+        "baseline_reason": "",
+        "glossary_out": "Tomorrow I'm going to college by bus?",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      },
+      {
+        "row": 2,
+        "text": "yenu guru ivattu plan?",
+        "expected": "What's the plan today bro?",
+        "keywords": [
+          "plan",
+          "today",
+          "bro"
+        ],
+        "baseline_out": "What's the plan for you?",
+        "baseline_passed": false,
+        "baseline_score": 0.3333333333333333,
+        "baseline_reason": "",
+        "glossary_out": "What are you planning today, dude?",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      },
+      {
+        "row": 3,
+        "text": "sakkath aagide",
+        "expected": "It's awesome",
+        "keywords": [
+          "awesome"
+        ],
+        "baseline_out": "Are you asleep?",
+        "baseline_passed": false,
+        "baseline_score": 0.0,
+        "baseline_reason": "",
+        "glossary_out": "Awesome!",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      }
+    ]
+  },
+  {
+    "model": "qwen2.5:3b",
+    "prompt_version": "v2_no_commentary",
+    "baseline_score": "0/3",
+    "glossary_score": "2/3",
+    "details": [
+      {
+        "row": 1,
+        "text": "naale college ge barthira?",
+        "expected": "Are you coming to college tomorrow?",
+        "keywords": [
+          "coming",
+          "college",
+          "tomorrow"
+        ],
+        "baseline_out": "Are you going to college?",
+        "baseline_passed": false,
+        "baseline_score": 0.6666666666666666,
+        "baseline_reason": "",
+        "glossary_out": "Tomorrow we will go to college?",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      },
+      {
+        "row": 2,
+        "text": "yenu guru ivattu plan?",
+        "expected": "What's the plan today bro?",
+        "keywords": [
+          "plan",
+          "today",
+          "bro"
+        ],
+        "baseline_out": "What’s your group study plan?",
+        "baseline_passed": false,
+        "baseline_score": 0.3333333333333333,
+        "baseline_reason": "",
+        "glossary_out": "What's up dude?",
+        "glossary_passed": false,
+        "glossary_score": 0.3333333333333333,
+        "glossary_reason": ""
+      },
+      {
+        "row": 3,
+        "text": "sakkath aagide",
+        "expected": "It's awesome",
+        "keywords": [
+          "awesome"
+        ],
+        "baseline_out": "That's okay",
+        "baseline_passed": false,
+        "baseline_score": 0.0,
+        "baseline_reason": "",
+        "glossary_out": "Great!",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      }
+    ]
+  },
+  {
+    "model": "gemma2:2b",
+    "prompt_version": "v2_no_commentary",
+    "baseline_score": "0/3",
+    "glossary_score": "2/3",
+    "details": [
+      {
+        "row": 1,
+        "text": "naale college ge barthira?",
+        "expected": "Are you coming to college tomorrow?",
+        "keywords": [
+          "coming",
+          "college",
+          "tomorrow"
+        ],
+        "baseline_out": "Are you going to college by bus?",
+        "baseline_passed": false,
+        "baseline_score": 0.6666666666666666,
+        "baseline_reason": "",
+        "glossary_out": "Tomorrow we will go to college?",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      },
+      {
+        "row": 2,
+        "text": "yenu guru ivattu plan?",
+        "expected": "What's the plan today bro?",
+        "keywords": [
+          "plan",
+          "today",
+          "bro"
+        ],
+        "baseline_out": "What's your group study plan?",
+        "baseline_passed": false,
+        "baseline_score": 0.3333333333333333,
+        "baseline_reason": "",
+        "glossary_out": "What's up bro?",
+        "glossary_passed": false,
+        "glossary_score": 0.3333333333333333,
+        "glossary_reason": ""
+      },
+      {
+        "row": 3,
+        "text": "sakkath aagide",
+        "expected": "It's awesome",
+        "keywords": [
+          "awesome"
+        ],
+        "baseline_out": "That's all",
+        "baseline_passed": false,
+        "baseline_score": 0.0,
+        "baseline_reason": "",
+        "glossary_out": "Awesome!",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      }
+    ]
+  },
+  {
+    "model": "qwen2.5:3b",
+    "prompt_version": "v3_strong_rules",
+    "baseline_score": "0/3",
+    "glossary_score": "1/3",
+    "details": [
+      {
+        "row": 1,
+        "text": "naale college ge barthira?",
+        "expected": "Are you coming to college tomorrow?",
+        "keywords": [
+          "coming",
+          "college",
+          "tomorrow"
+        ],
+        "baseline_out": "Will you be back from college?",
+        "baseline_passed": false,
+        "baseline_score": 0.3333333333333333,
+        "baseline_reason": "",
+        "glossary_out": "When will you go to college?",
+        "glossary_passed": false,
+        "glossary_score": 0.6666666666666666,
+        "glossary_reason": ""
+      },
+      {
+        "row": 2,
+        "text": "yenu guru ivattu plan?",
+        "expected": "What's the plan today bro?",
+        "keywords": [
+          "plan",
+          "today",
+          "bro"
+        ],
+        "baseline_out": "What are you planning to do?",
+        "baseline_passed": false,
+        "baseline_score": 0.3333333333333333,
+        "baseline_reason": "",
+        "glossary_out": "What's bro's plan?",
+        "glossary_passed": false,
+        "glossary_score": 0.6666666666666666,
+        "glossary_reason": ""
+      },
+      {
+        "row": 3,
+        "text": "sakkath aagide",
+        "expected": "It's awesome",
+        "keywords": [
+          "awesome"
+        ],
+        "baseline_out": "It is blazing hot.",
+        "baseline_passed": false,
+        "baseline_score": 0.0,
+        "baseline_reason": "",
+        "glossary_out": "It's awesome!",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      }
+    ]
+  },
+  {
+    "model": "gemma2:2b",
+    "prompt_version": "v3_strong_rules",
+    "baseline_score": "0/3",
+    "glossary_score": "2/3",
+    "details": [
+      {
+        "row": 1,
+        "text": "naale college ge barthira?",
+        "expected": "Are you coming to college tomorrow?",
+        "keywords": [
+          "coming",
+          "college",
+          "tomorrow"
+        ],
+        "baseline_out": "Will you go to college this week?",
+        "baseline_passed": false,
+        "baseline_score": 0.6666666666666666,
+        "baseline_reason": "",
+        "glossary_out": "Will you go to college tomorrow?",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      },
+      {
+        "row": 2,
+        "text": "yenu guru ivattu plan?",
+        "expected": "What's the plan today bro?",
+        "keywords": [
+          "plan",
+          "today",
+          "bro"
+        ],
+        "baseline_out": "What are you planning bro?",
+        "baseline_passed": false,
+        "baseline_score": 0.6666666666666666,
+        "baseline_reason": "",
+        "glossary_out": "What's bro's plans?",
+        "glossary_passed": false,
+        "glossary_score": 0.6666666666666666,
+        "glossary_reason": ""
+      },
+      {
+        "row": 3,
+        "text": "sakkath aagide",
+        "expected": "It's awesome",
+        "keywords": [
+          "awesome"
+        ],
+        "baseline_out": "It's blazing hot.",
+        "baseline_passed": false,
+        "baseline_score": 0.0,
+        "baseline_reason": "",
+        "glossary_out": "It's amazing/sucks.",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      }
+    ]
+  },
+  {
+    "model": "qwen2.5:3b",
+    "prompt_version": "v4_clean_glossary",
+    "baseline_score": "0/3",
+    "glossary_score": "2/3",
+    "details": [
+      {
+        "row": 1,
+        "text": "naale college ge barthira?",
+        "expected": "Are you coming to college tomorrow?",
+        "keywords": [
+          "coming",
+          "college",
+          "tomorrow"
+        ],
+        "baseline_out": "Are you going to college with me?",
+        "baseline_passed": false,
+        "baseline_score": 0.6666666666666666,
+        "baseline_reason": "",
+        "glossary_out": "Will you come to college with me tomorrow?",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      },
+      {
+        "row": 2,
+        "text": "yenu guru ivattu plan?",
+        "expected": "What's the plan today bro?",
+        "keywords": [
+          "plan",
+          "today",
+          "bro"
+        ],
+        "baseline_out": "What is your plan for the weekend?",
+        "baseline_passed": false,
+        "baseline_score": 0.3333333333333333,
+        "baseline_reason": "",
+        "glossary_out": "What are you planning for today, dude?",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      },
+      {
+        "row": 3,
+        "text": "sakkath aagide",
+        "expected": "It's awesome",
+        "keywords": [
+          "awesome"
+        ],
+        "baseline_out": "Have you heard the news?",
+        "baseline_passed": false,
+        "baseline_score": 0.0,
+        "baseline_reason": "",
+        "glossary_out": "Wow, has happened",
+        "glossary_passed": false,
+        "glossary_score": 0.0,
+        "glossary_reason": ""
+      }
+    ]
+  },
+  {
+    "model": "gemma2:2b",
+    "prompt_version": "v4_clean_glossary",
+    "baseline_score": "0/3",
+    "glossary_score": "3/3",
+    "details": [
+      {
+        "row": 1,
+        "text": "naale college ge barthira?",
+        "expected": "Are you coming to college tomorrow?",
+        "keywords": [
+          "coming",
+          "college",
+          "tomorrow"
+        ],
+        "baseline_out": "Are you going to the college with me?",
+        "baseline_passed": false,
+        "baseline_score": 0.6666666666666666,
+        "baseline_reason": "",
+        "glossary_out": "Will you go to college tomorrow?",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      },
+      {
+        "row": 2,
+        "text": "yenu guru ivattu plan?",
+        "expected": "What's the plan today bro?",
+        "keywords": [
+          "plan",
+          "today",
+          "bro"
+        ],
+        "baseline_out": "What is your plan for lunch?",
+        "baseline_passed": false,
+        "baseline_score": 0.3333333333333333,
+        "baseline_reason": "",
+        "glossary_out": "What are you planning what dude today?",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      },
+      {
+        "row": 3,
+        "text": "sakkath aagide",
+        "expected": "It's awesome",
+        "keywords": [
+          "awesome"
+        ],
+        "baseline_out": "Did you study?",
+        "baseline_passed": false,
+        "baseline_score": 0.0,
+        "baseline_reason": "",
+        "glossary_out": "What an awesome thing has happened?",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      }
+    ]
+  },
+  {
+    "model": "qwen2.5:3b",
+    "prompt_version": "v5_fewshot_aligned",
+    "baseline_score": "0/3",
+    "glossary_score": "0/3",
+    "details": [
+      {
+        "row": 1,
+        "text": "naale college ge barthira?",
+        "expected": "Are you coming to college tomorrow?",
+        "keywords": [
+          "coming",
+          "college",
+          "tomorrow"
+        ],
+        "baseline_out": "When are you going to college?",
+        "baseline_passed": false,
+        "baseline_score": 0.6666666666666666,
+        "baseline_reason": "",
+        "glossary_out": "tomorrow college go?\n\nKanglish: yenu maga plan?\nEnglish:\nWhat's the plan dude?\n\nKanglish: thumba chennagide\nEnglish:\nIt is very good.\n\nKanglish: naale college ge barthira?\nEnglish:\ntomorrow college go?",
+        "glossary_passed": false,
+        "glossary_score": 0.65,
+        "glossary_reason": "output spans multiple lines with commentary"
+      },
+      {
+        "row": 2,
+        "text": "yenu guru ivattu plan?",
+        "expected": "What's the plan today bro?",
+        "keywords": [
+          "plan",
+          "today",
+          "bro"
+        ],
+        "baseline_out": "What's your teacher's plan?",
+        "baseline_passed": false,
+        "baseline_score": 0.3333333333333333,
+        "baseline_reason": "",
+        "glossary_out": "What's your plan for today?",
+        "glossary_passed": false,
+        "glossary_score": 0.6666666666666666,
+        "glossary_reason": ""
+      },
+      {
+        "row": 3,
+        "text": "sakkath aagide",
+        "expected": "It's awesome",
+        "keywords": [
+          "awesome"
+        ],
+        "baseline_out": "It's going well.",
+        "baseline_passed": false,
+        "baseline_score": 0.0,
+        "baseline_reason": "",
+        "glossary_out": "sakkath gadya",
+        "glossary_passed": false,
+        "glossary_score": 0.0,
+        "glossary_reason": ""
+      }
+    ]
+  },
+  {
+    "model": "gemma2:2b",
+    "prompt_version": "v5_fewshot_aligned",
+    "baseline_score": "0/3",
+    "glossary_score": "1/3",
+    "details": [
+      {
+        "row": 1,
+        "text": "naale college ge barthira?",
+        "expected": "Are you coming to college tomorrow?",
+        "keywords": [
+          "coming",
+          "college",
+          "tomorrow"
+        ],
+        "baseline_out": "When are you going to college?",
+        "baseline_passed": false,
+        "baseline_score": 0.6666666666666666,
+        "baseline_reason": "",
+        "glossary_out": "tomorrow college go?",
+        "glossary_passed": true,
+        "glossary_score": 1.0,
+        "glossary_reason": ""
+      },
+      {
+        "row": 2,
+        "text": "yenu guru ivattu plan?",
+        "expected": "What's the plan today bro?",
+        "keywords": [
+          "plan",
+          "today",
+          "bro"
+        ],
+        "baseline_out": "What's your guru's plan?",
+        "baseline_passed": false,
+        "baseline_score": 0.6666666666666666,
+        "baseline_reason": "",
+        "glossary_out": "What's your plan for today?",
+        "glossary_passed": false,
+        "glossary_score": 0.6666666666666666,
+        "glossary_reason": ""
+      },
+      {
+        "row": 3,
+        "text": "sakkath aagide",
+        "expected": "It's awesome",
+        "keywords": [
+          "awesome"
+        ],
+        "baseline_out": "It's okay.",
+        "baseline_passed": false,
+        "baseline_score": 0.0,
+        "baseline_reason": "",
+        "glossary_out": "sakkath sakkath",
+        "glossary_passed": false,
+        "glossary_score": 0.0,
+        "glossary_reason": ""
+      }
+    ]
+  }
+]

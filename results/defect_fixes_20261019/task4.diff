@@ -1,0 +1,205 @@
+--- a/app/src/main/java/org/kanglish/app/ui/MainActivity.kt
++++ b/app/src/main/java/org/kanglish/app/ui/MainActivity.kt
+@@ -1,5 +1,7 @@
+ package org.kanglish.app.ui
+ 
++import android.Manifest
++import android.content.pm.PackageManager
+ import android.content.Intent
+ import android.content.ClipData
+ import android.content.ClipboardManager
+@@ -53,6 +55,10 @@
+     private var quickResult = ""
+     private var modelJob: Job? = null
+ 
++    private val notificationPermissionLauncher = registerForActivityResult(
++        ActivityResultContracts.RequestPermission()
++    ) { _ -> startSidebar() }
++
+     // SAF Document Pickers
+     private val pickTextFileLauncher = registerForActivityResult(
+         ActivityResultContracts.GetContent()
+@@ -351,6 +357,40 @@
+     }
+ 
+     private var isUpdatingOverlaySwitch = false
++
++    private fun notificationsAllowed(): Boolean = Build.VERSION.SDK_INT < 33 ||
++        ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED
++
++    private fun startSidebar() {
++        FloatingSidebarService.start(this)
++        isUpdatingOverlaySwitch = true
++        binding.switchFloatingSidebar.isChecked = true
++        isUpdatingOverlaySwitch = false
++        binding.tvSidebarStatus.setText(if (notificationsAllowed()) R.string.bubble_active else R.string.bubble_notifications_off)
++    }
++
++    private fun requestNotificationsAndStartSidebar() {
++        val prefs = getSharedPreferences("notification_prefs", MODE_PRIVATE)
++        if (notificationsAllowed() || prefs.getBoolean("permission_explained", false)) {
++            startSidebar()
++            return
++        }
++        // Request only when the user enables the bubble, never during ordinary translation.
++        fun continueWithoutNotifications() {
++            prefs.edit().putBoolean("permission_explained", true).apply()
++            startSidebar()
++        }
++        AlertDialog.Builder(this, R.style.Theme_Kanglish)
++            .setTitle(R.string.bubble_notification_title)
++            .setMessage(R.string.bubble_notification_explanation)
++            .setPositiveButton(R.string.bubble_notification_continue) { _, _ ->
++                prefs.edit().putBoolean("permission_explained", true).apply()
++                notificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
++            }
++            .setNegativeButton(R.string.bubble_notification_not_now) { _, _ -> continueWithoutNotifications() }
++            .setOnCancelListener { continueWithoutNotifications() }
++            .show()
++    }
+ 
+     private fun setupSidebarExtensionUi() {
+         binding.switchFloatingSidebar.setOnCheckedChangeListener { _, isChecked ->
+@@ -372,9 +412,7 @@
+                         Toast.LENGTH_LONG
+                     ).show()
+                 } else {
+-                    FloatingSidebarService.start(this)
+-                    binding.tvSidebarStatus.text = "Sidebar active! Floating badge is on your screen."
+-                    Toast.makeText(this, "Sidebar extension active! Tap the floating badge on your screen 🌐", Toast.LENGTH_SHORT).show()
++                    requestNotificationsAndStartSidebar()
+                 }
+             } else {
+                 FloatingSidebarService.stop(this)
+@@ -417,9 +455,7 @@
+                     Toast.LENGTH_LONG
+                 ).show()
+             } else {
+-                FloatingSidebarService.start(this)
+-                updateSidebarStatusIndicators()
+-                Toast.makeText(this, "Bubble ready. Copy a message, then tap it.", Toast.LENGTH_SHORT).show()
++                requestNotificationsAndStartSidebar()
+             }
+         }
+     }
+@@ -428,7 +464,7 @@
+         super.onResume()
+         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && Settings.canDrawOverlays(this) && binding.switchFloatingSidebar.tag == "requested") {
+             binding.switchFloatingSidebar.tag = null
+-            FloatingSidebarService.start(this)
++            requestNotificationsAndStartSidebar()
+         }
+         updateSidebarStatusIndicators()
+     }
+@@ -440,7 +476,7 @@
+         isUpdatingOverlaySwitch = false
+ 
+         if (overlayRunning) {
+-            binding.tvSidebarStatus.text = "Sidebar active! Floating badge is on your screen."
++            binding.tvSidebarStatus.setText(if (notificationsAllowed()) R.string.bubble_active else R.string.bubble_notifications_off)
+         } else {
+             binding.tvSidebarStatus.text = "Copy a WhatsApp message, then tap the bubble."
+         }
+--- a/app/src/main/res/values/strings.xml
++++ b/app/src/main/res/values/strings.xml
+@@ -1,5 +1,11 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
++    <string name="bubble_notification_title">Bubble notifications</string>
++    <string name="bubble_notification_explanation">Notifications provide a Paste copied text shortcut. The floating bubble still works if you decline.</string>
++    <string name="bubble_notification_continue">Continue</string>
++    <string name="bubble_notification_not_now">Not now</string>
++    <string name="bubble_active">Bubble active. Copy a message, then tap the bubble.</string>
++    <string name="bubble_notifications_off">Bubble active. Notifications off; copy text and tap the bubble.</string>
+     <string name="app_name">Kanglish Translator</string>
+     <string name="tab_chat">Messages</string>
+     <string name="tab_import">Import / Paste</string>
+--- a/app/src/test/java/org/kanglish/app/NotificationPermissionTest.kt
++++ b/app/src/test/java/org/kanglish/app/NotificationPermissionTest.kt
+@@ -0,0 +1,86 @@
++package org.kanglish.app
++
++import android.Manifest
++import android.content.pm.PackageManager
++import android.os.Looper
++import android.view.View
++import android.widget.TextView
++import androidx.appcompat.app.AlertDialog
++import org.junit.Assert.*
++import org.junit.Before
++import org.junit.Test
++import org.junit.runner.RunWith
++import org.kanglish.app.overlay.FloatingSidebarService
++import org.kanglish.app.ui.MainActivity
++import org.robolectric.Robolectric
++import org.robolectric.RobolectricTestRunner
++import org.robolectric.RuntimeEnvironment
++import org.robolectric.Shadows.shadowOf
++import org.robolectric.annotation.Config
++import org.robolectric.shadows.ShadowDialog
++import org.robolectric.shadows.ShadowSettings
++
++@RunWith(RobolectricTestRunner::class)
++@Config(sdk = [33, 35])
++class NotificationPermissionTest {
++    private val app get() = RuntimeEnvironment.getApplication()
++
++    @Before fun setup() {
++        ShadowSettings.setCanDrawOverlays(true)
++        shadowOf(app).denyPermissions(Manifest.permission.POST_NOTIFICATIONS)
++        app.getSharedPreferences("notification_prefs", 0).edit().clear().commit()
++    }
++
++    @Test fun denialStillStartsTheBubbleAndDoesNotPromptAgain() {
++        val controller = Robolectric.buildActivity(MainActivity::class.java).setup()
++        val activity = controller.get()
++        assertNull(shadowOf(activity).lastRequestedPermission)
++        activity.findViewById<View>(R.id.btnTestSidebar).performClick()
++        val explanation = ShadowDialog.getLatestDialog() as AlertDialog
++        assertTrue(explanation.findViewById<TextView>(android.R.id.message)!!.text.contains("still works"))
++        explanation.getButton(AlertDialog.BUTTON_POSITIVE).performClick()
++        shadowOf(Looper.getMainLooper()).idle()
++        val request = shadowOf(activity).lastRequestedPermission
++        assertArrayEquals(arrayOf(Manifest.permission.POST_NOTIFICATIONS), request.requestedPermissions)
++        activity.onRequestPermissionsResult(request.requestCode, request.requestedPermissions, intArrayOf(PackageManager.PERMISSION_DENIED))
++        assertEquals(FloatingSidebarService::class.java.name, shadowOf(app).nextStartedService.component?.className)
++        assertEquals(activity.getString(R.string.bubble_notifications_off), activity.findViewById<TextView>(R.id.tvSidebarStatus).text)
++        activity.findViewById<View>(R.id.btnTestSidebar).performClick()
++        assertSame(request, shadowOf(activity).lastRequestedPermission)
++        assertFalse(explanation.isShowing)
++        controller.pause().stop().destroy()
++    }
++
++    @Test fun grantingNotificationsStartsTheBubble() {
++        val controller = Robolectric.buildActivity(MainActivity::class.java).setup()
++        val activity = controller.get()
++        activity.findViewById<View>(R.id.btnTestSidebar).performClick()
++        (ShadowDialog.getLatestDialog() as AlertDialog).getButton(AlertDialog.BUTTON_POSITIVE).performClick()
++        shadowOf(Looper.getMainLooper()).idle()
++        val request = shadowOf(activity).lastRequestedPermission
++        shadowOf(app).grantPermissions(Manifest.permission.POST_NOTIFICATIONS)
++        activity.onRequestPermissionsResult(request.requestCode, request.requestedPermissions, intArrayOf(PackageManager.PERMISSION_GRANTED))
++        assertEquals(FloatingSidebarService::class.java.name, shadowOf(app).nextStartedService.component?.className)
++        assertEquals(activity.getString(R.string.bubble_active), activity.findViewById<TextView>(R.id.tvSidebarStatus).text)
++        controller.pause().stop().destroy()
++    }
++
++    @Test fun notNowStartsTheBubbleWithoutRequestingPermission() {
++        val controller = Robolectric.buildActivity(MainActivity::class.java).setup()
++        val activity = controller.get()
++        activity.findViewById<View>(R.id.btnTestSidebar).performClick()
++        (ShadowDialog.getLatestDialog() as AlertDialog).getButton(AlertDialog.BUTTON_NEGATIVE).performClick()
++        shadowOf(Looper.getMainLooper()).idle()
++        assertNull(shadowOf(activity).lastRequestedPermission)
++        assertNotNull(shadowOf(app).nextStartedService)
++        controller.pause().stop().destroy()
++    }
++
++    @Test @Config(sdk = [28]) fun android12AndEarlierDoNotRequestNotificationPermission() {
++        val controller = Robolectric.buildActivity(MainActivity::class.java).setup()
++        controller.get().findViewById<View>(R.id.btnTestSidebar).performClick()
++        assertNull(shadowOf(controller.get()).lastRequestedPermission)
++        assertNotNull(shadowOf(app).nextStartedService)
++        controller.pause().stop().destroy()
++    }
++}

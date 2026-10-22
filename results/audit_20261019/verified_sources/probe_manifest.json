@@ -1,0 +1,49 @@
+{
+  "started_utc": "2026-10-19T11:19:43.932049+00:00",
+  "complete": true,
+  "model": {
+    "name": "kanglish-audit-v3-20261019:latest",
+    "model": "kanglish-audit-v3-20261019:latest",
+    "modified_at": "2026-10-19T16:46:25.6970641+05:30",
+    "size": 531068197,
+    "digest": "112810fa124bb2c51e3a4f4d6a7dd28b030ca376b08166f9f6e9380db49e417f",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen2",
+      "families": [
+        "qwen2"
+      ],
+      "parameter_size": "494.03M",
+      "quantization_level": "Q8_0"
+    }
+  },
+  "gguf_sha256": "ce172bdd5f50f6a65547c7b05268ea982674efb33795a2fbcd21f2d73e75ea1a",
+  "options": {
+    "temperature": 0.1,
+    "seed": 42,
+    "num_ctx": 1024,
+    "num_predict": 192,
+    "top_k": 0,
+    "top_p": 1.0,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0
+  },
+  "audit_sha256": "968550c2429a5d460e20fa23d560b3a1c587ec893ff50e2590b4384a9d52599a",
+  "source_sha256": {
+    "scripts/probe_student_quality.py": "21d9649b1ba425d9b2417a45304b5daa0889529ef1191235caba0477b149a3b2",
+    "scripts/audit_dataset_quality.py": "5d0fe69c6922781dd9d1e84b472d2f21c86f5c3ef755a2d233628365369bf926",
+    "mobile/android/app/src/main/assets/glossary.json": "245896448dcc79568f35d60d6ece247c5c6149435a3bb464866cbd6327f8693d",
+    "mobile/android/app/src/main/java/org/kanglish/app/inference/TranslationPrompt.kt": "340d50d396b0028f58dba8569fff2cf853a2dfaf852ebc935f46b84f2b3c1465",
+    "mobile/android/app/src/main/java/org/kanglish/app/data/GlossaryManager.kt": "dd4765cff3a04593463845742f71b622ccda6d3373dccb4cbeac77b9f97f5102",
+    "mobile/android/app/src/main/cpp/kanglish_inference.cpp": "55404c9bb98e8440047f0f542d8b0d0eb2f25d8cca70d49ccaa5898050a4f9cf"
+  },
+  "case_count": 29,
+  "references_sent_to_model": false,
+  "limitations": "Desktop Ollama with adapted Android prompt and bundled glossary, no learned glossary/history. Not phone latency, exact Android sampler parity, cloud teacher accuracy or human evaluation.",
+  "finished_utc": "2026-10-19T11:21:08.861526+00:00",
+  "processed": 29,
+  "model_digest_unchanged": true,
+  "source_files_unchanged": true,
+  "predictions_sha256": "41a2e3eb0c22e52be16e50365f116518e107367acec826de999242cd24d843bc"
+}

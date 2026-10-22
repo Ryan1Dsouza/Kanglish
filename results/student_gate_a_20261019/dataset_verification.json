@@ -1,0 +1,48 @@
+{
+  "complete": true,
+  "passed": true,
+  "rows": 8386,
+  "errors": [],
+  "cross_split_variant_matches": [],
+  "source_group_overlap": 0,
+  "split_group_overlap": 0,
+  "protected_evaluation_and_glossary_data_unchanged": true,
+  "concurrent_app_changes_since_start": [
+    "mobile/android/app/src/main/AndroidManifest.xml",
+    "mobile/android/app/src/main/java/org/kanglish/app/data/ChatMessage.kt",
+    "mobile/android/app/src/main/java/org/kanglish/app/inference/TeacherService.kt",
+    "mobile/android/app/src/main/java/org/kanglish/app/inference/TranslationPrompt.kt",
+    "mobile/android/app/src/main/java/org/kanglish/app/inference/TranslationService.kt",
+    "mobile/android/app/src/main/java/org/kanglish/app/overlay/ClipboardTrampolineActivity.kt",
+    "mobile/android/app/src/main/java/org/kanglish/app/overlay/FloatingSidebarService.kt",
+    "mobile/android/app/src/main/java/org/kanglish/app/ui/MainActivity.kt",
+    "mobile/android/app/src/main/res/layout/activity_main.xml",
+    "mobile/android/app/src/main/res/values/strings.xml",
+    "mobile/android/app/src/main/res/values/themes.xml"
+  ],
+  "current_prompt_sha256": "38942163eb1e650f75806461cb6fdf45ea7b1c146708fe468cc9763d339ab803",
+  "review_status": {
+    "review_counts": {
+      "semantic": {
+        "total": 200,
+        "unresolved": 200
+      },
+      "abstention": {
+        "total": 50,
+        "unresolved": 50
+      }
+    },
+    "sample_threshold_passed": false,
+    "user_confirmation_received": false,
+    "training_allowed": false,
+    "next_action": "Explicit user confirmation of Gate A is required even if sample checks pass."
+  },
+  "file_sha256": {
+    "config.json": "3a82234ad63a691d38d107900106fcbb1b487795e3a3cb58e41f6a69fe48ac40",
+    "manifest.json": "4cb174ac8b2ee5c1584f594a257c738f427b2a88be42e1129aed3555b6e11072",
+    "review_queue.csv": "24ce5f990409c7f3c17fdc40141fb3ed42038c216ee5a6863ec6ce6e021621fd",
+    "review_sample.csv": "1ab587cbf6ab368ac45a86847d3a0b2fc7615618df7cbea1b2536879677a07c9",
+    "train_candidates.jsonl": "dc2fb9510210e0390d54a630ee662dd53a56985c4330ab84cddb6abd44a25bf5",
+    "validation_candidates.jsonl": "fced417906d7aa26e6586d3bc1316684c906d9bca6eaac0355bd4edbeecf6262"
+  }
+}

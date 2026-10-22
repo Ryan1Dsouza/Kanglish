@@ -1,0 +1,16 @@
+{
+  "checks_passed": [
+    "probe_manifest_complete",
+    "29_operationally_successful_cases",
+    "predictions_hash",
+    "no_human_ratings_created",
+    "protected_hashes_unchanged"
+  ],
+  "routes": {
+    "student_model": 28,
+    "exact_glossary": 1
+  },
+  "first_2500_dictionary_initial_letters": {
+    "a": 2500
+  }
+}

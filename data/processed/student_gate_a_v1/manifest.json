@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-10-19T12:45:07.572083+00:00",
+  "gate": "A",
+  "status": "WAITING_FOR_HUMAN_REVIEW_AND_USER_CONFIRMATION",
+  "training_allowed": false,
+  "training_started": false,
+  "train_rows": 7605,
+  "validation_rows": 781,
+  "train_source_groups": 2491,
+  "validation_source_groups": 259,
+  "connected_split_groups": 2614,
+  "cross_split_source_group_overlap": 0,
+  "review_sample": {
+    "semantic": 200,
+    "abstention": 50,
+    "total": 250,
+    "seed": 42
+  },
+  "review_queue_rows": 3085,
+  "review_queue_by_source": {
+    "bpcc_h_daily_conversational": 2782,
+    "alar_kannada_english_dict": 38,
+    "historical_llm_teacher_output": 265
+  },
+  "counts": {
+    "rejected:name_mismatch": 4796,
+    "rejected:negation_review": 88,
+    "rejected:unromanized_input": 126,
+    "rejected:fewer_than_three_safe_spelling_variants": 130,
+    "rejected:number_mismatch": 27,
+    "rejected:time_word_mismatch": 12,
+    "rejected:evaluation_near_duplicate": 37,
+    "rejected:ambiguous_bidi_review": 1,
+    "source_bpcc_rows": 8484,
+    "eligible_conversation_groups": 5702,
+    "not_selected:conversation_cap": 4202,
+    "rejected:teacher_output_requires_kannada_review": 265
+  },
+  "train_by_source": {
+    "bpcc_h_daily_conversational": 6473,
+    "alar_kannada_english_dict": 910,
+    "seeded_verified_absence": 222
+  },
+  "train_by_category": {
+    "conversation": 6473,
+    "dictionary": 910,
+    "abstention": 222
+  },
+  "validation_by_category": {
+    "conversation": 663,
+    "dictionary": 90,
+    "abstention": 28
+  },
+  "dictionary_initials": {
+    "y": 47,
+    "l": 48,
+    "m": 48,
+    "g": 48,
+    "j": 48,
+    "e": 48,
+    "a": 48,
+    "k": 48,
+    "o": 47,
+    "d": 48,
+    "c": 48,
+    "v": 47,
+    "r": 47,
+    "h": 48,
+    "t": 47,
+    "u": 47,
+    "p": 47,
+    "i": 48,
+    "n": 48,
+    "b": 48,
+    "s": 47
+  },
+  "real_rare_dictionary_rows": 988,
+  "quality_v1_source_rows_reused": 2500,
+  "output_sha256": {
+    "config.json": "3a82234ad63a691d38d107900106fcbb1b487795e3a3cb58e41f6a69fe48ac40",
+    "review_queue.csv": "24ce5f990409c7f3c17fdc40141fb3ed42038c216ee5a6863ec6ce6e021621fd",
+    "review_sample.csv": "1ab587cbf6ab368ac45a86847d3a0b2fc7615618df7cbea1b2536879677a07c9",
+    "train_candidates.jsonl": "dc2fb9510210e0390d54a630ee662dd53a56985c4330ab84cddb6abd44a25bf5",
+    "validation_candidates.jsonl": "fced417906d7aa26e6586d3bc1316684c906d9bca6eaac0355bd4edbeecf6262"
+  },
+  "limitations": [
+    "Automatic checks are conservative heuristics, not Kannada-speaker validation.",
+    "Machine spelling variants may be unnatural or change meaning; Gate A is mandatory.",
+    "Inventory absence does not prove a string is not a rare word or name.",
+    "Mixed unknown-word sentences were not fabricated."
+  ]
+}

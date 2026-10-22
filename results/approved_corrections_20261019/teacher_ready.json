@@ -1,0 +1,20 @@
+{
+  "input": "sakkath aagide",
+  "local_translation": "It's awesome / great.",
+  "teacher_status": "Agrees with the model",
+  "teacher_translation": "It is awesome / great.",
+  "explanation": "",
+  "observations": [
+    {
+      "elapsed_seconds": 3.64,
+      "values": {
+        "etPasteInput": "sakkath aagide",
+        "tvQuickResult": "It's awesome / great.",
+        "btnCopyQuick": "Copy translation",
+        "tvQuickTeacherStatus": "Agrees with the model",
+        "tvQuickTeacherTranslation": "It is awesome / great.",
+        "btnCopyQuickTeacher": "Copy teacher translation"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "patch_check": "passed; byte-exact application to saved baseline",
+  "changed_files": [
+    "app/build.gradle.kts",
+    "app/src/main/AndroidManifest.xml",
+    "app/src/main/java/org/kanglish/app/inference/TranslationPrompt.kt",
+    "app/src/main/java/org/kanglish/app/inference/TranslationService.kt",
+    "app/src/main/java/org/kanglish/app/overlay/ClipboardTrampolineActivity.kt",
+    "app/src/main/java/org/kanglish/app/overlay/FloatingSidebarService.kt",
+    "app/src/main/java/org/kanglish/app/overlay/MaxHeightScrollView.kt",
+    "app/src/main/java/org/kanglish/app/ui/MainActivity.kt",
+    "app/src/main/res/layout/layout_floating_sidebar.xml",
+    "app/src/main/res/values/strings.xml",
+    "app/src/main/res/values/themes.xml",
+    "app/src/test/java/org/kanglish/app/ClipboardEntryTest.kt",
+    "app/src/test/java/org/kanglish/app/NotificationPermissionTest.kt",
+    "app/src/test/java/org/kanglish/app/OverlayLayoutTest.kt",
+    "app/src/test/java/org/kanglish/app/TranslationPromptTest.kt",
+    "DEVICE_TEST_REPORT.md",
+    "GLOSSARY_ALTERNATIVES_REVIEW.md"
+  ],
+  "apk_sha256": "141d0a6c841beea79d803a27eebc1244e8cf8c7f6053144b3a6bfa6880721f76",
+  "glossary_unchanged": true
+}

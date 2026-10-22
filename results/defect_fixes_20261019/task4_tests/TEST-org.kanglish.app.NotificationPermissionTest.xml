@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.kanglish.app.NotificationPermissionTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-19T12:44:07" hostname="RYAN" time="11.407">
+  <properties/>
+  <testcase name="android12AndEarlierDoNotRequestNotificationPermission" classname="org.kanglish.app.NotificationPermissionTest" time="1.924"/>
+  <testcase name="notNowStartsTheBubbleWithoutRequestingPermission[33]" classname="org.kanglish.app.NotificationPermissionTest" time="4.848"/>
+  <testcase name="notNowStartsTheBubbleWithoutRequestingPermission" classname="org.kanglish.app.NotificationPermissionTest" time="2.392"/>
+  <testcase name="denialStillStartsTheBubbleAndDoesNotPromptAgain[33]" classname="org.kanglish.app.NotificationPermissionTest" time="0.485"/>
+  <testcase name="denialStillStartsTheBubbleAndDoesNotPromptAgain" classname="org.kanglish.app.NotificationPermissionTest" time="0.642"/>
+  <testcase name="grantingNotificationsStartsTheBubble[33]" classname="org.kanglish.app.NotificationPermissionTest" time="0.474"/>
+  <testcase name="grantingNotificationsStartsTheBubble" classname="org.kanglish.app.NotificationPermissionTest" time="0.641"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>

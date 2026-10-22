@@ -1,0 +1,160 @@
+--- a/app/src/main/java/org/kanglish/app/overlay/FloatingSidebarService.kt
++++ b/app/src/main/java/org/kanglish/app/overlay/FloatingSidebarService.kt
+@@ -219,7 +219,17 @@
+         btnFloatingTeach = floatingView.findViewById(R.id.btnFloatingTeach)
+ 
+         panelExpanded.layoutParams.width = minOf(dpToPx(344), resources.displayMetrics.widthPixels - dpToPx(24))
+-        floatingView.findViewById<View>(R.id.panelScroll).layoutParams.height = minOf(dpToPx(280), resources.displayMetrics.heightPixels / 3)
++        floatingView.findViewById<MaxHeightScrollView>(R.id.panelScroll).maxHeightPx = minOf(dpToPx(200), resources.displayMetrics.heightPixels / 3)
++        panelExpanded.addOnLayoutChangeListener { _, _, top, _, bottom, _, oldTop, _, oldBottom ->
++            if (bottom - top != oldBottom - oldTop && panelExpanded.visibility == View.VISIBLE) {
++                val maxY = (resources.displayMetrics.heightPixels - (bottom - top) - dpToPx(48)).coerceAtLeast(0)
++                val clampedY = windowParams.y.coerceIn(0, maxY)
++                if (clampedY != windowParams.y && floatingView.isAttachedToWindow) {
++                    windowParams.y = clampedY
++                    windowManager.updateViewLayout(floatingView, windowParams)
++                }
++            }
++        }
+         btnFloatingCopy.isEnabled = false
+ 
+         // Quick Paste & Translate from WhatsApp button
+@@ -364,7 +374,11 @@
+         val screenWidth = resources.displayMetrics.widthPixels
+         val screenHeight = resources.displayMetrics.heightPixels
+         windowParams.x = (screenWidth - panelExpanded.layoutParams.width - dpToPx(12)).coerceAtLeast(0)
+-        val panelHeight = floatingView.findViewById<View>(R.id.panelScroll).layoutParams.height + dpToPx(216)
++        panelExpanded.measure(
++            View.MeasureSpec.makeMeasureSpec(panelExpanded.layoutParams.width, View.MeasureSpec.EXACTLY),
++            View.MeasureSpec.makeMeasureSpec(screenHeight - dpToPx(48), View.MeasureSpec.AT_MOST)
++        )
++        val panelHeight = panelExpanded.measuredHeight
+         windowParams.y = windowParams.y.coerceIn(0, (screenHeight - panelHeight - dpToPx(48)).coerceAtLeast(0))
+         try {
+             windowManager.updateViewLayout(floatingView, windowParams)
+--- a/app/src/main/java/org/kanglish/app/overlay/MaxHeightScrollView.kt
++++ b/app/src/main/java/org/kanglish/app/overlay/MaxHeightScrollView.kt
+@@ -0,0 +1,20 @@
++package org.kanglish.app.overlay
++
++import android.content.Context
++import android.util.AttributeSet
++import android.widget.ScrollView
++
++/** Wrap short overlay content; cap long content so the action row stays reachable. */
++class MaxHeightScrollView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null) : ScrollView(context, attrs) {
++    var maxHeightPx: Int = (200 * resources.displayMetrics.density).toInt()
++        set(value) {
++            field = value.coerceAtLeast(0)
++            requestLayout()
++        }
++
++    override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
++        val parentLimit = if (MeasureSpec.getMode(heightMeasureSpec) == MeasureSpec.UNSPECIFIED) maxHeightPx
++            else MeasureSpec.getSize(heightMeasureSpec)
++        super.onMeasure(widthMeasureSpec, MeasureSpec.makeMeasureSpec(minOf(maxHeightPx, parentLimit), MeasureSpec.AT_MOST))
++    }
++}
+--- a/app/src/main/res/layout/layout_floating_sidebar.xml
++++ b/app/src/main/res/layout/layout_floating_sidebar.xml
+@@ -3,29 +3,29 @@
+     <LinearLayout android:layout_width="56dp" android:layout_height="56dp" android:id="@+id/pillHandle" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_floating_pill" android:contentDescription="Paste copied text with Kanglish" android:clickable="true" android:focusable="true">
+         <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="K" android:textSize="22sp" android:textColor="@color/text_primary" android:gravity="center" android:textStyle="bold" />
+     </LinearLayout>
+-    <LinearLayout android:layout_width="344dp" android:layout_height="wrap_content" android:id="@+id/panelExpanded" android:orientation="vertical" android:visibility="gone" android:background="@drawable/bg_floating_panel" android:padding="12dp" android:elevation="12dp">
++    <LinearLayout android:layout_width="344dp" android:layout_height="wrap_content" android:id="@+id/panelExpanded" android:orientation="vertical" android:visibility="gone" android:background="@drawable/bg_floating_panel" android:padding="8dp" android:elevation="12dp">
+         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+             <TextView android:layout_width="0dp" android:layout_height="48dp" android:id="@+id/panelHeader" android:text="Kanglish" android:textSize="15sp" android:textColor="@color/text_primary" android:layout_weight="1" android:textStyle="bold" android:gravity="center_vertical" />
+             <TextView android:layout_width="48dp" android:layout_height="48dp" android:id="@+id/btnMinimize" android:text="_" android:textSize="14sp" android:textColor="@color/primary_light" android:gravity="center" android:paddingHorizontal="12dp" android:clickable="true" android:focusable="true" android:contentDescription="Minimize" />
+             <TextView android:layout_width="48dp" android:layout_height="48dp" android:id="@+id/btnCloseOverlay" android:text="X" android:textSize="14sp" android:textColor="@color/primary_light" android:gravity="center" android:paddingHorizontal="12dp" android:clickable="true" android:focusable="true" android:contentDescription="Close bubble" />
+         </LinearLayout>
+         <TextView android:layout_width="match_parent" android:layout_height="48dp" android:id="@+id/btnFloatingPaste" android:text="Paste copied text" android:textSize="14sp" android:textColor="@color/primary_light" android:gravity="center" android:paddingHorizontal="12dp" android:clickable="true" android:focusable="true" android:contentDescription="Paste copied text" />
+-        <ScrollView android:layout_width="match_parent" android:layout_height="280dp" android:id="@+id/panelScroll">
++        <org.kanglish.app.overlay.MaxHeightScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/panelScroll" android:scrollbars="vertical">
+             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Copied message" android:textSize="13sp" android:textColor="@color/text_secondary" />
+-                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tvFloatingOriginal" android:text="Copy a message in WhatsApp, then tap Paste copied text." android:textSize="15sp" android:textColor="@color/text_primary" android:layout_marginTop="8dp" />
+-                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="English" android:textSize="13sp" android:textColor="@color/translated_border" android:layout_marginTop="20dp" />
++                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tvFloatingOriginal" android:text="Copy a message in WhatsApp, then tap Paste copied text." android:textSize="15sp" android:textColor="@color/text_primary" android:layout_marginTop="4dp" />
++                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="English" android:textSize="13sp" android:textColor="@color/translated_border" android:layout_marginTop="12dp" />
+                 <ProgressBar android:layout_width="24dp" android:layout_height="24dp" android:id="@+id/pbFloatingTranslating" android:visibility="gone" />
+-                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tvFloatingTranslated" android:text="Your translation appears here." android:textSize="18sp" android:textColor="@color/text_primary" android:layout_marginTop="8dp" android:textIsSelectable="true" android:accessibilityLiveRegion="polite" />
++                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tvFloatingTranslated" android:text="Your translation appears here." android:textSize="16sp" android:textColor="@color/text_primary" android:layout_marginTop="4dp" android:textIsSelectable="true" android:accessibilityLiveRegion="polite" />
+                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/boxFloatingTeacher" android:orientation="vertical" android:visibility="gone" android:layout_marginTop="12dp">
+                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tvFloatingTeacherBadge" android:text="Cloud review" android:textSize="13sp" android:textColor="@color/teacher_badge" />
+                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tvFloatingTeacherText" android:text="" android:textSize="14sp" android:textColor="@color/text_primary" />
+                     <TextView android:layout_width="wrap_content" android:layout_height="48dp" android:id="@+id/btnFloatingTeach" android:text="Save meaning" android:textSize="14sp" android:textColor="@color/primary_light" android:gravity="center" android:paddingHorizontal="12dp" android:clickable="true" android:focusable="true" android:contentDescription="Save meaning" />
+                 </LinearLayout>
+             </LinearLayout>
+-        </ScrollView>
+-        <TextView android:layout_width="match_parent" android:layout_height="48dp" android:id="@+id/btnFloatingCopy" android:text="Copy translation" android:textSize="14sp" android:textColor="@color/primary_light" android:gravity="center" android:paddingHorizontal="12dp" android:clickable="true" android:focusable="true" android:contentDescription="Copy translation" />
++        </org.kanglish.app.overlay.MaxHeightScrollView>
+         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
++        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:id="@+id/btnFloatingCopy" android:text="Copy translation" android:textSize="14sp" android:textColor="@color/primary_light" android:gravity="center" android:paddingHorizontal="12dp" android:clickable="true" android:focusable="true" android:contentDescription="Copy translation" />
+             <TextView android:layout_width="wrap_content" android:layout_height="48dp" android:id="@+id/btnFloatingOpenApp" android:text="Open app" android:textSize="14sp" android:textColor="@color/primary_light" android:gravity="center" android:paddingHorizontal="12dp" android:clickable="true" android:focusable="true" android:contentDescription="Open app" />
+             <TextView android:layout_width="wrap_content" android:layout_height="48dp" android:id="@+id/btnFloatingClear" android:text="Clear" android:textSize="14sp" android:textColor="@color/primary_light" android:gravity="center" android:paddingHorizontal="12dp" android:clickable="true" android:focusable="true" android:contentDescription="Clear" />
+         </LinearLayout>
+--- a/app/src/test/java/org/kanglish/app/OverlayLayoutTest.kt
++++ b/app/src/test/java/org/kanglish/app/OverlayLayoutTest.kt
+@@ -0,0 +1,61 @@
++package org.kanglish.app
++
++import android.graphics.Bitmap
++import android.graphics.Canvas
++import android.view.LayoutInflater
++import android.view.View
++import android.widget.TextView
++import androidx.appcompat.view.ContextThemeWrapper
++import org.junit.Assert.*
++import org.junit.Test
++import org.junit.runner.RunWith
++import org.kanglish.app.overlay.MaxHeightScrollView
++import org.robolectric.RobolectricTestRunner
++import org.robolectric.RuntimeEnvironment
++import org.robolectric.annotation.Config
++import org.robolectric.annotation.GraphicsMode
++import java.io.File
++
++@RunWith(RobolectricTestRunner::class)
++@Config(sdk = [35], qualifiers = "w360dp-h800dp-mdpi")
++@GraphicsMode(GraphicsMode.Mode.NATIVE)
++class OverlayLayoutTest {
++    private fun panel(text: String): View {
++        val context = ContextThemeWrapper(RuntimeEnvironment.getApplication(), R.style.Theme_Kanglish)
++        val view = LayoutInflater.from(context).inflate(R.layout.layout_floating_sidebar, null)
++        view.findViewById<View>(R.id.pillHandle).visibility = View.GONE
++        view.findViewById<View>(R.id.panelExpanded).visibility = View.VISIBLE
++        view.findViewById<TextView>(R.id.tvFloatingOriginal).text = "Sample input"
++        view.findViewById<TextView>(R.id.tvFloatingTranslated).text = text
++        view.measure(View.MeasureSpec.makeMeasureSpec(360, View.MeasureSpec.AT_MOST), View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED))
++        view.layout(0, 0, view.measuredWidth, view.measuredHeight)
++        return view
++    }
++
++    @Test fun shortMessagesWrapWithoutScrolling() {
++        val view = panel("Sample output")
++        val scroll = view.findViewById<MaxHeightScrollView>(R.id.panelScroll)
++        assertTrue("Short panel height: ${view.height}", view.height < 340)
++        assertTrue(scroll.height < scroll.maxHeightPx)
++        assertFalse(scroll.canScrollVertically(1))
++        capture(view, "overlay-short")
++    }
++
++    @Test fun longMessagesScrollWithinTheHeightCap() {
++        val view = panel("A line of sample text.\n".repeat(100))
++        val scroll = view.findViewById<MaxHeightScrollView>(R.id.panelScroll)
++        assertEquals(scroll.maxHeightPx, scroll.height)
++        assertTrue(scroll.canScrollVertically(1))
++        assertTrue(view.height <= 400)
++        capture(view, "overlay-long")
++    }
++
++    private fun capture(view: View, name: String) {
++        val image = Bitmap.createBitmap(view.width, view.height, Bitmap.Config.ARGB_8888)
++        view.draw(Canvas(image))
++        val output = File("build/outputs/ui-preview/$name.png")
++        output.parentFile!!.mkdirs()
++        output.outputStream().use { image.compress(Bitmap.CompressFormat.PNG, 100, it) }
++        image.recycle()
++    }
++}

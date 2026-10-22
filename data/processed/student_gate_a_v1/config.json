@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "max_sentence_groups": 1500,
+  "max_dictionary_groups": 1000,
+  "variants_per_sentence": "3 to 5 plus unchanged base; keep references identical; protect names/time/negation/Latin spans",
+  "fuzzy_threshold": 0.88,
+  "fuzzy_metric": "difflib.SequenceMatcher full compact strings + folded spelling families + edit distance <=1 for compact strings 4..10 characters",
+  "split": "connected components of source IDs, fuzzy native/Romanized inputs and English answer families; stable hash 90/10",
+  "abstention_target": "[unclear]",
+  "mixed_partial_abstention_rows": 0,
+  "mixed_partial_abstention_reason": "No Kannada-speaker-confirmed mixed-unknown references available",
+  "allowed_reference_sources": [
+    "BPCC-H human translations",
+    "Alar authored dictionary senses pending review",
+    "user-authorized fixed [unclear]"
+  ],
+  "teacher_outputs_in_training": 0,
+  "private_chats_used": 0,
+  "external_model_api_calls": 0,
+  "spend_cap": 0,
+  "prompt_sha256": "38942163eb1e650f75806461cb6fdf45ea7b1c146708fe468cc9763d339ab803",
+  "romanization_cache_sha256": "2350401c94b5d071e18af820cb47c85b56f05dfcb5ad404199c95c7bc09461cc",
+  "romanization_model": "AI4Bharat/IndicXlit indic-en v1.0; local pretrained PyTorch inference, greedy",
+  "student_model": "Qwen2.5-0.5B v3 Q8_0 baseline only; no training started"
+}

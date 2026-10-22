@@ -1,0 +1,817 @@
+{
+  "count": 162,
+  "total": 489,
+  "source_sha256": "245896448dcc79568f35d60d6ece247c5c6149435a3bb464866cbd6327f8693d",
+  "entries": [
+    {
+      "entry": 1,
+      "kanglish": "jaasthi scene bidthiya",
+      "english": "acting too smart / showing off"
+    },
+    {
+      "entry": 2,
+      "kanglish": "office ge ಹೊರಟಿದ್ದೀನಿ",
+      "english": "need to go to office / going to office"
+    },
+    {
+      "entry": 4,
+      "kanglish": "office ge hogthini",
+      "english": "need to go to office / going to office"
+    },
+    {
+      "entry": 6,
+      "kanglish": "chennagi idhdhini",
+      "english": "I am fine / doing well"
+    },
+    {
+      "entry": 8,
+      "kanglish": "office ge hogbeku",
+      "english": "need to go to office / going to office"
+    },
+    {
+      "entry": 9,
+      "kanglish": "tumba bejar aithu",
+      "english": "feeling very upset / sad"
+    },
+    {
+      "entry": 12,
+      "kanglish": "thika uritha ide",
+      "english": "ass is burning / getting pissed off"
+    },
+    {
+      "entry": 13,
+      "kanglish": "yenu samachaara",
+      "english": "what's the news? / what is up?"
+    },
+    {
+      "entry": 16,
+      "kanglish": "manege hogthini",
+      "english": "go home / I am going home"
+    },
+    {
+      "entry": 19,
+      "kanglish": "tumba danyavada",
+      "english": "thanks a lot / thank you very much"
+    },
+    {
+      "entry": 22,
+      "kanglish": "thikka uriyuthe",
+      "english": "ass is burning / getting pissed off"
+    },
+    {
+      "entry": 25,
+      "kanglish": "scene bidthidya",
+      "english": "acting too smart / showing off"
+    },
+    {
+      "entry": 26,
+      "kanglish": "chennagi idini",
+      "english": "I am fine / doing well"
+    },
+    {
+      "entry": 27,
+      "kanglish": "yenu samachara",
+      "english": "what's the news? / what is up?"
+    },
+    {
+      "entry": 28,
+      "kanglish": "enu samachaara",
+      "english": "what's the news? / what is up?"
+    },
+    {
+      "entry": 33,
+      "kanglish": "nidde barthide",
+      "english": "are you asleep? / feeling sleepy?"
+    },
+    {
+      "entry": 39,
+      "kanglish": "manege hogtini",
+      "english": "go home / I am going home"
+    },
+    {
+      "entry": 42,
+      "kanglish": "thika uriyuthe",
+      "english": "ass is burning / getting pissed off"
+    },
+    {
+      "entry": 43,
+      "kanglish": "chennagiddini",
+      "english": "I am fine / doing well"
+    },
+    {
+      "entry": 44,
+      "kanglish": "enu samachara",
+      "english": "what's the news? / what is up?"
+    },
+    {
+      "entry": 58,
+      "kanglish": "thumba thanks",
+      "english": "thanks a lot / thank you very much"
+    },
+    {
+      "entry": 63,
+      "kanglish": "hoge aagbitte",
+      "english": "went up in smoke / completely ruined / dead"
+    },
+    {
+      "entry": 64,
+      "kanglish": "chennagidini",
+      "english": "I am fine / doing well"
+    },
+    {
+      "entry": 67,
+      "kanglish": "ootaa aithaa",
+      "english": "did you eat? / have you eaten?"
+    },
+    {
+      "entry": 68,
+      "kanglish": "oota maadona",
+      "english": "let's eat / let's have lunch/dinner"
+    },
+    {
+      "entry": 69,
+      "kanglish": "oota maadana",
+      "english": "let's eat / let's have lunch/dinner"
+    },
+    {
+      "entry": 74,
+      "kanglish": "nidde bantha",
+      "english": "are you asleep? / feeling sleepy?"
+    },
+    {
+      "entry": 77,
+      "kanglish": "mane ge hogu",
+      "english": "go home / I am going home"
+    },
+    {
+      "entry": 79,
+      "kanglish": "tumba thanks",
+      "english": "thanks a lot / thank you very much"
+    },
+    {
+      "entry": 80,
+      "kanglish": "sumne kootko",
+      "english": "keep quiet / stay calm / sit quietly"
+    },
+    {
+      "entry": 83,
+      "kanglish": "bejar aaythu",
+      "english": "feeling very upset / sad"
+    },
+    {
+      "entry": 86,
+      "kanglish": "halakat nayi",
+      "english": "scoundrel / bastard / stray dog"
+    },
+    {
+      "entry": 91,
+      "kanglish": "oota aaytha",
+      "english": "did you eat? / have you eaten?"
+    },
+    {
+      "entry": 92,
+      "kanglish": "oota madona",
+      "english": "let's eat / let's have lunch/dinner"
+    },
+    {
+      "entry": 96,
+      "kanglish": "manege hogu",
+      "english": "go home / I am going home"
+    },
+    {
+      "entry": 97,
+      "kanglish": "manege hogo",
+      "english": "go home / I am going home"
+    },
+    {
+      "entry": 103,
+      "kanglish": "baddi magne",
+      "english": "bastard / rascal"
+    },
+    {
+      "entry": 104,
+      "kanglish": "baddimagane",
+      "english": "bastard / rascal"
+    },
+    {
+      "entry": 109,
+      "kanglish": "oota aitha",
+      "english": "did you eat? / have you eaten?"
+    },
+    {
+      "entry": 110,
+      "kanglish": "oota aatha",
+      "english": "did you eat? / have you eaten?"
+    },
+    {
+      "entry": 113,
+      "kanglish": "kadime ide",
+      "english": "it is less / low"
+    },
+    {
+      "entry": 114,
+      "kanglish": "haudu guru",
+      "english": "yes / that's right / yes bro"
+    },
+    {
+      "entry": 115,
+      "kanglish": "saaku bidi",
+      "english": "enough / that's enough"
+    },
+    {
+      "entry": 124,
+      "kanglish": "hoge aithu",
+      "english": "went up in smoke / completely ruined / dead"
+    },
+    {
+      "entry": 130,
+      "kanglish": "oota aita",
+      "english": "did you eat? / have you eaten?"
+    },
+    {
+      "entry": 132,
+      "kanglish": "malgideya",
+      "english": "are you asleep? / feeling sleepy?"
+    },
+    {
+      "entry": 133,
+      "kanglish": "kammi ide",
+      "english": "it is less / low"
+    },
+    {
+      "entry": 136,
+      "kanglish": "ilve illa",
+      "english": "no / not at all"
+    },
+    {
+      "entry": 137,
+      "kanglish": "sumne iru",
+      "english": "keep quiet / stay calm / sit quietly"
+    },
+    {
+      "entry": 138,
+      "kanglish": "sumne iri",
+      "english": "keep quiet / stay calm / sit quietly"
+    },
+    {
+      "entry": 142,
+      "kanglish": "halakatte",
+      "english": "scoundrel / bastard / stray dog"
+    },
+    {
+      "entry": 147,
+      "kanglish": "malgidya",
+      "english": "are you asleep? / feeling sleepy?"
+    },
+    {
+      "entry": 148,
+      "kanglish": "saakappa",
+      "english": "enough / that's enough"
+    },
+    {
+      "entry": 152,
+      "kanglish": "keyyalla",
+      "english": "fuck / to fuck"
+    },
+    {
+      "entry": 156,
+      "kanglish": "bekappa",
+      "english": "want / need"
+    },
+    {
+      "entry": 157,
+      "kanglish": "bedappa",
+      "english": "don't want / no need"
+    },
+    {
+      "entry": 159,
+      "kanglish": "sumkire",
+      "english": "keep quiet / stay calm / sit quietly"
+    },
+    {
+      "entry": 162,
+      "kanglish": "shattaa",
+      "english": "bullshit / pubic hair"
+    },
+    {
+      "entry": 163,
+      "kanglish": "halakat",
+      "english": "scoundrel / bastard / stray dog"
+    },
+    {
+      "entry": 164,
+      "kanglish": "keyyoke",
+      "english": "fuck / to fuck"
+    },
+    {
+      "entry": 166,
+      "kanglish": "magane",
+      "english": "dude / bro / son"
+    },
+    {
+      "entry": 167,
+      "kanglish": "machan",
+      "english": "buddy / bro"
+    },
+    {
+      "entry": 168,
+      "kanglish": "machaa",
+      "english": "buddy / bro"
+    },
+    {
+      "entry": 169,
+      "kanglish": "guruve",
+      "english": "bro / master / mate"
+    },
+    {
+      "entry": 170,
+      "kanglish": "dostha",
+      "english": "friend / buddy"
+    },
+    {
+      "entry": 171,
+      "kanglish": "appaji",
+      "english": "father / dad"
+    },
+    {
+      "entry": 179,
+      "kanglish": "shataa",
+      "english": "bullshit / pubic hair"
+    },
+    {
+      "entry": 182,
+      "kanglish": "haudu",
+      "english": "yes / that's right / yes bro"
+    },
+    {
+      "entry": 183,
+      "kanglish": "houdu",
+      "english": "yes / that's right / yes bro"
+    },
+    {
+      "entry": 184,
+      "kanglish": "howdu",
+      "english": "yes / that's right / yes bro"
+    },
+    {
+      "entry": 185,
+      "kanglish": "saaku",
+      "english": "enough / that's enough"
+    },
+    {
+      "entry": 188,
+      "kanglish": "macha",
+      "english": "buddy / bro"
+    },
+    {
+      "entry": 189,
+      "kanglish": "amman",
+      "english": "mother / mom"
+    },
+    {
+      "entry": 194,
+      "kanglish": "shata",
+      "english": "bullshit / pubic hair"
+    },
+    {
+      "entry": 195,
+      "kanglish": "keyyu",
+      "english": "fuck / to fuck"
+    },
+    {
+      "entry": 196,
+      "kanglish": "beku",
+      "english": "want / need"
+    },
+    {
+      "entry": 197,
+      "kanglish": "beda",
+      "english": "don't want / no need"
+    },
+    {
+      "entry": 198,
+      "kanglish": "illa",
+      "english": "no / not at all"
+    },
+    {
+      "entry": 199,
+      "kanglish": "alla",
+      "english": "no / not at all"
+    },
+    {
+      "entry": 200,
+      "kanglish": "maga",
+      "english": "dude / bro / son"
+    },
+    {
+      "entry": 201,
+      "kanglish": "mago",
+      "english": "dude / bro / son"
+    },
+    {
+      "entry": 202,
+      "kanglish": "guru",
+      "english": "bro / master / mate"
+    },
+    {
+      "entry": 203,
+      "kanglish": "amma",
+      "english": "mother / mom"
+    },
+    {
+      "entry": 204,
+      "kanglish": "appa",
+      "english": "father / dad"
+    },
+    {
+      "entry": 207,
+      "kanglish": "ley",
+      "english": "hey / dude"
+    },
+    {
+      "entry": 208,
+      "kanglish": "laa",
+      "english": "hey / dude"
+    },
+    {
+      "entry": 209,
+      "kanglish": "lo",
+      "english": "hey / dude"
+    },
+    {
+      "entry": 210,
+      "kanglish": "da",
+      "english": "friend / buddy"
+    },
+    {
+      "entry": 217,
+      "kanglish": "aaraam",
+      "english": "fine / comfortable"
+    },
+    {
+      "entry": 239,
+      "kanglish": "channagide",
+      "english": "It's good / I'm fine."
+    },
+    {
+      "entry": 240,
+      "kanglish": "channagilla",
+      "english": "Not good / Not fine."
+    },
+    {
+      "entry": 241,
+      "kanglish": "chennagide",
+      "english": "It's good / I'm fine."
+    },
+    {
+      "entry": 242,
+      "kanglish": "channagidini",
+      "english": "I am fine / I'm doing well."
+    },
+    {
+      "entry": 243,
+      "kanglish": "channagi idini",
+      "english": "I am fine / I'm doing well."
+    },
+    {
+      "entry": 244,
+      "kanglish": "tumba channagide",
+      "english": "Very good / Feeling great."
+    },
+    {
+      "entry": 248,
+      "kanglish": "ok ide",
+      "english": "It's okay / I'm okay."
+    },
+    {
+      "entry": 250,
+      "kanglish": "sari ide",
+      "english": "It's fine / alright."
+    },
+    {
+      "entry": 259,
+      "kanglish": "eega hogtheeni",
+      "english": "I'm leaving now / going now."
+    },
+    {
+      "entry": 279,
+      "kanglish": "mane illi ide",
+      "english": "Home is here / I'm at home."
+    },
+    {
+      "entry": 285,
+      "kanglish": "oota aaytha?",
+      "english": "Did you eat? / Have you eaten?"
+    },
+    {
+      "entry": 286,
+      "kanglish": "oota aaythu",
+      "english": "Ate / Done eating."
+    },
+    {
+      "entry": 287,
+      "kanglish": "oota maadu",
+      "english": "Eat food / Have your meal."
+    },
+    {
+      "entry": 306,
+      "kanglish": "kelsa ide",
+      "english": "There is work / I have work."
+    },
+    {
+      "entry": 307,
+      "kanglish": "kelsa illa",
+      "english": "No work / There's no work."
+    },
+    {
+      "entry": 311,
+      "kanglish": "class ide",
+      "english": "There's class / I have class."
+    },
+    {
+      "entry": 329,
+      "kanglish": "gottidya",
+      "english": "Do you know? / Did you find out?"
+    },
+    {
+      "entry": 333,
+      "kanglish": "heli",
+      "english": "Tell / Say."
+    },
+    {
+      "entry": 334,
+      "kanglish": "helu",
+      "english": "Tell / Say (informal)."
+    },
+    {
+      "entry": 335,
+      "kanglish": "keli",
+      "english": "Listen / Ask."
+    },
+    {
+      "entry": 340,
+      "kanglish": "nodide",
+      "english": "I saw / I watched."
+    },
+    {
+      "entry": 356,
+      "kanglish": "bejar aagide",
+      "english": "Feeling sad / upset."
+    },
+    {
+      "entry": 357,
+      "kanglish": "bejar agthide",
+      "english": "Getting upset / feeling sad."
+    },
+    {
+      "entry": 359,
+      "kanglish": "khushi aagide",
+      "english": "Happy / feeling happy."
+    },
+    {
+      "entry": 360,
+      "kanglish": "tension aagide",
+      "english": "Feeling tensed / stressed."
+    },
+    {
+      "entry": 362,
+      "kanglish": "tension beda",
+      "english": "Don't stress / no tension."
+    },
+    {
+      "entry": 364,
+      "kanglish": "baya aagide",
+      "english": "I'm scared / feeling afraid."
+    },
+    {
+      "entry": 366,
+      "kanglish": "baya illa",
+      "english": "No fear / not scared."
+    },
+    {
+      "entry": 367,
+      "kanglish": "donga feeling",
+      "english": "Feeling like a thief / guilty feeling."
+    },
+    {
+      "entry": 368,
+      "kanglish": "sakkath feel aagide",
+      "english": "Feeling great / awesome feeling."
+    },
+    {
+      "entry": 374,
+      "kanglish": "nidde aaytha",
+      "english": "Fell asleep / went to sleep."
+    },
+    {
+      "entry": 375,
+      "kanglish": "nidde banthidya",
+      "english": "Did sleep come? / Are you sleepy?"
+    },
+    {
+      "entry": 376,
+      "kanglish": "tumba dhanyavaada",
+      "english": "Many thanks / Thank you very much."
+    },
+    {
+      "entry": 381,
+      "kanglish": "sorry kano",
+      "english": "Hey sorry / I'm sorry."
+    },
+    {
+      "entry": 382,
+      "kanglish": "sorry aagthu",
+      "english": "Feeling sorry / I'm sorry."
+    },
+    {
+      "entry": 383,
+      "kanglish": "swalpa nodi",
+      "english": "Please check / look once."
+    },
+    {
+      "entry": 387,
+      "kanglish": "please beda",
+      "english": "Please don't / please no."
+    },
+    {
+      "entry": 393,
+      "kanglish": "sari sari",
+      "english": "Okay okay / Alright."
+    },
+    {
+      "entry": 395,
+      "kanglish": "aagalla",
+      "english": "Won't happen / Not possible."
+    },
+    {
+      "entry": 396,
+      "kanglish": "aagilla",
+      "english": "Didn't happen / Not possible."
+    },
+    {
+      "entry": 397,
+      "kanglish": "aaguthde",
+      "english": "It will happen / It will be done."
+    },
+    {
+      "entry": 399,
+      "kanglish": "aagide aagide",
+      "english": "It happened / Done done."
+    },
+    {
+      "entry": 400,
+      "kanglish": "saku bidu",
+      "english": "That's enough / leave it."
+    },
+    {
+      "entry": 402,
+      "kanglish": "bidi bidi",
+      "english": "Leave it leave it / drop it."
+    },
+    {
+      "entry": 403,
+      "kanglish": "chalo",
+      "english": "Let's go / come on."
+    },
+    {
+      "entry": 414,
+      "kanglish": "battery itta",
+      "english": "Battery is there / charged."
+    },
+    {
+      "entry": 419,
+      "kanglish": "ping maadu",
+      "english": "Ping me / message me."
+    },
+    {
+      "entry": 426,
+      "kanglish": "hangout hogona",
+      "english": "Let's hang out / go out."
+    },
+    {
+      "entry": 433,
+      "kanglish": "function ide",
+      "english": "There's a function / event."
+    },
+    {
+      "entry": 434,
+      "kanglish": "kano",
+      "english": "Hey / Listen (soft attention grab)."
+    },
+    {
+      "entry": 435,
+      "kanglish": "guru kano",
+      "english": "Hey bro / Listen bro."
+    },
+    {
+      "entry": 438,
+      "kanglish": "swalpa iri",
+      "english": "Wait a bit / stay a moment."
+    },
+    {
+      "entry": 439,
+      "kanglish": "swalpa baa",
+      "english": "Come a little / come here briefly."
+    },
+    {
+      "entry": 440,
+      "kanglish": "nimma ishta",
+      "english": "As you wish / your choice."
+    },
+    {
+      "entry": 441,
+      "kanglish": "ninna ishta",
+      "english": "Your wish / as you like."
+    },
+    {
+      "entry": 442,
+      "kanglish": "nanna ishta",
+      "english": "My wish / as I like."
+    },
+    {
+      "entry": 445,
+      "kanglish": "sakkath aagide",
+      "english": "It's awesome / great."
+    },
+    {
+      "entry": 447,
+      "kanglish": "mast aagide",
+      "english": "It's great / fantastic."
+    },
+    {
+      "entry": 448,
+      "kanglish": "super aagide",
+      "english": "It's super / excellent."
+    },
+    {
+      "entry": 449,
+      "kanglish": "bakwaas",
+      "english": "Nonsense / rubbish."
+    },
+    {
+      "entry": 452,
+      "kanglish": "beku beku",
+      "english": "Want want / I need it."
+    },
+    {
+      "entry": 456,
+      "kanglish": "nim hatra gotthu",
+      "english": "I know from you / you told me."
+    },
+    {
+      "entry": 457,
+      "kanglish": "nim hathra gotthu",
+      "english": "I know from you / you told me."
+    },
+    {
+      "entry": 460,
+      "kanglish": "duddu ide",
+      "english": "There's money / I have money."
+    },
+    {
+      "entry": 463,
+      "kanglish": "duddu hogide",
+      "english": "Money is gone / spent."
+    },
+    {
+      "entry": 466,
+      "kanglish": "rate enu",
+      "english": "What is the rate / price?"
+    },
+    {
+      "entry": 472,
+      "kanglish": "ninna prem aaguthide",
+      "english": "I'm falling for you / I love you."
+    },
+    {
+      "entry": 473,
+      "kanglish": "scene bidtha",
+      "english": "Showing off / acting smart."
+    },
+    {
+      "entry": 476,
+      "kanglish": "put scene bidtha",
+      "english": "Acting fake / putting on a show."
+    },
+    {
+      "entry": 477,
+      "kanglish": "naach naach",
+      "english": "Dance dance / keep dancing."
+    },
+    {
+      "entry": 479,
+      "kanglish": "hevaagi ide",
+      "english": "Feeling unwell / sick."
+    },
+    {
+      "entry": 482,
+      "kanglish": "tablet tindu",
+      "english": "Take the tablet / medicine."
+    },
+    {
+      "entry": 484,
+      "kanglish": "channagaaguva",
+      "english": "Will get better / will be fine."
+    }
+  ]
+}

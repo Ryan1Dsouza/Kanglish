@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.kanglish.app.ClipboardEntryTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-19T12:47:15" hostname="RYAN" time="6.164">
+  <properties/>
+  <testcase name="clipboardCaptureUsesAnUnrelatedTransientTask[28]" classname="org.kanglish.app.ClipboardEntryTest" time="2.408"/>
+  <testcase name="clipboardCaptureUsesAnUnrelatedTransientTask" classname="org.kanglish.app.ClipboardEntryTest" time="2.087"/>
+  <testcase name="resumeDoesNotConsumeClipboardBeforeFocusAndFocusDispatchesOnce[28]" classname="org.kanglish.app.ClipboardEntryTest" time="0.593"/>
+  <testcase name="resumeDoesNotConsumeClipboardBeforeFocusAndFocusDispatchesOnce" classname="org.kanglish.app.ClipboardEntryTest" time="0.745"/>
+  <testcase name="emptyClipboardDoesNotStartTranslation[28]" classname="org.kanglish.app.ClipboardEntryTest" time="0.054"/>
+  <testcase name="emptyClipboardDoesNotStartTranslation" classname="org.kanglish.app.ClipboardEntryTest" time="0.085"/>
+  <testcase name="selectedTextOpensAppWhenOverlayPermissionIsMissing[28]" classname="org.kanglish.app.ClipboardEntryTest" time="0.055"/>
+  <testcase name="selectedTextOpensAppWhenOverlayPermissionIsMissing" classname="org.kanglish.app.ClipboardEntryTest" time="0.059"/>
+  <testcase name="sharedTextKeepsAllLines[28]" classname="org.kanglish.app.ClipboardEntryTest" time="0.035"/>
+  <testcase name="sharedTextKeepsAllLines" classname="org.kanglish.app.ClipboardEntryTest" time="0.041"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

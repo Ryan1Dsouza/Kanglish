@@ -1,0 +1,19 @@
+{
+  "input": "sakkath aagide",
+  "local_translation": "It's awesome / great.",
+  "teacher_status": "Cloud review is off",
+  "teacher_translation": "",
+  "explanation": "Enable cloud review in Settings to get the teacher\u2019s translation and check this answer.",
+  "observations": [
+    {
+      "elapsed_seconds": 3.75,
+      "values": {
+        "etPasteInput": "sakkath aagide",
+        "tvQuickResult": "It's awesome / great.",
+        "btnCopyQuick": "Copy translation",
+        "tvQuickTeacherStatus": "Cloud review is off",
+        "tvQuickTeacherExplanation": "Enable cloud review in Settings to get the teacher\u2019s translation and check this answer."
+      }
+    }
+  ]
+}

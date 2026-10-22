@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.kanglish.app.MainUiTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-19T12:24:54" hostname="RYAN" time="31.958">
+  <properties/>
+  <testcase name="translationIsTheLandingPageAndSettingsAreSeparate" classname="org.kanglish.app.MainUiTest" time="31.262"/>
+  <testcase name="homePastePreservesMultilineTextAndClearRemovesIt" classname="org.kanglish.app.MainUiTest" time="0.696"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

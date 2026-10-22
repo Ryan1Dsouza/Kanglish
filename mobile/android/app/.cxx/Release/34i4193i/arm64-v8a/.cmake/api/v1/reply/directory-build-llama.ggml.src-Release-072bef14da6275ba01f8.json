@@ -1,0 +1,60 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"ggml_add_backend_library",
+			"ggml_add_cpu_backend_variant_impl"
+		],
+		"files" : 
+		[
+			"C:/Users/ryan1/kanglish-foss/mobile/android/third_party/llama.cpp/ggml/src/CMakeLists.txt",
+			"C:/Users/ryan1/kanglish-foss/mobile/android/third_party/llama.cpp/ggml/src/ggml-cpu/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 596,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 27,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 396,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"build-llama/ggml/src/libggml-cpu.a"
+			],
+			"targetId" : "ggml-cpu::@23533c6d68a59d54598d",
+			"targetIndex" : 3,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "build-llama/ggml/src",
+		"source" : "C:/Users/ryan1/kanglish-foss/mobile/android/third_party/llama.cpp/ggml/src"
+	}
+}

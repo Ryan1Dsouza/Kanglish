@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.kanglish.app.TeacherResponseTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-19T12:47:39" hostname="RYAN" time="0.249">
+  <properties/>
+  <testcase name="emptyOrOldResponsesCannotApproveTheStudent" classname="org.kanglish.app.TeacherResponseTest" time="0.025"/>
+  <testcase name="wholeCodeFenceIsAllowedButExtraResponseTextIsRejected" classname="org.kanglish.app.TeacherResponseTest" time="0.037"/>
+  <testcase name="mismatchRequiresBothACorrectionAndAReason" classname="org.kanglish.app.TeacherResponseTest" time="0.023"/>
+  <testcase name="agreementRequiresAnExplicitVerdictAndTranslation" classname="org.kanglish.app.TeacherResponseTest" time="0.021"/>
+  <testcase name="uncertainReviewHidesSaveMeaningAndShowsItsReason" classname="org.kanglish.app.TeacherResponseTest" time="0.099"/>
+  <testcase name="wrongTypesUnknownVerdictsAndBlankTranslationsAreRejected" classname="org.kanglish.app.TeacherResponseTest" time="0.022"/>
+  <testcase name="uncertaintyIsExplicitAndNeverContainsALearnedAnswer" classname="org.kanglish.app.TeacherResponseTest" time="0.022"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

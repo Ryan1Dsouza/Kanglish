@@ -1,0 +1,6 @@
+{
+  "app_llama_cpp_revision": "5aeac37a35b44fde4bdffaec9159f2fcb253b622",
+  "tracked_modifications": "",
+  "native_bridge_sha256": "55404c9bb98e8440047f0f542d8b0d0eb2f25d8cca70d49ccaa5898050a4f9cf",
+  "phase_c_requirement": "Use this app-vendored revision for conversion and quantization, recheck before Phase C."
+}

@@ -1,0 +1,11 @@
+{
+  "input": "sakkath aagide",
+  "actual": "It's awesome / great.",
+  "observations": [
+    {
+      "elapsed_seconds": 2.7,
+      "result": "It's awesome / great."
+    }
+  ],
+  "timing_note": "Includes ADB and UIAutomator polling overhead; not a throughput benchmark."
+}

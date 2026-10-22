@@ -1,0 +1,40 @@
+{
+  "input": "naale college ge barthira?",
+  "owner_reference": "Are you coming to college tomorrow?",
+  "actual": "",
+  "observations": [
+    {
+      "elapsed": 4.11,
+      "result": ""
+    },
+    {
+      "elapsed": 6.69,
+      "result": ""
+    },
+    {
+      "elapsed": 10.05,
+      "result": ""
+    },
+    {
+      "elapsed": 12.61,
+      "result": ""
+    },
+    {
+      "elapsed": 18.26,
+      "result": ""
+    },
+    {
+      "elapsed": 21.69,
+      "result": ""
+    },
+    {
+      "elapsed": 26.41,
+      "result": ""
+    },
+    {
+      "elapsed": 28.98,
+      "result": ""
+    }
+  ],
+  "timing_note": "Host UI polling includes ADB/UIAutomator overhead; not a token throughput benchmark."
+}

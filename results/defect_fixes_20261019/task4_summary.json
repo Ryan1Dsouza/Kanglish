@@ -1,0 +1,26 @@
+{
+  "stage": "task4",
+  "diff": [
+    {
+      "file": "app/src/main/java/org/kanglish/app/ui/MainActivity.kt",
+      "added": 44,
+      "removed": 8
+    },
+    {
+      "file": "app/src/main/res/values/strings.xml",
+      "added": 6,
+      "removed": 0
+    },
+    {
+      "file": "app/src/test/java/org/kanglish/app/NotificationPermissionTest.kt",
+      "added": 86,
+      "removed": 0
+    }
+  ],
+  "unit_tests": {
+    "tests": 39,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}

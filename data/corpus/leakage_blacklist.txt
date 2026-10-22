@@ -1,0 +1,25 @@
+﻿# Kanglish-FOSS Prompt Leakage Blacklist
+# =========================================
+# Any sentence in this file must NEVER appear in the test or dev splits.
+# Generated from PILOT_DATASET_SCHEMA.md contamination audit.
+# Last updated: 2026-10-18
+
+# --- data/test.csv (original 3 sanity rows) ---
+naale college ge barthira?
+yenu guru ivattu plan?
+sakkath aagide
+
+# --- scripts/baseline.py and glossary_run.py few-shots ---
+eno maadtidya?
+nanna jothe bartiya?
+oota aitha?
+
+# --- test_generalization.py sentences ---
+naale barthini
+maga illi baa
+ivattu class ide
+guru scene enu?
+tumba chennagide
+ninne movie nodide
+oota aaytha?
+swalpa wait maadu

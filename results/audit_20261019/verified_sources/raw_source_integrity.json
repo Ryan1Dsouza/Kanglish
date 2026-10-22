@@ -1,0 +1,43 @@
+[
+  {
+    "path": "data/raw/aksharantar/kan.zip",
+    "hash_matches_manifest": true,
+    "size_matches_manifest": true
+  },
+  {
+    "path": "data/raw/in22_conv/in22_conv_mteb_default_test.parquet",
+    "hash_matches_manifest": true,
+    "size_matches_manifest": true
+  },
+  {
+    "path": "data/raw/en_kan_cleaned/train_0000.parquet",
+    "hash_matches_manifest": true,
+    "size_matches_manifest": true
+  },
+  {
+    "path": "data/raw/bpcc_h_daily/daily/kan_Knda.tsv",
+    "hash_matches_manifest": true,
+    "size_matches_manifest": true
+  },
+  {
+    "path": "data/raw/alar/alar.yml",
+    "hash_matches_manifest": true,
+    "size_matches_manifest": true
+  },
+  {
+    "aksharantar_members": [
+      {
+        "name": "kan_test.json",
+        "uncompressed_bytes": 1504551
+      },
+      {
+        "name": "kan_train.json",
+        "uncompressed_bytes": 487443219
+      },
+      {
+        "name": "kan_valid.json",
+        "uncompressed_bytes": 1065743
+      }
+    ]
+  }
+]

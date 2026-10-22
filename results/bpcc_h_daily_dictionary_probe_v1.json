@@ -1,0 +1,6758 @@
+{
+  "schema_version": "bpcc-dictionary-probe-v1",
+  "purpose": "diagnostic only; no training or human verification",
+  "source_repository": "ai4bharat/BPCC",
+  "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+  "source_file": "daily/kan_Knda.tsv",
+  "source_sha256": "f7c049f9217610f93dae24307e7a9fd4f078a5628929a8098fc871b5675973ef",
+  "source_license": "CC-BY-4.0",
+  "license_evidence": "https://github.com/AI4Bharat/IndicTrans2/blob/4f08e39cc6bf13cd62e2445dc725f22bff1a9219/README.md#license",
+  "source_attribution": "AI4Bharat, IndicTrans2, BPCC-H-Daily",
+  "source_license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_role": "training corpus; diagnostic sample only",
+  "sample_path": "data/processed/bpcc_h_daily_v1/kan_en_sample.csv",
+  "sample_sha256": "3688d0aa5e2fb4313b760573dcffe3f497ef64ac7835125283629bde2777b974",
+  "sample_method": "existing first 100 source records; not representative or randomly sampled",
+  "transformation": "existing tokenize/transliterate_sentence, unchanged; retain only needed lookup entries while scanning the full Aksharantar training member; deduplicate candidate lists preserving original order",
+  "dictionary_source": "ai4bharat/Aksharantar, kan_train.json; declared CC0 mined / CC-BY manual components per local manifest; retain separate attribution, no blanket relicensing of the derivative",
+  "dictionary_sha256": "a0c18fa0a8bf06b34d413b09c3e7b9505b74ba3f7f1fa2ae724793fc3fc7d650",
+  "summary": {
+    "sentences": 100,
+    "kannada_token_occurrences": 685,
+    "unique_match": 224,
+    "ambiguous_match": 86,
+    "unknown_kannada": 375,
+    "other_unknown": 6,
+    "unique_match_percent": 32.7,
+    "ambiguous_percent": 12.55,
+    "unknown_kannada_percent": 54.74,
+    "latin_token_occurrences": 6,
+    "latin_tokens_preserved_exactly": true,
+    "sentences_with_unknown": 95,
+    "sentences_with_ambiguous": 52,
+    "sentences_without_unknown_or_ambiguous": 1,
+    "unique_kannada_types": 482,
+    "type_status_counts": {
+      "kannada_matched": 152,
+      "kannada_unknown": 263,
+      "kannada_ambiguous": 67
+    },
+    "unknown_token_occurrences_with_ZWNJ": 120,
+    "lexicon_rows_scanned": 2906728,
+    "elapsed_seconds": 13.315
+  },
+  "top_unknown_tokens": [
+    [
+      "ನಾನು",
+      12
+    ],
+    [
+      "ಈ",
+      12
+    ],
+    [
+      "ನನ್ನ",
+      8
+    ],
+    [
+      "ಐ",
+      7
+    ],
+    [
+      "ನನ್‌",
+      6
+    ],
+    [
+      "ವ್ಯಾಕ್ಸಿನೇಷನ್‌",
+      4
+    ],
+    [
+      "ನಂಗೆ",
+      4
+    ],
+    [
+      "ಸಿ",
+      4
+    ],
+    [
+      "ಅನ್ನು",
+      4
+    ],
+    [
+      "ಮತ್ತು",
+      4
+    ],
+    [
+      "ಹೇಳು",
+      3
+    ],
+    [
+      "ಪಿನ್‌ಕೋಡ್‌",
+      3
+    ],
+    [
+      "ಇ",
+      3
+    ],
+    [
+      "ಗೆ",
+      3
+    ],
+    [
+      "ಅಳಿಸಿ",
+      3
+    ]
+  ],
+  "rows": [
+    {
+      "id": "BPCC-CAND-00001",
+      "source_row_index": 1,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಅನಂತಪುರ್ ಜಿಲ್ಲೆಯಲ್ಲಿರುವ ವ್ಯಾಕ್ಸಿನೇಷನ್‌ ಕೇಂದ್ರವನ್ನು ಹುಡುಕು.",
+      "english_reference": "Search vaccination center in District Anantapur",
+      "romanized_diagnostic": "anantapur jilleyalliruva <<UNK>> kendravannu huduku.",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಅನಂತಪುರ್",
+          "type": "kannada_matched",
+          "output": "anantapur",
+          "candidates": [
+            "anantapur"
+          ]
+        },
+        {
+          "token": "ಜಿಲ್ಲೆಯಲ್ಲಿರುವ",
+          "type": "kannada_matched",
+          "output": "jilleyalliruva",
+          "candidates": [
+            "jilleyalliruva"
+          ]
+        },
+        {
+          "token": "ವ್ಯಾಕ್ಸಿನೇಷನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕೇಂದ್ರವನ್ನು",
+          "type": "kannada_matched",
+          "output": "kendravannu",
+          "candidates": [
+            "kendravannu"
+          ]
+        },
+        {
+          "token": "ಹುಡುಕು",
+          "type": "kannada_matched",
+          "output": "huduku",
+          "candidates": [
+            "huduku"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00002",
+      "source_row_index": 2,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಭುವನ ಅವರಿಗೆ ವೈಯಕ್ತಿಕ ಧನ್ಯವಾದಗಳು ಇಮೇಲ್ ಕಳುಹಿಸಿ",
+      "english_reference": "send a personal thank you email to george",
+      "romanized_diagnostic": "bhuvana avarige vaiyaktika <<UNK>> emel <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಭುವನ",
+          "type": "kannada_matched",
+          "output": "bhuvana",
+          "candidates": [
+            "bhuvana"
+          ]
+        },
+        {
+          "token": "ಅವರಿಗೆ",
+          "type": "kannada_matched",
+          "output": "avarige",
+          "candidates": [
+            "avarige"
+          ]
+        },
+        {
+          "token": "ವೈಯಕ್ತಿಕ",
+          "type": "kannada_matched",
+          "output": "vaiyaktika",
+          "candidates": [
+            "vaiyaktika"
+          ]
+        },
+        {
+          "token": "ಧನ್ಯವಾದಗಳು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಇಮೇಲ್",
+          "type": "kannada_matched",
+          "output": "emel",
+          "candidates": [
+            "emel"
+          ]
+        },
+        {
+          "token": "ಕಳುಹಿಸಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00003",
+      "source_row_index": 3,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಹತ್ತು ನಿಮಿಷಗಳ ನಂತರ ನನಗೆ ನೆನಪಿಸಿ",
+      "english_reference": "remind me after ten minutes",
+      "romanized_diagnostic": "<<UNK>> <<AMB>>nimishagala nantara nanage nenapisi",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಹತ್ತು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ನಿಮಿಷಗಳ",
+          "type": "kannada_ambiguous",
+          "output": "nimishagala",
+          "candidates": [
+            "nimishagala",
+            "nimisagala"
+          ]
+        },
+        {
+          "token": "ನಂತರ",
+          "type": "kannada_matched",
+          "output": "nantara",
+          "candidates": [
+            "nantara"
+          ]
+        },
+        {
+          "token": "ನನಗೆ",
+          "type": "kannada_matched",
+          "output": "nanage",
+          "candidates": [
+            "nanage"
+          ]
+        },
+        {
+          "token": "ನೆನಪಿಸಿ",
+          "type": "kannada_matched",
+          "output": "nenapisi",
+          "candidates": [
+            "nenapisi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00004",
+      "source_row_index": 4,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಹೋಂ ರನ್ ವ್ಯಾಖ್ಯಾನ ಏನು",
+      "english_reference": "what is the definition of a home run",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> vyaakhyaana yenu",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಹೋಂ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ರನ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವ್ಯಾಖ್ಯಾನ",
+          "type": "kannada_matched",
+          "output": "vyaakhyaana",
+          "candidates": [
+            "vyaakhyaana"
+          ]
+        },
+        {
+          "token": "ಏನು",
+          "type": "kannada_matched",
+          "output": "yenu",
+          "candidates": [
+            "yenu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00005",
+      "source_row_index": 5,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಸೆಲಿನ್ ಡಿಯೋನ್ ಅವರ ಹಾಡನ್ನು ಹಾಕಿದರು",
+      "english_reference": "put on a song by celine dion",
+      "romanized_diagnostic": "selene <<UNK>> <<UNK>> <<AMB>>haadannu <<AMB>>hakidaru",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಸೆಲಿನ್",
+          "type": "kannada_matched",
+          "output": "selene",
+          "candidates": [
+            "selene"
+          ]
+        },
+        {
+          "token": "ಡಿಯೋನ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅವರ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹಾಡನ್ನು",
+          "type": "kannada_ambiguous",
+          "output": "haadannu",
+          "candidates": [
+            "haadannu",
+            "hadannu"
+          ]
+        },
+        {
+          "token": "ಹಾಕಿದರು",
+          "type": "kannada_ambiguous",
+          "output": "hakidaru",
+          "candidates": [
+            "hakidaru",
+            "haakidaru"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00006",
+      "source_row_index": 6,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನಾನು ಕೇಳುತ್ತೇನೆ ಹಾಡನ್ನು ಪ್ಲೇ ಮಾಡಿ",
+      "english_reference": "play the song i listen to the most",
+      "romanized_diagnostic": "<<UNK>> keluttene <<AMB>>haadannu <<UNK>> maadi",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನಾನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕೇಳುತ್ತೇನೆ",
+          "type": "kannada_matched",
+          "output": "keluttene",
+          "candidates": [
+            "keluttene"
+          ]
+        },
+        {
+          "token": "ಹಾಡನ್ನು",
+          "type": "kannada_ambiguous",
+          "output": "haadannu",
+          "candidates": [
+            "haadannu",
+            "hadannu"
+          ]
+        },
+        {
+          "token": "ಪ್ಲೇ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡಿ",
+          "type": "kannada_matched",
+          "output": "maadi",
+          "candidates": [
+            "maadi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00007",
+      "source_row_index": 7,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನಂಗೆ ಇವತ್ತಿನ್‌ ಡೇಟ್‌ ಹೇಳಕ್ಕಾಗತ್ತಾ ನಿಂಗೆ",
+      "english_reference": "can you tell me what date it is",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> helakkaagattaa <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನಂಗೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಇವತ್ತಿನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಡೇಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹೇಳಕ್ಕಾಗತ್ತಾ",
+          "type": "kannada_matched",
+          "output": "helakkaagattaa",
+          "candidates": [
+            "helakkaagattaa"
+          ]
+        },
+        {
+          "token": "ನಿಂಗೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00008",
+      "source_row_index": 8,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಈ ಶುಕ್ರವಾರದ ಸಭೆಯಲ್ಲಿ ಯಾರು ಭಾಗವಹಿಸಲಿದ್ದಾರೆ",
+      "english_reference": "who will be attending the meeting this friday",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> sabheyalli <<AMB>>yaru <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಈ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಶುಕ್ರವಾರದ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸಭೆಯಲ್ಲಿ",
+          "type": "kannada_matched",
+          "output": "sabheyalli",
+          "candidates": [
+            "sabheyalli"
+          ]
+        },
+        {
+          "token": "ಯಾರು",
+          "type": "kannada_ambiguous",
+          "output": "yaru",
+          "candidates": [
+            "yaru",
+            "yaaru"
+          ]
+        },
+        {
+          "token": "ಭಾಗವಹಿಸಲಿದ್ದಾರೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00009",
+      "source_row_index": 9,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಎಂಸ್ವೈಪ್ ಯಾಕೆ ಪದೇ ಪದೇ ತಪ್ಪ್‌ ಯು.ಪಿ.ಐ. ಐಡಿ ತೋರಿಸ್ತಿದೆ?",
+      "english_reference": "Why is it showing wrong UPI id several times in MSwipe ?",
+      "romanized_diagnostic": "<<UNK>> <<AMB>>yake <<UNK>> <<UNK>> <<UNK>> <<UNK>>. <<UNK>>. <<UNK>>. <<UNK>> toristide?",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಎಂಸ್ವೈಪ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಯಾಕೆ",
+          "type": "kannada_ambiguous",
+          "output": "yake",
+          "candidates": [
+            "yake",
+            "yaake"
+          ]
+        },
+        {
+          "token": "ಪದೇ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಪದೇ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ತಪ್ಪ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಯು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಪಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಐ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಐಡಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ತೋರಿಸ್ತಿದೆ",
+          "type": "kannada_matched",
+          "output": "toristide",
+          "candidates": [
+            "toristide"
+          ]
+        },
+        {
+          "token": "?",
+          "type": "punct",
+          "output": "?",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00010",
+      "source_row_index": 10,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಪೇಟಿಎಮ್ ಇದ್ರಲ್ಲಿರೋ ಟ್ರಾನ್ಸಾಕ್ಷನ್‌ ಹಿಸ್ಟ್ರಿನಾ ಓದ್‌ ಹೇಳು.",
+      "english_reference": "Read out the transaction history in PayTm to me.",
+      "romanized_diagnostic": "paytm <<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>>.",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಪೇಟಿಎಮ್",
+          "type": "kannada_matched",
+          "output": "paytm",
+          "candidates": [
+            "paytm"
+          ]
+        },
+        {
+          "token": "ಇದ್ರಲ್ಲಿರೋ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಟ್ರಾನ್ಸಾಕ್ಷನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹಿಸ್ಟ್ರಿನಾ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಓದ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹೇಳು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00011",
+      "source_row_index": 11,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಈ ವಾರದ ಹವಾಮಾನ ಮುನ್ಸೂಚನೆ",
+      "english_reference": "weather forecast for this week",
+      "romanized_diagnostic": "<<UNK>> vaarada <<AMB>>havamana munsuchane",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಈ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವಾರದ",
+          "type": "kannada_matched",
+          "output": "vaarada",
+          "candidates": [
+            "vaarada"
+          ]
+        },
+        {
+          "token": "ಹವಾಮಾನ",
+          "type": "kannada_ambiguous",
+          "output": "havamana",
+          "candidates": [
+            "havamana",
+            "havamaana",
+            "havaamaana"
+          ]
+        },
+        {
+          "token": "ಮುನ್ಸೂಚನೆ",
+          "type": "kannada_matched",
+          "output": "munsuchane",
+          "candidates": [
+            "munsuchane"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00012",
+      "source_row_index": 12,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಜಗತ್ತಿನಲ್ಲಿ ಇತ್ತೀಚೆಗೆ ಏನಾಯಿತು",
+      "english_reference": "what has happened recently in the world",
+      "romanized_diagnostic": "jagattinalli <<AMB>>itteechege <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಜಗತ್ತಿನಲ್ಲಿ",
+          "type": "kannada_matched",
+          "output": "jagattinalli",
+          "candidates": [
+            "jagattinalli"
+          ]
+        },
+        {
+          "token": "ಇತ್ತೀಚೆಗೆ",
+          "type": "kannada_ambiguous",
+          "output": "itteechege",
+          "candidates": [
+            "itteechege",
+            "ittichege"
+          ]
+        },
+        {
+          "token": "ಏನಾಯಿತು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00013",
+      "source_row_index": 13,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನನ್‌ ಪೇಯುಮನಿ ರಿವಾರ್ಡ್ಸ್‌ ಬಗ್ಗೆ ಡಿಸ್ಪ್ಯೂಟ್‌ ರೇಯ್ಸ್‌ ಮಾಡ್ಬೋದಾ?",
+      "english_reference": "Can I dispute my PayUmoney rewards?",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> bagge <<UNK>> <<UNK>> <<UNK>>?",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಪೇಯುಮನಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ರಿವಾರ್ಡ್ಸ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಬಗ್ಗೆ",
+          "type": "kannada_matched",
+          "output": "bagge",
+          "candidates": [
+            "bagge"
+          ]
+        },
+        {
+          "token": "ಡಿಸ್ಪ್ಯೂಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ರೇಯ್ಸ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡ್ಬೋದಾ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "?",
+          "type": "punct",
+          "output": "?",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00014",
+      "source_row_index": 14,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಪಿನ್‌ಕೋಡ್‌ 921644 ಏರಿಯಾದಲ್ಲಿ ಅಪಘಾತ ವಿಭಾಗ ಸೇವೆಗಳನ್ನ ನೀಡೋ ಇ.ಎಸ್.ಐ.ಸಿ. ಸೆಂಟರ್ಸ್‌ ಯಾವ್ಯಾವ್ದಿವೆ ಪತ್ತೆ ಮಾಡು.",
+      "english_reference": "Find out ESIC Centres located in area with pincode 921644 and offering Casualty services",
+      "romanized_diagnostic": "<<UNK>> 921644 airiyaadalli <<AMB>>apaghaatha <<AMB>>vibhaga <<UNK>> <<UNK>> <<UNK>>. usha. <<UNK>>. <<UNK>>. <<UNK>> <<UNK>> <<UNK>> maadu.",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಪಿನ್‌ಕೋಡ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "921644",
+          "type": "numeric",
+          "output": "921644",
+          "candidates": []
+        },
+        {
+          "token": "ಏರಿಯಾದಲ್ಲಿ",
+          "type": "kannada_matched",
+          "output": "airiyaadalli",
+          "candidates": [
+            "airiyaadalli"
+          ]
+        },
+        {
+          "token": "ಅಪಘಾತ",
+          "type": "kannada_ambiguous",
+          "output": "apaghaatha",
+          "candidates": [
+            "apaghaatha",
+            "apaghaata",
+            "apaghata"
+          ]
+        },
+        {
+          "token": "ವಿಭಾಗ",
+          "type": "kannada_ambiguous",
+          "output": "vibhaga",
+          "candidates": [
+            "vibhaga",
+            "vibhaaga"
+          ]
+        },
+        {
+          "token": "ಸೇವೆಗಳನ್ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ನೀಡೋ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಇ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಎಸ್",
+          "type": "kannada_matched",
+          "output": "usha",
+          "candidates": [
+            "usha"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಐ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಸಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಸೆಂಟರ್ಸ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಯಾವ್ಯಾವ್ದಿವೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಪತ್ತೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡು",
+          "type": "kannada_matched",
+          "output": "maadu",
+          "candidates": [
+            "maadu"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00015",
+      "source_row_index": 15,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಮನೇಲಿರೋ ಲೈಟ್‌ ಕಲರ್‌ ಬದ್ಲಾಯಿಸು",
+      "english_reference": "can you change the light colors in the house",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಮನೇಲಿರೋ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಲೈಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕಲರ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಬದ್ಲಾಯಿಸು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00016",
+      "source_row_index": 16,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಈ ತಿಂಗ್ಳ ಸಂಬ್ಳ ಮೇಘಾಲಯ ರೂರಲ್‌ ಬ್ಯಾಂಕ್ ನಲ್ಲಿರೋ ನನ್‌ ಬ್ಯಾಂಕ್ ಅಕೌಂಟ್‌‌ 278606438838 ಗೆ ಕ್ರೆಡಿಟ್‌ ಆಗಿದ್ಯಾ ಚೆಕ್‌ ಮಾಡ್ತ್ಯಾ? ಆಗಿದ್ರೆ, ಏರ್‌ಟೆಲ್‌ ಮನಿ ಮೂಲ್ಕ ₹ 574 ರೂಪಾಯನ್ನ ಮೇಘಾಲಯ ರೂರಲ್‌ ಬ್ಯಾಂಕ್ ನಲ್ಲಿರೋ 278606438838 ಗೆ ಟ್ರಾನ್ಸ್‌ಫ಼ರ್‌ ಮಾಡು.",
+      "english_reference": "Can you check if this month's salary was credited to my bank account 278606438838 in Meghalaya Rural Bank , and if yes, transfer Rs. ₹ 574 to 278606438838 in Meghalaya Rural Bank via Airtel Money ?",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> meghalaya <<UNK>> <<AMB>>byaank nalliro <<UNK>> <<AMB>>byaank <<UNK>> 278606438838 <<UNK>> <<UNK>> agidya <<UNK>> madtya? agidre, <<UNK>> <<UNK>> moolka <<UNK>> 574 <<UNK>> meghalaya <<UNK>> <<AMB>>byaank nalliro 278606438838 <<UNK>> <<UNK>> maadu.",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಈ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ತಿಂಗ್ಳ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸಂಬ್ಳ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮೇಘಾಲಯ",
+          "type": "kannada_matched",
+          "output": "meghalaya",
+          "candidates": [
+            "meghalaya"
+          ]
+        },
+        {
+          "token": "ರೂರಲ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಬ್ಯಾಂಕ್",
+          "type": "kannada_ambiguous",
+          "output": "byaank",
+          "candidates": [
+            "byaank",
+            "banq",
+            "byank"
+          ]
+        },
+        {
+          "token": "ನಲ್ಲಿರೋ",
+          "type": "kannada_matched",
+          "output": "nalliro",
+          "candidates": [
+            "nalliro"
+          ]
+        },
+        {
+          "token": "ನನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಬ್ಯಾಂಕ್",
+          "type": "kannada_ambiguous",
+          "output": "byaank",
+          "candidates": [
+            "byaank",
+            "banq",
+            "byank"
+          ]
+        },
+        {
+          "token": "ಅಕೌಂಟ್‌‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "278606438838",
+          "type": "numeric",
+          "output": "278606438838",
+          "candidates": []
+        },
+        {
+          "token": "ಗೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕ್ರೆಡಿಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಆಗಿದ್ಯಾ",
+          "type": "kannada_matched",
+          "output": "agidya",
+          "candidates": [
+            "agidya"
+          ]
+        },
+        {
+          "token": "ಚೆಕ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡ್ತ್ಯಾ",
+          "type": "kannada_matched",
+          "output": "madtya",
+          "candidates": [
+            "madtya"
+          ]
+        },
+        {
+          "token": "?",
+          "type": "punct",
+          "output": "?",
+          "candidates": []
+        },
+        {
+          "token": "ಆಗಿದ್ರೆ",
+          "type": "kannada_matched",
+          "output": "agidre",
+          "candidates": [
+            "agidre"
+          ]
+        },
+        {
+          "token": ",",
+          "type": "punct",
+          "output": ",",
+          "candidates": []
+        },
+        {
+          "token": "ಏರ್‌ಟೆಲ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮನಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮೂಲ್ಕ",
+          "type": "kannada_matched",
+          "output": "moolka",
+          "candidates": [
+            "moolka"
+          ]
+        },
+        {
+          "token": "₹",
+          "type": "other_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "574",
+          "type": "numeric",
+          "output": "574",
+          "candidates": []
+        },
+        {
+          "token": "ರೂಪಾಯನ್ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮೇಘಾಲಯ",
+          "type": "kannada_matched",
+          "output": "meghalaya",
+          "candidates": [
+            "meghalaya"
+          ]
+        },
+        {
+          "token": "ರೂರಲ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಬ್ಯಾಂಕ್",
+          "type": "kannada_ambiguous",
+          "output": "byaank",
+          "candidates": [
+            "byaank",
+            "banq",
+            "byank"
+          ]
+        },
+        {
+          "token": "ನಲ್ಲಿರೋ",
+          "type": "kannada_matched",
+          "output": "nalliro",
+          "candidates": [
+            "nalliro"
+          ]
+        },
+        {
+          "token": "278606438838",
+          "type": "numeric",
+          "output": "278606438838",
+          "candidates": []
+        },
+        {
+          "token": "ಗೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಟ್ರಾನ್ಸ್‌ಫ಼ರ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡು",
+          "type": "kannada_matched",
+          "output": "maadu",
+          "candidates": [
+            "maadu"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00017",
+      "source_row_index": 17,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನಾನು ಸಪ್ಪರ್ ಏನು ಬೇಯಿಸಬೇಕು",
+      "english_reference": "what should i cook for supper",
+      "romanized_diagnostic": "<<UNK>> sappar yenu beyisabeku",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನಾನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸಪ್ಪರ್",
+          "type": "kannada_matched",
+          "output": "sappar",
+          "candidates": [
+            "sappar"
+          ]
+        },
+        {
+          "token": "ಏನು",
+          "type": "kannada_matched",
+          "output": "yenu",
+          "candidates": [
+            "yenu"
+          ]
+        },
+        {
+          "token": "ಬೇಯಿಸಬೇಕು",
+          "type": "kannada_matched",
+          "output": "beyisabeku",
+          "candidates": [
+            "beyisabeku"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00018",
+      "source_row_index": 18,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಮೈಕೆಲ್ ಜಾಕ್ಸನ್ ಕುಟುಂಬದ ಹಿನ್ನೆಲೆ",
+      "english_reference": "michael jackson family background",
+      "romanized_diagnostic": "<<UNK>> <<AMB>>jaackson kutumbada hinnele",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಮೈಕೆಲ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಜಾಕ್ಸನ್",
+          "type": "kannada_ambiguous",
+          "output": "jaackson",
+          "candidates": [
+            "jaackson",
+            "jakson",
+            "jaxon"
+          ]
+        },
+        {
+          "token": "ಕುಟುಂಬದ",
+          "type": "kannada_matched",
+          "output": "kutumbada",
+          "candidates": [
+            "kutumbada"
+          ]
+        },
+        {
+          "token": "ಹಿನ್ನೆಲೆ",
+          "type": "kannada_matched",
+          "output": "hinnele",
+          "candidates": [
+            "hinnele"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00019",
+      "source_row_index": 19,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಈ ಮುಂದಿನ್‌ ಲಿಸ್ಟ್‌ನ ತೆಗ್ದಾಕು",
+      "english_reference": "please remove the following list",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಈ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮುಂದಿನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಲಿಸ್ಟ್‌ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ತೆಗ್ದಾಕು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00020",
+      "source_row_index": 20,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನಂಜೊತೆ ಚೆಕ್ಕರ್ಸ್‌ ಆಡು",
+      "english_reference": "play checkers with me",
+      "romanized_diagnostic": "nanjote <<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನಂಜೊತೆ",
+          "type": "kannada_matched",
+          "output": "nanjote",
+          "candidates": [
+            "nanjote"
+          ]
+        },
+        {
+          "token": "ಚೆಕ್ಕರ್ಸ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಆಡು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00021",
+      "source_row_index": 21,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಪ್ರತಿ ಈವೆಂಟ್ ಅನ್ನು ಅಳಿಸಿ",
+      "english_reference": "delete every event",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಪ್ರತಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಈವೆಂಟ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅನ್ನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅಳಿಸಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00022",
+      "source_row_index": 22,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಕೆಲಸದಿಂದ ಬಂದ ಕೊನೆಯ ಇಮೇಲ್ ಯಾವುದು",
+      "english_reference": "what was the last email from work",
+      "romanized_diagnostic": "kelasadinda <<UNK>> koneya emel <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಕೆಲಸದಿಂದ",
+          "type": "kannada_matched",
+          "output": "kelasadinda",
+          "candidates": [
+            "kelasadinda"
+          ]
+        },
+        {
+          "token": "ಬಂದ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕೊನೆಯ",
+          "type": "kannada_matched",
+          "output": "koneya",
+          "candidates": [
+            "koneya"
+          ]
+        },
+        {
+          "token": "ಇಮೇಲ್",
+          "type": "kannada_matched",
+          "output": "emel",
+          "candidates": [
+            "emel"
+          ]
+        },
+        {
+          "token": "ಯಾವುದು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00023",
+      "source_row_index": 23,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಹಾಟ್ ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ವಿಷಯಗಳು ಯಾವುವು",
+      "english_reference": "what's hot social media topics",
+      "romanized_diagnostic": "hott saamaajika maadhyama vishayagalu <<AMB>>yavuvu",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಹಾಟ್",
+          "type": "kannada_matched",
+          "output": "hott",
+          "candidates": [
+            "hott"
+          ]
+        },
+        {
+          "token": "ಸಾಮಾಜಿಕ",
+          "type": "kannada_matched",
+          "output": "saamaajika",
+          "candidates": [
+            "saamaajika"
+          ]
+        },
+        {
+          "token": "ಮಾಧ್ಯಮ",
+          "type": "kannada_matched",
+          "output": "maadhyama",
+          "candidates": [
+            "maadhyama"
+          ]
+        },
+        {
+          "token": "ವಿಷಯಗಳು",
+          "type": "kannada_matched",
+          "output": "vishayagalu",
+          "candidates": [
+            "vishayagalu"
+          ]
+        },
+        {
+          "token": "ಯಾವುವು",
+          "type": "kannada_ambiguous",
+          "output": "yavuvu",
+          "candidates": [
+            "yavuvu",
+            "yaavuvu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00024",
+      "source_row_index": 24,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಒಡಿಶಾ ರಾಜ್ಯದಲ್ಲಿ ವ್ಯಾಕ್ಸಿನೇಷನ್‌ ಕೇಂದ್ರಗಳನ್ನು ಹುಡುಕಲು ಜಿಲ್ಲೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.",
+      "english_reference": "Choose district to search for vaccination centers in state Odisha",
+      "romanized_diagnostic": "<<UNK>> <<AMB>>rajyadalli <<UNK>> kendragalannu hudukalu jilleyannu <<UNK>> maadi.",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಒಡಿಶಾ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ರಾಜ್ಯದಲ್ಲಿ",
+          "type": "kannada_ambiguous",
+          "output": "rajyadalli",
+          "candidates": [
+            "rajyadalli",
+            "raajyadalli"
+          ]
+        },
+        {
+          "token": "ವ್ಯಾಕ್ಸಿನೇಷನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕೇಂದ್ರಗಳನ್ನು",
+          "type": "kannada_matched",
+          "output": "kendragalannu",
+          "candidates": [
+            "kendragalannu"
+          ]
+        },
+        {
+          "token": "ಹುಡುಕಲು",
+          "type": "kannada_matched",
+          "output": "hudukalu",
+          "candidates": [
+            "hudukalu"
+          ]
+        },
+        {
+          "token": "ಜಿಲ್ಲೆಯನ್ನು",
+          "type": "kannada_matched",
+          "output": "jilleyannu",
+          "candidates": [
+            "jilleyannu"
+          ]
+        },
+        {
+          "token": "ಆಯ್ಕೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡಿ",
+          "type": "kannada_matched",
+          "output": "maadi",
+          "candidates": [
+            "maadi"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00025",
+      "source_row_index": 25,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನನಗೆ ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳ ವಿಷಯಗಳು ಬೇಕು",
+      "english_reference": "i want topics on latest news",
+      "romanized_diagnostic": "nanage <<AMB>>ettiichina suddigala vishayagalu beku",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನನಗೆ",
+          "type": "kannada_matched",
+          "output": "nanage",
+          "candidates": [
+            "nanage"
+          ]
+        },
+        {
+          "token": "ಇತ್ತೀಚಿನ",
+          "type": "kannada_ambiguous",
+          "output": "ettiichina",
+          "candidates": [
+            "ettiichina",
+            "itteechina",
+            "ittichina"
+          ]
+        },
+        {
+          "token": "ಸುದ್ದಿಗಳ",
+          "type": "kannada_matched",
+          "output": "suddigala",
+          "candidates": [
+            "suddigala"
+          ]
+        },
+        {
+          "token": "ವಿಷಯಗಳು",
+          "type": "kannada_matched",
+          "output": "vishayagalu",
+          "candidates": [
+            "vishayagalu"
+          ]
+        },
+        {
+          "token": "ಬೇಕು",
+          "type": "kannada_matched",
+          "output": "beku",
+          "candidates": [
+            "beku"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00026",
+      "source_row_index": 26,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಓಲಿ ವಾಲ್ಯೂಮ್‌ ಇಳ್ಸು",
+      "english_reference": "olly cut down the volume",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಓಲಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವಾಲ್ಯೂಮ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಇಳ್ಸು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00027",
+      "source_row_index": 27,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಪ್ಲೀಸ್‌ ಜೋರಾಗ್‌ ಹೇಳು",
+      "english_reference": "please speak loud",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಪ್ಲೀಸ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಜೋರಾಗ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹೇಳು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00028",
+      "source_row_index": 28,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ರೇಡಿಯೋ ಚಾನೆಲ್‌ಗಳು",
+      "english_reference": "radio channels",
+      "romanized_diagnostic": "<<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ರೇಡಿಯೋ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಚಾನೆಲ್‌ಗಳು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00029",
+      "source_row_index": 29,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಅಲೆಕ್ಸಾ ನಾನು ಇಂದು ಸನ್ಸ್ಕ್ರೀನ್ ಧರಿಸಬೇಕೇ",
+      "english_reference": "alexa should i wear sunscreen today",
+      "romanized_diagnostic": "alexa <<UNK>> <<UNK>> sunscreen <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಅಲೆಕ್ಸಾ",
+          "type": "kannada_matched",
+          "output": "alexa",
+          "candidates": [
+            "alexa"
+          ]
+        },
+        {
+          "token": "ನಾನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಇಂದು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸನ್ಸ್ಕ್ರೀನ್",
+          "type": "kannada_matched",
+          "output": "sunscreen",
+          "candidates": [
+            "sunscreen"
+          ]
+        },
+        {
+          "token": "ಧರಿಸಬೇಕೇ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00030",
+      "source_row_index": 30,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನೀನು ನಂಗೋಸ್ಕ್ರ ಒಂದ್‌ ಕಂಪ್ಲೇಂಟ್‌ ಟ್ವೀಟ್‌ ಮಾಡ್ಬೇಕಲ್ಲಾ",
+      "english_reference": "i need you to tweet a complaint",
+      "romanized_diagnostic": "<<AMB>>neenu <<UNK>> <<UNK>> <<UNK>> <<UNK>> madbekalla",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನೀನು",
+          "type": "kannada_ambiguous",
+          "output": "neenu",
+          "candidates": [
+            "neenu",
+            "ninu"
+          ]
+        },
+        {
+          "token": "ನಂಗೋಸ್ಕ್ರ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಒಂದ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕಂಪ್ಲೇಂಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಟ್ವೀಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡ್ಬೇಕಲ್ಲಾ",
+          "type": "kannada_matched",
+          "output": "madbekalla",
+          "candidates": [
+            "madbekalla"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00031",
+      "source_row_index": 31,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನನಗೆ ಮ್ಯೂಸಿಕ್ ಸುದ್ದಿ ನೀಡಿ",
+      "english_reference": "give me music news",
+      "romanized_diagnostic": "nanage <<UNK>> suddi niidi",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನನಗೆ",
+          "type": "kannada_matched",
+          "output": "nanage",
+          "candidates": [
+            "nanage"
+          ]
+        },
+        {
+          "token": "ಮ್ಯೂಸಿಕ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸುದ್ದಿ",
+          "type": "kannada_matched",
+          "output": "suddi",
+          "candidates": [
+            "suddi"
+          ]
+        },
+        {
+          "token": "ನೀಡಿ",
+          "type": "kannada_matched",
+          "output": "niidi",
+          "candidates": [
+            "niidi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00032",
+      "source_row_index": 32,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಪೇಯುಮನಿ ಲಿ ಡಿ.ಟಿ.ಹೆಚ್. ಬಿಲ್ ಪೇಮೆಂಟ್ಸ್‌ದು ನೋಟಿಫಿ಼ಕೇಷನ್ಸ್‌ನ ಆನ್ ಮಾಡು.",
+      "english_reference": "Turn on the notifications for DTH bill payments in PayUmoney .",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>>. <<UNK>>. <<UNK>>. <<UNK>> <<UNK>> <<UNK>> <<UNK>> maadu.",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಪೇಯುಮನಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಲಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಡಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಟಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಹೆಚ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಬಿಲ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಪೇಮೆಂಟ್ಸ್‌ದು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ನೋಟಿಫಿ಼ಕೇಷನ್ಸ್‌ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಆನ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡು",
+          "type": "kannada_matched",
+          "output": "maadu",
+          "candidates": [
+            "maadu"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00033",
+      "source_row_index": 33,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನನ್ನ twitter ಖಾತೆಯನ್ನು ಪರಿಶೀಲಿಸಿ",
+      "english_reference": "check my twitter account",
+      "romanized_diagnostic": "<<UNK>> twitter <<AMB>>khateyannu <<AMB>>parisheelisi",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನನ್ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "twitter",
+          "type": "latin_preserved",
+          "output": "twitter",
+          "candidates": []
+        },
+        {
+          "token": "ಖಾತೆಯನ್ನು",
+          "type": "kannada_ambiguous",
+          "output": "khateyannu",
+          "candidates": [
+            "khateyannu",
+            "khaateyannu",
+            "khatyannu"
+          ]
+        },
+        {
+          "token": "ಪರಿಶೀಲಿಸಿ",
+          "type": "kannada_ambiguous",
+          "output": "parisheelisi",
+          "candidates": [
+            "parisheelisi",
+            "parishilisi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00034",
+      "source_row_index": 34,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "7850311401 ಈ ಫ಼ೋನ್‌ ನಂಬರ್‌ ಇರೋ ಬೆನಿಫಿ಼ಷಿಯರಿ ವೈಷ್ಣವಿ ಅವ್ರ ವ್ಯಾಕ್ಸೀನ್‍ ಸರ್ಟಿಫಿ಼ಕೇಟ್‌ನ ಕೋವಿನ್‌ ಪೋರ್ಟಲ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್‌ ಮಾಡು.",
+      "english_reference": "Download COVID vaccine certificate from Co-WIN portal for beneficiary name Vaishnavi with phone number 7850311401",
+      "romanized_diagnostic": "7850311401 <<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>> maadu.",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "7850311401",
+          "type": "numeric",
+          "output": "7850311401",
+          "candidates": []
+        },
+        {
+          "token": "ಈ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಫ಼ೋನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ನಂಬರ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಇರೋ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಬೆನಿಫಿ಼ಷಿಯರಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವೈಷ್ಣವಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅವ್ರ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವ್ಯಾಕ್ಸೀನ್‍",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸರ್ಟಿಫಿ಼ಕೇಟ್‌ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕೋವಿನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಪೋರ್ಟಲ್‌ನಿಂದ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಡೌನ್‌ಲೋಡ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡು",
+          "type": "kannada_matched",
+          "output": "maadu",
+          "candidates": [
+            "maadu"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00035",
+      "source_row_index": 35,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನಾನು ಯಾವುದೇ ಹೊಸ ಇಮೇಲ್‌ಗಳನ್ನು ಸ್ವೀಕರಿಸಿದ್ದೇನೆ",
+      "english_reference": "have i received any new emails",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> hosa <<UNK>> sweekarisiddene",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನಾನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಯಾವುದೇ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹೊಸ",
+          "type": "kannada_matched",
+          "output": "hosa",
+          "candidates": [
+            "hosa"
+          ]
+        },
+        {
+          "token": "ಇಮೇಲ್‌ಗಳನ್ನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸ್ವೀಕರಿಸಿದ್ದೇನೆ",
+          "type": "kannada_matched",
+          "output": "sweekarisiddene",
+          "candidates": [
+            "sweekarisiddene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00036",
+      "source_row_index": 36,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಈ ವಾರ ಹವಾಮಾನ ಮುನ್ಸೂಚನೆ",
+      "english_reference": "this weeks weather forecast",
+      "romanized_diagnostic": "<<UNK>> vaara <<AMB>>havamana munsuchane",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಈ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವಾರ",
+          "type": "kannada_matched",
+          "output": "vaara",
+          "candidates": [
+            "vaara"
+          ]
+        },
+        {
+          "token": "ಹವಾಮಾನ",
+          "type": "kannada_ambiguous",
+          "output": "havamana",
+          "candidates": [
+            "havamana",
+            "havamaana",
+            "havaamaana"
+          ]
+        },
+        {
+          "token": "ಮುನ್ಸೂಚನೆ",
+          "type": "kannada_matched",
+          "output": "munsuchane",
+          "candidates": [
+            "munsuchane"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00037",
+      "source_row_index": 37,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಜೂನ್ ಎರಡು ಸಾವಿರದ ಹದಿನೇಳರ ಆರನೇ ತಾರೀಖಿನಂದು ಬೆಳಗ್ಗೆ ಐದು ಗಂಟೆ ಎಚ್ಚರಿಕೆಯನ್ನು ಹೊಂದಿಸಿ",
+      "english_reference": "set alarm for sixth of june two thousand seventeen at five am",
+      "romanized_diagnostic": "<<UNK>> eradu <<AMB>>saavirada <<UNK>> <<AMB>>arane tarikhinandu belagge idu <<UNK>> <<AMB>>echharikeyannu <<AMB>>hondisi",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಜೂನ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಎರಡು",
+          "type": "kannada_matched",
+          "output": "eradu",
+          "candidates": [
+            "eradu"
+          ]
+        },
+        {
+          "token": "ಸಾವಿರದ",
+          "type": "kannada_ambiguous",
+          "output": "saavirada",
+          "candidates": [
+            "saavirada",
+            "savirada"
+          ]
+        },
+        {
+          "token": "ಹದಿನೇಳರ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಆರನೇ",
+          "type": "kannada_ambiguous",
+          "output": "arane",
+          "candidates": [
+            "arane",
+            "aarane"
+          ]
+        },
+        {
+          "token": "ತಾರೀಖಿನಂದು",
+          "type": "kannada_matched",
+          "output": "tarikhinandu",
+          "candidates": [
+            "tarikhinandu"
+          ]
+        },
+        {
+          "token": "ಬೆಳಗ್ಗೆ",
+          "type": "kannada_matched",
+          "output": "belagge",
+          "candidates": [
+            "belagge"
+          ]
+        },
+        {
+          "token": "ಐದು",
+          "type": "kannada_matched",
+          "output": "idu",
+          "candidates": [
+            "idu"
+          ]
+        },
+        {
+          "token": "ಗಂಟೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಎಚ್ಚರಿಕೆಯನ್ನು",
+          "type": "kannada_ambiguous",
+          "output": "echharikeyannu",
+          "candidates": [
+            "echharikeyannu",
+            "eccharikeyannu",
+            "echcharikeyannu"
+          ]
+        },
+        {
+          "token": "ಹೊಂದಿಸಿ",
+          "type": "kannada_ambiguous",
+          "output": "hondisi",
+          "candidates": [
+            "hondisi",
+            "hondhisi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00038",
+      "source_row_index": 38,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "₹ 6,684 ಮೊತ್ತವನ್ನ ನಮೂದಿಸಿ ಟಾಪಪ್‌ ಕ್ರಮ ಮುಂದುವರಿಸಿ!",
+      "english_reference": "Enter the amount ₹ 6,684 and proceed to topup!",
+      "romanized_diagnostic": "<<UNK>> 6, 684 <<UNK>> <<UNK>> <<UNK>> krama munduvarisi!",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "₹",
+          "type": "other_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "6",
+          "type": "numeric",
+          "output": "6",
+          "candidates": []
+        },
+        {
+          "token": ",",
+          "type": "punct",
+          "output": ",",
+          "candidates": []
+        },
+        {
+          "token": "684",
+          "type": "numeric",
+          "output": "684",
+          "candidates": []
+        },
+        {
+          "token": "ಮೊತ್ತವನ್ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ನಮೂದಿಸಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಟಾಪಪ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕ್ರಮ",
+          "type": "kannada_matched",
+          "output": "krama",
+          "candidates": [
+            "krama"
+          ]
+        },
+        {
+          "token": "ಮುಂದುವರಿಸಿ",
+          "type": "kannada_matched",
+          "output": "munduvarisi",
+          "candidates": [
+            "munduvarisi"
+          ]
+        },
+        {
+          "token": "!",
+          "type": "punct",
+          "output": "!",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00039",
+      "source_row_index": 39,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯಲ್ಲಿ ನನ್‌ ವಾರ್ಷಿಕ ಆದಾಯ ಅಂತ ʼ 8 ಲಕ್ಷʼ ಮೊತ್ತವನ್ನ ಸೇರಿಸು.",
+      "english_reference": "Add ' 8 lakh' as my yearly income in personal details.",
+      "romanized_diagnostic": "vaiyaktika <<AMB>>mahitiyalli <<UNK>> <<AMB>>varsika <<AMB>>aadaaya <<UNK>> <<UNK>> 8 <<UNK>> <<UNK>> <<UNK>>.",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ವೈಯಕ್ತಿಕ",
+          "type": "kannada_matched",
+          "output": "vaiyaktika",
+          "candidates": [
+            "vaiyaktika"
+          ]
+        },
+        {
+          "token": "ಮಾಹಿತಿಯಲ್ಲಿ",
+          "type": "kannada_ambiguous",
+          "output": "mahitiyalli",
+          "candidates": [
+            "mahitiyalli",
+            "maahithiyalli",
+            "maahitiyalli"
+          ]
+        },
+        {
+          "token": "ನನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವಾರ್ಷಿಕ",
+          "type": "kannada_ambiguous",
+          "output": "varsika",
+          "candidates": [
+            "varsika",
+            "vaarshika",
+            "varshika"
+          ]
+        },
+        {
+          "token": "ಆದಾಯ",
+          "type": "kannada_ambiguous",
+          "output": "aadaaya",
+          "candidates": [
+            "aadaaya",
+            "aadhaaya",
+            "aadaya"
+          ]
+        },
+        {
+          "token": "ಅಂತ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ʼ",
+          "type": "other_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "8",
+          "type": "numeric",
+          "output": "8",
+          "candidates": []
+        },
+        {
+          "token": "ಲಕ್ಷʼ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮೊತ್ತವನ್ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸೇರಿಸು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00040",
+      "source_row_index": 40,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಈ ವಾರದ ಶುಕ್ರವಾರದಂದು ಮೋಡಗಳಿಲ್ಲದ ಸೂರ್ಯ ಇರಬಹುದೇ ಎಂದು ದಯವಿಟ್ಟು ನನಗೆ ತಿಳಿಸಿ",
+      "english_reference": "please tell me if there will be sun with no clouds on friday of this week",
+      "romanized_diagnostic": "<<UNK>> vaarada <<AMB>>sukravaradandu modagalillada <<AMB>>suryah irabahude endu <<AMB>>dayawittu nanage tilisi",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಈ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವಾರದ",
+          "type": "kannada_matched",
+          "output": "vaarada",
+          "candidates": [
+            "vaarada"
+          ]
+        },
+        {
+          "token": "ಶುಕ್ರವಾರದಂದು",
+          "type": "kannada_ambiguous",
+          "output": "sukravaradandu",
+          "candidates": [
+            "sukravaradandu",
+            "shukravaradandu",
+            "shukravaaradandu"
+          ]
+        },
+        {
+          "token": "ಮೋಡಗಳಿಲ್ಲದ",
+          "type": "kannada_matched",
+          "output": "modagalillada",
+          "candidates": [
+            "modagalillada"
+          ]
+        },
+        {
+          "token": "ಸೂರ್ಯ",
+          "type": "kannada_ambiguous",
+          "output": "suryah",
+          "candidates": [
+            "suryah",
+            "soraya"
+          ]
+        },
+        {
+          "token": "ಇರಬಹುದೇ",
+          "type": "kannada_matched",
+          "output": "irabahude",
+          "candidates": [
+            "irabahude"
+          ]
+        },
+        {
+          "token": "ಎಂದು",
+          "type": "kannada_matched",
+          "output": "endu",
+          "candidates": [
+            "endu"
+          ]
+        },
+        {
+          "token": "ದಯವಿಟ್ಟು",
+          "type": "kannada_ambiguous",
+          "output": "dayawittu",
+          "candidates": [
+            "dayawittu",
+            "dayavittu"
+          ]
+        },
+        {
+          "token": "ನನಗೆ",
+          "type": "kannada_matched",
+          "output": "nanage",
+          "candidates": [
+            "nanage"
+          ]
+        },
+        {
+          "token": "ತಿಳಿಸಿ",
+          "type": "kannada_matched",
+          "output": "tilisi",
+          "candidates": [
+            "tilisi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00041",
+      "source_row_index": 41,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಇತ್ತೀಚ್ಗೆ ಏರ್‌ಟೆಲ್‌ ಮನಿ ನಲ್ಲಿ ನಂಗೆ ಅಭಿಷೇಕ್ ಅವ್ರಿಂದ ₹ 1,124 ರೂಪಾಯಿ ಬಂದಿದ್ಯಾ?",
+      "english_reference": "Have I received Rs. ₹ 1,124 from Abhishek recently on Airtel Money ?",
+      "romanized_diagnostic": "ittichge <<UNK>> <<UNK>> nalli <<UNK>> <<AMB>>abishek <<UNK>> <<UNK>> 1, 124 rupayi bandidya?",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಇತ್ತೀಚ್ಗೆ",
+          "type": "kannada_matched",
+          "output": "ittichge",
+          "candidates": [
+            "ittichge"
+          ]
+        },
+        {
+          "token": "ಏರ್‌ಟೆಲ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮನಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ನಲ್ಲಿ",
+          "type": "kannada_matched",
+          "output": "nalli",
+          "candidates": [
+            "nalli"
+          ]
+        },
+        {
+          "token": "ನಂಗೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅಭಿಷೇಕ್",
+          "type": "kannada_ambiguous",
+          "output": "abishek",
+          "candidates": [
+            "abishek",
+            "abhishekh"
+          ]
+        },
+        {
+          "token": "ಅವ್ರಿಂದ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "₹",
+          "type": "other_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "1",
+          "type": "numeric",
+          "output": "1",
+          "candidates": []
+        },
+        {
+          "token": ",",
+          "type": "punct",
+          "output": ",",
+          "candidates": []
+        },
+        {
+          "token": "124",
+          "type": "numeric",
+          "output": "124",
+          "candidates": []
+        },
+        {
+          "token": "ರೂಪಾಯಿ",
+          "type": "kannada_matched",
+          "output": "rupayi",
+          "candidates": [
+            "rupayi"
+          ]
+        },
+        {
+          "token": "ಬಂದಿದ್ಯಾ",
+          "type": "kannada_matched",
+          "output": "bandidya",
+          "candidates": [
+            "bandidya"
+          ]
+        },
+        {
+          "token": "?",
+          "type": "punct",
+          "output": "?",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00042",
+      "source_row_index": 42,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಕಲಬುರಗಿಗೆ ಮುಂದಿನ ರೈಲು ಯಾವಾಗ",
+      "english_reference": "when is the next train to london",
+      "romanized_diagnostic": "kalaburagige mundina <<UNK>> <<AMB>>yavaaga",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಕಲಬುರಗಿಗೆ",
+          "type": "kannada_matched",
+          "output": "kalaburagige",
+          "candidates": [
+            "kalaburagige"
+          ]
+        },
+        {
+          "token": "ಮುಂದಿನ",
+          "type": "kannada_matched",
+          "output": "mundina",
+          "candidates": [
+            "mundina"
+          ]
+        },
+        {
+          "token": "ರೈಲು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಯಾವಾಗ",
+          "type": "kannada_ambiguous",
+          "output": "yavaaga",
+          "candidates": [
+            "yavaaga",
+            "yavaga",
+            "yaavaaga"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00043",
+      "source_row_index": 43,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಹೆಡ್ ಚೀಸ್ ಎಂದರೇನು",
+      "english_reference": "hey what's a head cheese",
+      "romanized_diagnostic": "<<UNK>> <<AMB>>chees <<AMB>>endarenu",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಹೆಡ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಚೀಸ್",
+          "type": "kannada_ambiguous",
+          "output": "chees",
+          "candidates": [
+            "chees",
+            "choc"
+          ]
+        },
+        {
+          "token": "ಎಂದರೇನು",
+          "type": "kannada_ambiguous",
+          "output": "endarenu",
+          "candidates": [
+            "endarenu",
+            "endareenu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00044",
+      "source_row_index": 44,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "2021-2022 ರ ಶೈಕ್ಷಣಿಕ ವರ್ಷದಲ್ಲಿ, ಬನಾರಸ್ ಹಿಂದೂ ವಿಶ್ವವಿದ್ಯಾನಿಲಯ ಎ.ಐ.ಸಿ.ಟಿ.ಇ. ಇಂದ ಅಪ್ರೂವ್ಡ್‌ ಆಗಿತ್ತಾ ಅಂತ ಚೆಕ್‌ ಮಾಡಕ್ಕಾಗತ್ತಾ?",
+      "english_reference": "Can you check if the Banaras Hindu University was an AICTE approved institute in the academic year 2021-2022 ??",
+      "romanized_diagnostic": "2021-2022 <<UNK>> shaikshanika <<UNK>>, <<UNK>> hinduu <<UNK>> <<UNK>>. <<UNK>>. <<UNK>>. <<UNK>>. <<UNK>>. <<UNK>> <<UNK>> agitta <<UNK>> <<UNK>> <<UNK>>?",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "2021-2022",
+          "type": "latin_preserved",
+          "output": "2021-2022",
+          "candidates": []
+        },
+        {
+          "token": "ರ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಶೈಕ್ಷಣಿಕ",
+          "type": "kannada_matched",
+          "output": "shaikshanika",
+          "candidates": [
+            "shaikshanika"
+          ]
+        },
+        {
+          "token": "ವರ್ಷದಲ್ಲಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ",",
+          "type": "punct",
+          "output": ",",
+          "candidates": []
+        },
+        {
+          "token": "ಬನಾರಸ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹಿಂದೂ",
+          "type": "kannada_matched",
+          "output": "hinduu",
+          "candidates": [
+            "hinduu"
+          ]
+        },
+        {
+          "token": "ವಿಶ್ವವಿದ್ಯಾನಿಲಯ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಎ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಐ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಸಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಟಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಇ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಇಂದ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅಪ್ರೂವ್ಡ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಆಗಿತ್ತಾ",
+          "type": "kannada_matched",
+          "output": "agitta",
+          "candidates": [
+            "agitta"
+          ]
+        },
+        {
+          "token": "ಅಂತ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಚೆಕ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡಕ್ಕಾಗತ್ತಾ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "?",
+          "type": "punct",
+          "output": "?",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00045",
+      "source_row_index": 45,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಪ್ಲೀಸ್‌ ಈ ವಾರದ್‌ ಹವಾ ವರದಿ ಹೇಳು ನಂಗೆ",
+      "english_reference": "please give me the weather report for this week",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> hava varadi <<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಪ್ಲೀಸ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಈ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವಾರದ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹವಾ",
+          "type": "kannada_matched",
+          "output": "hava",
+          "candidates": [
+            "hava"
+          ]
+        },
+        {
+          "token": "ವರದಿ",
+          "type": "kannada_matched",
+          "output": "varadi",
+          "candidates": [
+            "varadi"
+          ]
+        },
+        {
+          "token": "ಹೇಳು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ನಂಗೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00046",
+      "source_row_index": 46,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನಾನು ಕಳೆದ್‌ ೨೪ ಗಂಟೆಯ ಅವಧೀಲಿ ದಿನಸಿ ಸಾಮಾನಿನ್‌‌ ಮೇಲೆ ಅಂದಾಜು ಎಷ್ಟ್‌ ಹಣ ಖರ್ಚು ಮಾಡಿದೀನಿ?",
+      "english_reference": "What is my average spending on groceries last 24 hours ?",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> ganteya <<UNK>> <<UNK>> <<UNK>> meele <<AMB>>andaaju <<UNK>> <<UNK>> kharchu madideeni?",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನಾನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕಳೆದ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "೨೪",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಗಂಟೆಯ",
+          "type": "kannada_matched",
+          "output": "ganteya",
+          "candidates": [
+            "ganteya"
+          ]
+        },
+        {
+          "token": "ಅವಧೀಲಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ದಿನಸಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸಾಮಾನಿನ್‌‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮೇಲೆ",
+          "type": "kannada_matched",
+          "output": "meele",
+          "candidates": [
+            "meele"
+          ]
+        },
+        {
+          "token": "ಅಂದಾಜು",
+          "type": "kannada_ambiguous",
+          "output": "andaaju",
+          "candidates": [
+            "andaaju",
+            "andaju"
+          ]
+        },
+        {
+          "token": "ಎಷ್ಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹಣ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಖರ್ಚು",
+          "type": "kannada_matched",
+          "output": "kharchu",
+          "candidates": [
+            "kharchu"
+          ]
+        },
+        {
+          "token": "ಮಾಡಿದೀನಿ",
+          "type": "kannada_matched",
+          "output": "madideeni",
+          "candidates": [
+            "madideeni"
+          ]
+        },
+        {
+          "token": "?",
+          "type": "punct",
+          "output": "?",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00047",
+      "source_row_index": 47,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನಗರ ದಲ್ಲಿ ಇಂದು ರಾತ್ರಿ ನಾನು ಏನು ಮಾಡಬಹುದು",
+      "english_reference": "what can i do tonight in the city",
+      "romanized_diagnostic": "ngr <<UNK>> <<UNK>> <<AMB>>ratri <<UNK>> yenu <<AMB>>maadabahudu",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನಗರ",
+          "type": "kannada_matched",
+          "output": "ngr",
+          "candidates": [
+            "ngr"
+          ]
+        },
+        {
+          "token": "ದಲ್ಲಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಇಂದು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ರಾತ್ರಿ",
+          "type": "kannada_ambiguous",
+          "output": "ratri",
+          "candidates": [
+            "ratri",
+            "raatri",
+            "raathri"
+          ]
+        },
+        {
+          "token": "ನಾನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಏನು",
+          "type": "kannada_matched",
+          "output": "yenu",
+          "candidates": [
+            "yenu"
+          ]
+        },
+        {
+          "token": "ಮಾಡಬಹುದು",
+          "type": "kannada_ambiguous",
+          "output": "maadabahudu",
+          "candidates": [
+            "maadabahudu",
+            "madabahudu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00048",
+      "source_row_index": 48,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಪ್ಲೀಸ್‌ ಮನೇ ಎಲ್ಲಾ ಲೈಟ್ಸ್‌ ಆಫ್‌ ಮಾಡು",
+      "english_reference": "please turn off all of the lights in the house",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> ellaa <<UNK>> <<UNK>> maadu",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಪ್ಲೀಸ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮನೇ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಎಲ್ಲಾ",
+          "type": "kannada_matched",
+          "output": "ellaa",
+          "candidates": [
+            "ellaa"
+          ]
+        },
+        {
+          "token": "ಲೈಟ್ಸ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಆಫ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡು",
+          "type": "kannada_matched",
+          "output": "maadu",
+          "candidates": [
+            "maadu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00049",
+      "source_row_index": 49,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಸಿ.ಎಸ್.ಬಿ. ಬ್ಯಾಂಕ್ ನ 771797967256 ಅಕೌಂಟಲ್ಲಿ ಸ್ಟಕ್‌ ಟ್ರಾನ್ಸಾಕ್ಷನ್‌ನಲ್ಲಿ ಸಿಕ್ಕಾಕೊಂಡಿರೋ ನನ್‌ ₹ 3,943 ರೂಪಾಯಿ ಯಾವಾಗ್‌ ವಾಪಸ್‌ ಸಿಗತ್ತೆ?",
+      "english_reference": "When will I recieve the amount back in stuck transaction of Rs ₹ 3,943 to 771797967256 in CSB Bank ?",
+      "romanized_diagnostic": "<<UNK>>. usha. <<UNK>>. <<AMB>>byaank <<UNK>> 771797967256 accountally <<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>> 3, 943 rupayi <<UNK>> <<UNK>> sigatte?",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಸಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಎಸ್",
+          "type": "kannada_matched",
+          "output": "usha",
+          "candidates": [
+            "usha"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಬಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಬ್ಯಾಂಕ್",
+          "type": "kannada_ambiguous",
+          "output": "byaank",
+          "candidates": [
+            "byaank",
+            "banq",
+            "byank"
+          ]
+        },
+        {
+          "token": "ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "771797967256",
+          "type": "numeric",
+          "output": "771797967256",
+          "candidates": []
+        },
+        {
+          "token": "ಅಕೌಂಟಲ್ಲಿ",
+          "type": "kannada_matched",
+          "output": "accountally",
+          "candidates": [
+            "accountally"
+          ]
+        },
+        {
+          "token": "ಸ್ಟಕ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಟ್ರಾನ್ಸಾಕ್ಷನ್‌ನಲ್ಲಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸಿಕ್ಕಾಕೊಂಡಿರೋ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ನನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "₹",
+          "type": "other_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "3",
+          "type": "numeric",
+          "output": "3",
+          "candidates": []
+        },
+        {
+          "token": ",",
+          "type": "punct",
+          "output": ",",
+          "candidates": []
+        },
+        {
+          "token": "943",
+          "type": "numeric",
+          "output": "943",
+          "candidates": []
+        },
+        {
+          "token": "ರೂಪಾಯಿ",
+          "type": "kannada_matched",
+          "output": "rupayi",
+          "candidates": [
+            "rupayi"
+          ]
+        },
+        {
+          "token": "ಯಾವಾಗ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವಾಪಸ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸಿಗತ್ತೆ",
+          "type": "kannada_matched",
+          "output": "sigatte",
+          "candidates": [
+            "sigatte"
+          ]
+        },
+        {
+          "token": "?",
+          "type": "punct",
+          "output": "?",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00050",
+      "source_row_index": 50,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನಿನ್ನೆ ಪವರ್‌ಬಾಲ್ ಲಾಟರಿಯ ವಿಜೇತ ಸಂಖ್ಯೆಗಳು ಯಾವುವು",
+      "english_reference": "what were the winning numbers of the powerball lottery yesterday",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> vijetha <<UNK>> <<AMB>>yavuvu",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನಿನ್ನೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಪವರ್‌ಬಾಲ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಲಾಟರಿಯ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವಿಜೇತ",
+          "type": "kannada_matched",
+          "output": "vijetha",
+          "candidates": [
+            "vijetha"
+          ]
+        },
+        {
+          "token": "ಸಂಖ್ಯೆಗಳು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಯಾವುವು",
+          "type": "kannada_ambiguous",
+          "output": "yavuvu",
+          "candidates": [
+            "yavuvu",
+            "yaavuvu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00051",
+      "source_row_index": 51,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನನ್ನ ಆಹಾರ ಕ್ರಮದ ಸ್ಥಿತಿ ಏನು",
+      "english_reference": "what is the status of my food order",
+      "romanized_diagnostic": "<<UNK>> <<AMB>>aahaara kramada <<UNK>> yenu",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನನ್ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಆಹಾರ",
+          "type": "kannada_ambiguous",
+          "output": "aahaara",
+          "candidates": [
+            "aahaara",
+            "aahara"
+          ]
+        },
+        {
+          "token": "ಕ್ರಮದ",
+          "type": "kannada_matched",
+          "output": "kramada",
+          "candidates": [
+            "kramada"
+          ]
+        },
+        {
+          "token": "ಸ್ಥಿತಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಏನು",
+          "type": "kannada_matched",
+          "output": "yenu",
+          "candidates": [
+            "yenu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00052",
+      "source_row_index": 52,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನನಗೆ ವಿರಾಮ ಬೇಕು ಐದು ನಿಮಿಷಗಳ ನಂತರ ಅದನ್ನು ಪ್ರಾರಂಭಿಸಿ",
+      "english_reference": "i need a break start it after five minutes",
+      "romanized_diagnostic": "nanage viraama beku idu <<AMB>>nimishagala nantara <<UNK>> <<AMB>>prarambhisi",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನನಗೆ",
+          "type": "kannada_matched",
+          "output": "nanage",
+          "candidates": [
+            "nanage"
+          ]
+        },
+        {
+          "token": "ವಿರಾಮ",
+          "type": "kannada_matched",
+          "output": "viraama",
+          "candidates": [
+            "viraama"
+          ]
+        },
+        {
+          "token": "ಬೇಕು",
+          "type": "kannada_matched",
+          "output": "beku",
+          "candidates": [
+            "beku"
+          ]
+        },
+        {
+          "token": "ಐದು",
+          "type": "kannada_matched",
+          "output": "idu",
+          "candidates": [
+            "idu"
+          ]
+        },
+        {
+          "token": "ನಿಮಿಷಗಳ",
+          "type": "kannada_ambiguous",
+          "output": "nimishagala",
+          "candidates": [
+            "nimishagala",
+            "nimisagala"
+          ]
+        },
+        {
+          "token": "ನಂತರ",
+          "type": "kannada_matched",
+          "output": "nantara",
+          "candidates": [
+            "nantara"
+          ]
+        },
+        {
+          "token": "ಅದನ್ನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಪ್ರಾರಂಭಿಸಿ",
+          "type": "kannada_ambiguous",
+          "output": "prarambhisi",
+          "candidates": [
+            "prarambhisi",
+            "praarambhisi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00053",
+      "source_row_index": 53,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಇಂದು ದಿನಾಂಕ",
+      "english_reference": "date today",
+      "romanized_diagnostic": "<<UNK>> <<AMB>>dinanka",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಇಂದು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ದಿನಾಂಕ",
+          "type": "kannada_ambiguous",
+          "output": "dinanka",
+          "candidates": [
+            "dinanka",
+            "dinaanka"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00054",
+      "source_row_index": 54,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಕಳೆದ 1 ತಿಂಗ್ಳಲ್ಲಿ ನಾನು ಲೋನ್‌ ಈ.ಎಂ.ಐ.ಗಳಿಗೆ ಎಷ್ಟ್‌ ಹಣ ಖರ್ಚ್‌ ಮಾಡಿದೀನಿ?",
+      "english_reference": "How much did I spend in last 1 month on loan EMI?",
+      "romanized_diagnostic": "kaleda 1 tinglalli <<UNK>> <<UNK>> <<UNK>>. <<UNK>>. <<UNK>>. galige <<UNK>> <<UNK>> <<UNK>> madideeni?",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಕಳೆದ",
+          "type": "kannada_matched",
+          "output": "kaleda",
+          "candidates": [
+            "kaleda"
+          ]
+        },
+        {
+          "token": "1",
+          "type": "numeric",
+          "output": "1",
+          "candidates": []
+        },
+        {
+          "token": "ತಿಂಗ್ಳಲ್ಲಿ",
+          "type": "kannada_matched",
+          "output": "tinglalli",
+          "candidates": [
+            "tinglalli"
+          ]
+        },
+        {
+          "token": "ನಾನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಲೋನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಈ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಎಂ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಐ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಗಳಿಗೆ",
+          "type": "kannada_matched",
+          "output": "galige",
+          "candidates": [
+            "galige"
+          ]
+        },
+        {
+          "token": "ಎಷ್ಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹಣ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಖರ್ಚ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡಿದೀನಿ",
+          "type": "kannada_matched",
+          "output": "madideeni",
+          "candidates": [
+            "madideeni"
+          ]
+        },
+        {
+          "token": "?",
+          "type": "punct",
+          "output": "?",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00055",
+      "source_row_index": 55,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನಾನು ಹೊಂದಿಸಿರುವ ಜ್ಞಾಪನೆಗಳನ್ನು ನನಗೆ ನೆನಪಿಸಿ",
+      "english_reference": "remind me the reminders i have set",
+      "romanized_diagnostic": "<<UNK>> hondisiruva gnapanegalannu nanage nenapisi",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನಾನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹೊಂದಿಸಿರುವ",
+          "type": "kannada_matched",
+          "output": "hondisiruva",
+          "candidates": [
+            "hondisiruva"
+          ]
+        },
+        {
+          "token": "ಜ್ಞಾಪನೆಗಳನ್ನು",
+          "type": "kannada_matched",
+          "output": "gnapanegalannu",
+          "candidates": [
+            "gnapanegalannu"
+          ]
+        },
+        {
+          "token": "ನನಗೆ",
+          "type": "kannada_matched",
+          "output": "nanage",
+          "candidates": [
+            "nanage"
+          ]
+        },
+        {
+          "token": "ನೆನಪಿಸಿ",
+          "type": "kannada_matched",
+          "output": "nenapisi",
+          "candidates": [
+            "nenapisi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00056",
+      "source_row_index": 56,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಬೆಂಗಳೂರು ಹೆದ್ದಾರಿಯಲ್ಲಿ ಟ್ರಾಫಿಕ್ ಪರಿಸ್ಥಿತಿ ಹೇಗಿದೆ",
+      "english_reference": "what is the traffic situation at the bazaar highway",
+      "romanized_diagnostic": "<<UNK>> <<AMB>>heddaariyalli <<AMB>>traffik <<AMB>>paristiti <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಬೆಂಗಳೂರು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹೆದ್ದಾರಿಯಲ್ಲಿ",
+          "type": "kannada_ambiguous",
+          "output": "heddaariyalli",
+          "candidates": [
+            "heddaariyalli",
+            "heddariyalli"
+          ]
+        },
+        {
+          "token": "ಟ್ರಾಫಿಕ್",
+          "type": "kannada_ambiguous",
+          "output": "traffik",
+          "candidates": [
+            "traffik",
+            "traphphic"
+          ]
+        },
+        {
+          "token": "ಪರಿಸ್ಥಿತಿ",
+          "type": "kannada_ambiguous",
+          "output": "paristiti",
+          "candidates": [
+            "paristiti",
+            "paristhithi",
+            "paristhiti"
+          ]
+        },
+        {
+          "token": "ಹೇಗಿದೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00057",
+      "source_row_index": 57,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಹೊರಗೆ ಹವಾಮಾನ ಹೇಗಿದೆ ಅದು ಮೋಡವಾಗಿರುತ್ತದೆ",
+      "english_reference": "what is the weather like outside it is cloudy",
+      "romanized_diagnostic": "horage <<AMB>>havamana <<UNK>> <<UNK>> modavagiruttade",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಹೊರಗೆ",
+          "type": "kannada_matched",
+          "output": "horage",
+          "candidates": [
+            "horage"
+          ]
+        },
+        {
+          "token": "ಹವಾಮಾನ",
+          "type": "kannada_ambiguous",
+          "output": "havamana",
+          "candidates": [
+            "havamana",
+            "havamaana",
+            "havaamaana"
+          ]
+        },
+        {
+          "token": "ಹೇಗಿದೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅದು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮೋಡವಾಗಿರುತ್ತದೆ",
+          "type": "kannada_matched",
+          "output": "modavagiruttade",
+          "candidates": [
+            "modavagiruttade"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00058",
+      "source_row_index": 58,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನನ್ನ ಮುಂದಿನ ಈವೆಂಟ್ ಅನ್ನು ಹುಡುಕಿ ಮತ್ತು ದಯವಿಟ್ಟು ಅದನ್ನು ಅಳಿಸಿ",
+      "english_reference": "find my next event and delete it please",
+      "romanized_diagnostic": "<<UNK>> mundina <<UNK>> <<UNK>> huduki <<UNK>> <<AMB>>dayawittu <<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನನ್ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮುಂದಿನ",
+          "type": "kannada_matched",
+          "output": "mundina",
+          "candidates": [
+            "mundina"
+          ]
+        },
+        {
+          "token": "ಈವೆಂಟ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅನ್ನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹುಡುಕಿ",
+          "type": "kannada_matched",
+          "output": "huduki",
+          "candidates": [
+            "huduki"
+          ]
+        },
+        {
+          "token": "ಮತ್ತು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ದಯವಿಟ್ಟು",
+          "type": "kannada_ambiguous",
+          "output": "dayawittu",
+          "candidates": [
+            "dayawittu",
+            "dayavittu"
+          ]
+        },
+        {
+          "token": "ಅದನ್ನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅಳಿಸಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00059",
+      "source_row_index": 59,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "2019-2020 ರ ಶೈಕ್ಷಣಿಕ ವರ್ಷದಲ್ಲಿ, ಅಪ್ಲಿಕೇಷನ್‌ ಐಡಿ ll9wdMsh ಮತ್ತು ಹುಟ್ಟಿದ ದಿನಾಂಕ 23/08/2022 ಹೊಂದಿರುವ ಬಳಕೆದಾರರು ಸಬ್ಮಿಟ್‌ ಮಾಡಿರೋ ಹೊಸ ಸ್ಕಾಲರ್‌ಶಿಪ್‌ ಅಪ್ಲಿಕೇಷನ್‌ಗಳನ್ನ ಲಿಸ್ಟ್‌ ಮಾಡು.",
+      "english_reference": "In the academic year 2019-2020 , list submitted Fresh scholarship applications by user with application ID ll9wdMsh and date of birth 23/08/2022",
+      "romanized_diagnostic": "2019-2020 <<UNK>> shaikshanika <<UNK>>, <<UNK>> <<UNK>> ll9wdMsh <<UNK>> huttida <<AMB>>dinanka 23 / 08 / 2022 <<AMB>>hondhiruva <<AMB>>balakedaararu <<UNK>> <<UNK>> hosa <<UNK>> <<UNK>> <<UNK>> maadu.",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "2019-2020",
+          "type": "latin_preserved",
+          "output": "2019-2020",
+          "candidates": []
+        },
+        {
+          "token": "ರ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಶೈಕ್ಷಣಿಕ",
+          "type": "kannada_matched",
+          "output": "shaikshanika",
+          "candidates": [
+            "shaikshanika"
+          ]
+        },
+        {
+          "token": "ವರ್ಷದಲ್ಲಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ",",
+          "type": "punct",
+          "output": ",",
+          "candidates": []
+        },
+        {
+          "token": "ಅಪ್ಲಿಕೇಷನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಐಡಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ll9wdMsh",
+          "type": "latin_preserved",
+          "output": "ll9wdMsh",
+          "candidates": []
+        },
+        {
+          "token": "ಮತ್ತು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹುಟ್ಟಿದ",
+          "type": "kannada_matched",
+          "output": "huttida",
+          "candidates": [
+            "huttida"
+          ]
+        },
+        {
+          "token": "ದಿನಾಂಕ",
+          "type": "kannada_ambiguous",
+          "output": "dinanka",
+          "candidates": [
+            "dinanka",
+            "dinaanka"
+          ]
+        },
+        {
+          "token": "23",
+          "type": "numeric",
+          "output": "23",
+          "candidates": []
+        },
+        {
+          "token": "/",
+          "type": "punct",
+          "output": "/",
+          "candidates": []
+        },
+        {
+          "token": "08",
+          "type": "numeric",
+          "output": "08",
+          "candidates": []
+        },
+        {
+          "token": "/",
+          "type": "punct",
+          "output": "/",
+          "candidates": []
+        },
+        {
+          "token": "2022",
+          "type": "numeric",
+          "output": "2022",
+          "candidates": []
+        },
+        {
+          "token": "ಹೊಂದಿರುವ",
+          "type": "kannada_ambiguous",
+          "output": "hondhiruva",
+          "candidates": [
+            "hondhiruva",
+            "hondiruva"
+          ]
+        },
+        {
+          "token": "ಬಳಕೆದಾರರು",
+          "type": "kannada_ambiguous",
+          "output": "balakedaararu",
+          "candidates": [
+            "balakedaararu",
+            "balakedararu"
+          ]
+        },
+        {
+          "token": "ಸಬ್ಮಿಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡಿರೋ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹೊಸ",
+          "type": "kannada_matched",
+          "output": "hosa",
+          "candidates": [
+            "hosa"
+          ]
+        },
+        {
+          "token": "ಸ್ಕಾಲರ್‌ಶಿಪ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅಪ್ಲಿಕೇಷನ್‌ಗಳನ್ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಲಿಸ್ಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡು",
+          "type": "kannada_matched",
+          "output": "maadu",
+          "candidates": [
+            "maadu"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00060",
+      "source_row_index": 60,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಮಾಹಿತಿ ಅಗತ್ಯವಿದೆ",
+      "english_reference": "need info",
+      "romanized_diagnostic": "maahithi <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಮಾಹಿತಿ",
+          "type": "kannada_matched",
+          "output": "maahithi",
+          "candidates": [
+            "maahithi"
+          ]
+        },
+        {
+          "token": "ಅಗತ್ಯವಿದೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00061",
+      "source_row_index": 61,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಓಲಿ ನೆಕ್ಸ್ಟ್‌ ಎರಡ್‌ ದಿನದ್‌ ಎಲ್ಲಾ ಈವೆಂಟ್ಸ್‌ನೂ ಕ್ಯಾನ್ಸಲ್‌ ಮಾಡು",
+      "english_reference": "olly cancel all events in the next two days",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> <<UNK>> ellaa <<UNK>> <<UNK>> maadu",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಓಲಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ನೆಕ್ಸ್ಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಎರಡ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ದಿನದ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಎಲ್ಲಾ",
+          "type": "kannada_matched",
+          "output": "ellaa",
+          "candidates": [
+            "ellaa"
+          ]
+        },
+        {
+          "token": "ಈವೆಂಟ್ಸ್‌ನೂ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕ್ಯಾನ್ಸಲ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡು",
+          "type": "kannada_matched",
+          "output": "maadu",
+          "candidates": [
+            "maadu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00062",
+      "source_row_index": 62,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಮ್ಯೂಸಿಕ್ ಪ್ಲೇಯರ್‌ನಲ್ಲಿ ವಾಲ್ಯೂಮ್ ಮಟ್ಟವನ್ನು ಅರವತ್ತಕ್ಕೆ ಹೊಂದಿಸಿ",
+      "english_reference": "on the music player set the volume level at sixty",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> <<UNK>> aravattakke <<AMB>>hondisi",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಮ್ಯೂಸಿಕ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಪ್ಲೇಯರ್‌ನಲ್ಲಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವಾಲ್ಯೂಮ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಟ್ಟವನ್ನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅರವತ್ತಕ್ಕೆ",
+          "type": "kannada_matched",
+          "output": "aravattakke",
+          "candidates": [
+            "aravattakke"
+          ]
+        },
+        {
+          "token": "ಹೊಂದಿಸಿ",
+          "type": "kannada_ambiguous",
+          "output": "hondisi",
+          "candidates": [
+            "hondisi",
+            "hondhisi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00063",
+      "source_row_index": 63,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಕೆಲವು ತಂಪಾದ ಹಾಸ್ಯಗಳನ್ನು ತೆರೆಯಿರಿ",
+      "english_reference": "open some cools jokes",
+      "romanized_diagnostic": "kelavu <<AMB>>tampada haasyagalannu <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಕೆಲವು",
+          "type": "kannada_matched",
+          "output": "kelavu",
+          "candidates": [
+            "kelavu"
+          ]
+        },
+        {
+          "token": "ತಂಪಾದ",
+          "type": "kannada_ambiguous",
+          "output": "tampada",
+          "candidates": [
+            "tampada",
+            "tampaada"
+          ]
+        },
+        {
+          "token": "ಹಾಸ್ಯಗಳನ್ನು",
+          "type": "kannada_matched",
+          "output": "haasyagalannu",
+          "candidates": [
+            "haasyagalannu"
+          ]
+        },
+        {
+          "token": "ತೆರೆಯಿರಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00064",
+      "source_row_index": 64,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನನ್ನ ಇನ್ಬಾಕ್ಸ್ ಈಗ ಯಾವುದಾದರು ಹೊಸ ಇಮೇಲ್‌ಗಳು ದೇವ್",
+      "english_reference": "are there any new emails in my inbox john right now",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<AMB>>eega <<AMB>>yaavudaadaru hosa <<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನನ್ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಇನ್ಬಾಕ್ಸ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಈಗ",
+          "type": "kannada_ambiguous",
+          "output": "eega",
+          "candidates": [
+            "eega",
+            "ega",
+            "iga"
+          ]
+        },
+        {
+          "token": "ಯಾವುದಾದರು",
+          "type": "kannada_ambiguous",
+          "output": "yaavudaadaru",
+          "candidates": [
+            "yaavudaadaru",
+            "yavudadaru"
+          ]
+        },
+        {
+          "token": "ಹೊಸ",
+          "type": "kannada_matched",
+          "output": "hosa",
+          "candidates": [
+            "hosa"
+          ]
+        },
+        {
+          "token": "ಇಮೇಲ್‌ಗಳು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ದೇವ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00065",
+      "source_row_index": 65,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಈ ಹಾಡಿನ ಬಗ್ಗೆ ಹೇಳಿ",
+      "english_reference": "tell me about this song",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> bagge <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಈ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹಾಡಿನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಬಗ್ಗೆ",
+          "type": "kannada_matched",
+          "output": "bagge",
+          "candidates": [
+            "bagge"
+          ]
+        },
+        {
+          "token": "ಹೇಳಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00066",
+      "source_row_index": 66,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನಂಗೆ ಹತ್ರದಲ್ಲಿರೋ ಲೈಟಾಫ್‌ ಮಾಡು",
+      "english_reference": "turn off the nearest light",
+      "romanized_diagnostic": "<<UNK>> hatradalliro <<UNK>> maadu",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನಂಗೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹತ್ರದಲ್ಲಿರೋ",
+          "type": "kannada_matched",
+          "output": "hatradalliro",
+          "candidates": [
+            "hatradalliro"
+          ]
+        },
+        {
+          "token": "ಲೈಟಾಫ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡು",
+          "type": "kannada_matched",
+          "output": "maadu",
+          "candidates": [
+            "maadu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00067",
+      "source_row_index": 67,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಅಶ್ವತ್ ಪ್ರವಾಸಕ್ಕೆ ಹೋಗಲಿದ್ದಾರೆ",
+      "english_reference": "is adele going to go on tour",
+      "romanized_diagnostic": "<<AMB>>ashwath <<AMB>>pravasakke hogaliddaare",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಅಶ್ವತ್",
+          "type": "kannada_ambiguous",
+          "output": "ashwath",
+          "candidates": [
+            "ashwath",
+            "ashwat"
+          ]
+        },
+        {
+          "token": "ಪ್ರವಾಸಕ್ಕೆ",
+          "type": "kannada_ambiguous",
+          "output": "pravasakke",
+          "candidates": [
+            "pravasakke",
+            "pravaasakke"
+          ]
+        },
+        {
+          "token": "ಹೋಗಲಿದ್ದಾರೆ",
+          "type": "kannada_matched",
+          "output": "hogaliddaare",
+          "candidates": [
+            "hogaliddaare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00068",
+      "source_row_index": 68,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಅನ್‌ಆಥರೈಸ಼್ಡ್‌ ಪೇಪಾಲ್ ಅಕೌಂಟ್‌ ಆಕ್ಟಿವಿಟೀನ ರಿಪೋರ್ಟ್‌ ಮಾಡು.",
+      "english_reference": "Report unauthorised PayPal account activity.",
+      "romanized_diagnostic": "<<UNK>> paypal <<UNK>> <<UNK>> <<UNK>> maadu.",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಅನ್‌ಆಥರೈಸ಼್ಡ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಪೇಪಾಲ್",
+          "type": "kannada_matched",
+          "output": "paypal",
+          "candidates": [
+            "paypal"
+          ]
+        },
+        {
+          "token": "ಅಕೌಂಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಆಕ್ಟಿವಿಟೀನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ರಿಪೋರ್ಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡು",
+          "type": "kannada_matched",
+          "output": "maadu",
+          "candidates": [
+            "maadu"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00069",
+      "source_row_index": 69,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಟೈಮ್‌ಜ಼ೋನ್‌ನ ಕೆನಡಾಗೆ ಚೇಂಜ್‌ ಮಾಡು",
+      "english_reference": "please change time zone to canada",
+      "romanized_diagnostic": "<<UNK>> kenadaage <<UNK>> maadu",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಟೈಮ್‌ಜ಼ೋನ್‌ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕೆನಡಾಗೆ",
+          "type": "kannada_matched",
+          "output": "kenadaage",
+          "candidates": [
+            "kenadaage"
+          ]
+        },
+        {
+          "token": "ಚೇಂಜ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡು",
+          "type": "kannada_matched",
+          "output": "maadu",
+          "candidates": [
+            "maadu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00070",
+      "source_row_index": 70,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಪಿನ್‌ಕೋಡ್‌ 458003 ಏರಿಯಾದಲ್ಲಿ ಎಕ್ಸ್-ರೇ ಸೇವೆಗಳನ್ನ ನೀಡೋ ಇ.ಎಸ್.ಐ.ಸಿ. ಸೆಂಟರ್ಸ್‌ನ ಹುಡ್ಕಕ್ಕೆ ಸಹಾಯ ಮಾಡಕ್ಕಾಗತ್ತಾ?",
+      "english_reference": "Can you help in searching for ESIC Centres located in area with pincode 458003 and offering X-Ray services",
+      "romanized_diagnostic": "<<UNK>> 458003 airiyaadalli <<UNK>> <<UNK>> <<UNK>> <<UNK>>. usha. <<UNK>>. <<UNK>>. <<UNK>> <<UNK>> <<UNK>> <<UNK>>?",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಪಿನ್‌ಕೋಡ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "458003",
+          "type": "numeric",
+          "output": "458003",
+          "candidates": []
+        },
+        {
+          "token": "ಏರಿಯಾದಲ್ಲಿ",
+          "type": "kannada_matched",
+          "output": "airiyaadalli",
+          "candidates": [
+            "airiyaadalli"
+          ]
+        },
+        {
+          "token": "ಎಕ್ಸ್-ರೇ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸೇವೆಗಳನ್ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ನೀಡೋ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಇ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಎಸ್",
+          "type": "kannada_matched",
+          "output": "usha",
+          "candidates": [
+            "usha"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಐ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಸಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಸೆಂಟರ್ಸ್‌ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹುಡ್ಕಕ್ಕೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸಹಾಯ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡಕ್ಕಾಗತ್ತಾ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "?",
+          "type": "punct",
+          "output": "?",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00071",
+      "source_row_index": 71,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನಾಳೆ ಸಂಜೆ ಐದೂವರೇಗೆ ಸನ್‌ಸೆಟ್‌ ಆಗತ್ತಾ",
+      "english_reference": "will there be sunset at five thirty p. m. tomorrow",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನಾಳೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸಂಜೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಐದೂವರೇಗೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸನ್‌ಸೆಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಆಗತ್ತಾ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00072",
+      "source_row_index": 72,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನಾನು ಶಾರ್ಟ್ಸ್‌ನಲ್ಲಿ ಹೊರಗೆ ಹೋಗಬಹುದೇ",
+      "english_reference": "can i go out in shorts",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> horage hogabahude",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನಾನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಶಾರ್ಟ್ಸ್‌ನಲ್ಲಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹೊರಗೆ",
+          "type": "kannada_matched",
+          "output": "horage",
+          "candidates": [
+            "horage"
+          ]
+        },
+        {
+          "token": "ಹೋಗಬಹುದೇ",
+          "type": "kannada_matched",
+          "output": "hogabahude",
+          "candidates": [
+            "hogabahude"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00073",
+      "source_row_index": 73,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನಾನು ಹೋಟೆಲ್ ಮ್ಯಾನೇಜ್ಮೆಂಟ್ ಮತ್ತು ಕೇಟರಿಂಗ್ ವಿಭಾಗದ ಡಿಪ್ಲೊಮಾ ಪ್ರೋಗ್ರಾಂಗಳನ್ನ ಆಫ಼ರ್‌ ಮಾಡ್ತಿರೋ ಮಾನ್ಯತೆಪಡೆದ ಖಾಸಗೀ ವಿಶ್ವವಿದ್ಯಾನಿಲಯ ಇನ್‌ಸ್ಟಿಟ್ಯೂಟ್‌ನಲ್ಲಿ ಎನ್‌ರೋಲ್‌ ಆಗ್ಬೇಕು, 2006-2007 ರ ಶೈಕ್ಷಣಿಕ ವರ್ಷದ ಅಂತಹ ಇನ್‌ಸ್ಟಿಟ್ಯೂಟ್‌ಗಳ ಲಿಸ್ಟ್ ಸಿಗತ್ತಾ?",
+      "english_reference": "I want to get enrolled myself in an Deemed Private University institutes offering Diploma level programs in Hotel Management and Catering , Can I get a list of such institutes in the academic year 2006-2007 ??",
+      "romanized_diagnostic": "<<UNK>> hottal <<UNK>> <<UNK>> <<UNK>> <<AMB>>vibhaagada <<UNK>> prograngalanna <<UNK>> madtiro maanyatepadeda <<AMB>>khasagi <<UNK>> <<UNK>> <<UNK>> agbeku, 2006-2007 <<UNK>> shaikshanika varshada anthaha <<UNK>> <<UNK>> sigatta?",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನಾನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹೋಟೆಲ್",
+          "type": "kannada_matched",
+          "output": "hottal",
+          "candidates": [
+            "hottal"
+          ]
+        },
+        {
+          "token": "ಮ್ಯಾನೇಜ್ಮೆಂಟ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮತ್ತು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕೇಟರಿಂಗ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವಿಭಾಗದ",
+          "type": "kannada_ambiguous",
+          "output": "vibhaagada",
+          "candidates": [
+            "vibhaagada",
+            "vibhagada"
+          ]
+        },
+        {
+          "token": "ಡಿಪ್ಲೊಮಾ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಪ್ರೋಗ್ರಾಂಗಳನ್ನ",
+          "type": "kannada_matched",
+          "output": "prograngalanna",
+          "candidates": [
+            "prograngalanna"
+          ]
+        },
+        {
+          "token": "ಆಫ಼ರ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡ್ತಿರೋ",
+          "type": "kannada_matched",
+          "output": "madtiro",
+          "candidates": [
+            "madtiro"
+          ]
+        },
+        {
+          "token": "ಮಾನ್ಯತೆಪಡೆದ",
+          "type": "kannada_matched",
+          "output": "maanyatepadeda",
+          "candidates": [
+            "maanyatepadeda"
+          ]
+        },
+        {
+          "token": "ಖಾಸಗೀ",
+          "type": "kannada_ambiguous",
+          "output": "khasagi",
+          "candidates": [
+            "khasagi",
+            "khasagee"
+          ]
+        },
+        {
+          "token": "ವಿಶ್ವವಿದ್ಯಾನಿಲಯ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಇನ್‌ಸ್ಟಿಟ್ಯೂಟ್‌ನಲ್ಲಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಎನ್‌ರೋಲ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಆಗ್ಬೇಕು",
+          "type": "kannada_matched",
+          "output": "agbeku",
+          "candidates": [
+            "agbeku"
+          ]
+        },
+        {
+          "token": ",",
+          "type": "punct",
+          "output": ",",
+          "candidates": []
+        },
+        {
+          "token": "2006-2007",
+          "type": "latin_preserved",
+          "output": "2006-2007",
+          "candidates": []
+        },
+        {
+          "token": "ರ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಶೈಕ್ಷಣಿಕ",
+          "type": "kannada_matched",
+          "output": "shaikshanika",
+          "candidates": [
+            "shaikshanika"
+          ]
+        },
+        {
+          "token": "ವರ್ಷದ",
+          "type": "kannada_matched",
+          "output": "varshada",
+          "candidates": [
+            "varshada"
+          ]
+        },
+        {
+          "token": "ಅಂತಹ",
+          "type": "kannada_matched",
+          "output": "anthaha",
+          "candidates": [
+            "anthaha"
+          ]
+        },
+        {
+          "token": "ಇನ್‌ಸ್ಟಿಟ್ಯೂಟ್‌ಗಳ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಲಿಸ್ಟ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸಿಗತ್ತಾ",
+          "type": "kannada_matched",
+          "output": "sigatta",
+          "candidates": [
+            "sigatta"
+          ]
+        },
+        {
+          "token": "?",
+          "type": "punct",
+          "output": "?",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00074",
+      "source_row_index": 74,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ದಯವಿಟ್ಟು ನನ್ನ ಸ್ಥಳದ ಸಮೀಪ ದಟ್ಟಣೆಯ ಬಗ್ಗೆ ಮಾಹಿತಿ ನೀಡಿ",
+      "english_reference": "give information about the traffic near my location please",
+      "romanized_diagnostic": "<<AMB>>dayawittu <<UNK>> <<UNK>> <<AMB>>samipa dattaneya bagge maahithi niidi",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ದಯವಿಟ್ಟು",
+          "type": "kannada_ambiguous",
+          "output": "dayawittu",
+          "candidates": [
+            "dayawittu",
+            "dayavittu"
+          ]
+        },
+        {
+          "token": "ನನ್ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸ್ಥಳದ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸಮೀಪ",
+          "type": "kannada_ambiguous",
+          "output": "samipa",
+          "candidates": [
+            "samipa",
+            "sameepa"
+          ]
+        },
+        {
+          "token": "ದಟ್ಟಣೆಯ",
+          "type": "kannada_matched",
+          "output": "dattaneya",
+          "candidates": [
+            "dattaneya"
+          ]
+        },
+        {
+          "token": "ಬಗ್ಗೆ",
+          "type": "kannada_matched",
+          "output": "bagge",
+          "candidates": [
+            "bagge"
+          ]
+        },
+        {
+          "token": "ಮಾಹಿತಿ",
+          "type": "kannada_matched",
+          "output": "maahithi",
+          "candidates": [
+            "maahithi"
+          ]
+        },
+        {
+          "token": "ನೀಡಿ",
+          "type": "kannada_matched",
+          "output": "niidi",
+          "candidates": [
+            "niidi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00075",
+      "source_row_index": 75,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಪಿನ್‌ಕೋಡ್‌ 917563 ನಲ್ಲಿ ಉಚಿತ ಶುಲ್ಕರಹಿತ ಕೋವಿಶೀಲ್ಡ್ ವ್ಯಾಕ್ಸೀನ್‌ ಕೊಡೋ ವ್ಯಾಕ್ಸಿನೇಷನ್‌ ಕೇಂದ್ರಗಳಿವ್ಯಾ?",
+      "english_reference": "Is there any Free COVISHIELD vaccination center nearby in pincode 917563 ?",
+      "romanized_diagnostic": "<<UNK>> 917563 nalli <<UNK>> shulkarahita covishield <<UNK>> <<UNK>> <<UNK>> <<UNK>>?",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಪಿನ್‌ಕೋಡ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "917563",
+          "type": "numeric",
+          "output": "917563",
+          "candidates": []
+        },
+        {
+          "token": "ನಲ್ಲಿ",
+          "type": "kannada_matched",
+          "output": "nalli",
+          "candidates": [
+            "nalli"
+          ]
+        },
+        {
+          "token": "ಉಚಿತ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಶುಲ್ಕರಹಿತ",
+          "type": "kannada_matched",
+          "output": "shulkarahita",
+          "candidates": [
+            "shulkarahita"
+          ]
+        },
+        {
+          "token": "ಕೋವಿಶೀಲ್ಡ್",
+          "type": "kannada_matched",
+          "output": "covishield",
+          "candidates": [
+            "covishield"
+          ]
+        },
+        {
+          "token": "ವ್ಯಾಕ್ಸೀನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕೊಡೋ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವ್ಯಾಕ್ಸಿನೇಷನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕೇಂದ್ರಗಳಿವ್ಯಾ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "?",
+          "type": "punct",
+          "output": "?",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00076",
+      "source_row_index": 76,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನಾನು ಪ್ರ್ಯಾನ್ ನಂಬರ್ 763692175018 ಹೊಂದಿರೋ ನನ್‌ ಎ.ಪಿ.ವೈ. ಅಕೌಂಟ್‌ನಲ್ಲಿ ಒಟ್ಟು ಹೋಲ್ಡಿಂಗ್ಸ್‌ ಎಷ್ಟಿದೆ ಅಂತ ತಿಳ್ಕೋಬೇಕು.",
+      "english_reference": "I want to know the total holdings in my APY account with PRAN number 763692175018",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> 763692175018 hondiro <<UNK>> <<UNK>>. <<UNK>>. <<UNK>>. <<UNK>> ottu <<UNK>> <<UNK>> <<UNK>> tilkobeku.",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನಾನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಪ್ರ್ಯಾನ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ನಂಬರ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "763692175018",
+          "type": "numeric",
+          "output": "763692175018",
+          "candidates": []
+        },
+        {
+          "token": "ಹೊಂದಿರೋ",
+          "type": "kannada_matched",
+          "output": "hondiro",
+          "candidates": [
+            "hondiro"
+          ]
+        },
+        {
+          "token": "ನನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಎ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಪಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ವೈ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಅಕೌಂಟ್‌ನಲ್ಲಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಒಟ್ಟು",
+          "type": "kannada_matched",
+          "output": "ottu",
+          "candidates": [
+            "ottu"
+          ]
+        },
+        {
+          "token": "ಹೋಲ್ಡಿಂಗ್ಸ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಎಷ್ಟಿದೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅಂತ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ತಿಳ್ಕೋಬೇಕು",
+          "type": "kannada_matched",
+          "output": "tilkobeku",
+          "candidates": [
+            "tilkobeku"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00077",
+      "source_row_index": 77,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಲ್ಯಾಪ್‌ಟಾಪ್ ಸರ್ಕ್ಯೂಟ್‌ನ ವಿವರಣೆಯನ್ನು ನನಗೆ ನೀಡಿ",
+      "english_reference": "give me the description of laptop circuit",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> vivaraneyannu nanage niidi",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಲ್ಯಾಪ್‌ಟಾಪ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸರ್ಕ್ಯೂಟ್‌ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವಿವರಣೆಯನ್ನು",
+          "type": "kannada_matched",
+          "output": "vivaraneyannu",
+          "candidates": [
+            "vivaraneyannu"
+          ]
+        },
+        {
+          "token": "ನನಗೆ",
+          "type": "kannada_matched",
+          "output": "nanage",
+          "candidates": [
+            "nanage"
+          ]
+        },
+        {
+          "token": "ನೀಡಿ",
+          "type": "kannada_matched",
+          "output": "niidi",
+          "candidates": [
+            "niidi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00078",
+      "source_row_index": 78,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ದೂರು",
+      "english_reference": "complaint",
+      "romanized_diagnostic": "dooru",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ದೂರು",
+          "type": "kannada_matched",
+          "output": "dooru",
+          "candidates": [
+            "dooru"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00079",
+      "source_row_index": 79,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "೧೫-೧೭ ವರ್ಷ ಈ ಏಜ್‌ ಗ್ರೂಪ್‌ನವ್ರಿಗೆ ಕೋರ್ಬೆವ್ಯಾಕ್ಸ್ ಕೊಡ್ತಿರೋ ಎಲ್ಲಾ ಪೇಯ್ಡ್ ಶುಲ್ಕಸಹಿತ ವ್ಯಾಕ್ಸಿನೇಷನ್‌ ಕ್ಲಿನಿಕ್ಸ್‌ನೂ ಲಿಸ್ಟ್‌ ಮಾಡು ಪ್ಲೀಸ್.",
+      "english_reference": "For age group 15-17 years , please list all the CORBEVAX vaccination clinics which are Paid",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>> kodtiro ellaa payed shulkasahita <<UNK>> <<UNK>> <<UNK>> maadu plees.",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "೧೫-೧೭",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವರ್ಷ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಈ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಏಜ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಗ್ರೂಪ್‌ನವ್ರಿಗೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕೋರ್ಬೆವ್ಯಾಕ್ಸ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕೊಡ್ತಿರೋ",
+          "type": "kannada_matched",
+          "output": "kodtiro",
+          "candidates": [
+            "kodtiro"
+          ]
+        },
+        {
+          "token": "ಎಲ್ಲಾ",
+          "type": "kannada_matched",
+          "output": "ellaa",
+          "candidates": [
+            "ellaa"
+          ]
+        },
+        {
+          "token": "ಪೇಯ್ಡ್",
+          "type": "kannada_matched",
+          "output": "payed",
+          "candidates": [
+            "payed"
+          ]
+        },
+        {
+          "token": "ಶುಲ್ಕಸಹಿತ",
+          "type": "kannada_matched",
+          "output": "shulkasahita",
+          "candidates": [
+            "shulkasahita"
+          ]
+        },
+        {
+          "token": "ವ್ಯಾಕ್ಸಿನೇಷನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕ್ಲಿನಿಕ್ಸ್‌ನೂ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಲಿಸ್ಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡು",
+          "type": "kannada_matched",
+          "output": "maadu",
+          "candidates": [
+            "maadu"
+          ]
+        },
+        {
+          "token": "ಪ್ಲೀಸ್",
+          "type": "kannada_matched",
+          "output": "plees",
+          "candidates": [
+            "plees"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00080",
+      "source_row_index": 80,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನನಗೆ ಇತ್ತೀಚೆಗೆ ಯಾವುದಾದರೂ ಮೇಲ್ ಬಂದಿದೆಯೇ",
+      "english_reference": "have i gotten any mail recently",
+      "romanized_diagnostic": "nanage <<AMB>>itteechege <<AMB>>yaavudaadaroo <<UNK>> bandideye",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನನಗೆ",
+          "type": "kannada_matched",
+          "output": "nanage",
+          "candidates": [
+            "nanage"
+          ]
+        },
+        {
+          "token": "ಇತ್ತೀಚೆಗೆ",
+          "type": "kannada_ambiguous",
+          "output": "itteechege",
+          "candidates": [
+            "itteechege",
+            "ittichege"
+          ]
+        },
+        {
+          "token": "ಯಾವುದಾದರೂ",
+          "type": "kannada_ambiguous",
+          "output": "yaavudaadaroo",
+          "candidates": [
+            "yaavudaadaroo",
+            "yavudadaru",
+            "yaavudaadaru"
+          ]
+        },
+        {
+          "token": "ಮೇಲ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಬಂದಿದೆಯೇ",
+          "type": "kannada_matched",
+          "output": "bandideye",
+          "candidates": [
+            "bandideye"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00081",
+      "source_row_index": 81,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಆಫೀಸಿಂದ ಕೊನೇ ಟ್ರೇನ್‌ ಎಷ್ಟೊತ್ತಿಗಿದೆ",
+      "english_reference": "when does the last train from work leave",
+      "romanized_diagnostic": "aafisinda <<UNK>> <<UNK>> eshtottigide",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಆಫೀಸಿಂದ",
+          "type": "kannada_matched",
+          "output": "aafisinda",
+          "candidates": [
+            "aafisinda"
+          ]
+        },
+        {
+          "token": "ಕೊನೇ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಟ್ರೇನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಎಷ್ಟೊತ್ತಿಗಿದೆ",
+          "type": "kannada_matched",
+          "output": "eshtottigide",
+          "candidates": [
+            "eshtottigide"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00082",
+      "source_row_index": 82,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಸಂಜೆ ಐದ್‌ ಗಂಟೆ ಅಲಾರಂನ ತೆಗ್ದ್‌ ಬಿಡು",
+      "english_reference": "get rid of the five p. m. alarm",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಸಂಜೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಐದ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಗಂಟೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅಲಾರಂನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ತೆಗ್ದ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಬಿಡು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00083",
+      "source_row_index": 83,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನನ್‌ ಯೋನೋ ಎಸ್.ಬಿ.ಐ. ಕ್ಯೂ.ಆರ್.‌ ಕೋಡ್‌ನ ವಾಟ್ಸ್‌ಆಪ್‌ನಲ್ಲಿ ಅಭಿಷೇಕ್ ಅವ್ರಿಗೆ ಕಳ್ಸು.",
+      "english_reference": "Share my Yono SBI QR code with Abhishek on WhatsApp.",
+      "romanized_diagnostic": "<<UNK>> yono usha. <<UNK>>. <<UNK>>. queue. <<UNK>>. <<UNK>> <<UNK>> <<UNK>> <<AMB>>abishek <<UNK>> <<UNK>>.",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಯೋನೋ",
+          "type": "kannada_matched",
+          "output": "yono",
+          "candidates": [
+            "yono"
+          ]
+        },
+        {
+          "token": "ಎಸ್",
+          "type": "kannada_matched",
+          "output": "usha",
+          "candidates": [
+            "usha"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಬಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಐ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಕ್ಯೂ",
+          "type": "kannada_matched",
+          "output": "queue",
+          "candidates": [
+            "queue"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "ಆರ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        },
+        {
+          "token": "‌",
+          "type": "other_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕೋಡ್‌ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವಾಟ್ಸ್‌ಆಪ್‌ನಲ್ಲಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅಭಿಷೇಕ್",
+          "type": "kannada_ambiguous",
+          "output": "abishek",
+          "candidates": [
+            "abishek",
+            "abhishekh"
+          ]
+        },
+        {
+          "token": "ಅವ್ರಿಗೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕಳ್ಸು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00084",
+      "source_row_index": 84,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಮೈಕ್ ನನಗೆ ಇಮೇಲ್ ಕಳುಹಿಸುತ್ತಾರೆ ಆ ಇಮೇಲ್ ಸ್ವೀಕರಿಸಿದ ನಾಳೆ ಹದಿನೈದು ನಿಮಿಷಗಳ ನಂತರ ನೀವು ದಯವಿಟ್ಟು ಅಲಾರಾಂ ಅನ್ನು ಹೊಂದಿಸಬಹುದೇ",
+      "english_reference": "mike will send me an email tomorrow can you please set up an alarm fifteen minutes after receiving that email",
+      "romanized_diagnostic": "<<AMB>>mic nanage emel <<AMB>>kaluhisuttare <<UNK>> emel <<AMB>>swikarisida <<UNK>> hadinaidu <<AMB>>nimishagala nantara neewu <<AMB>>dayawittu <<AMB>>alarm <<UNK>> hondisabahude",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಮೈಕ್",
+          "type": "kannada_ambiguous",
+          "output": "mic",
+          "candidates": [
+            "mic",
+            "mik"
+          ]
+        },
+        {
+          "token": "ನನಗೆ",
+          "type": "kannada_matched",
+          "output": "nanage",
+          "candidates": [
+            "nanage"
+          ]
+        },
+        {
+          "token": "ಇಮೇಲ್",
+          "type": "kannada_matched",
+          "output": "emel",
+          "candidates": [
+            "emel"
+          ]
+        },
+        {
+          "token": "ಕಳುಹಿಸುತ್ತಾರೆ",
+          "type": "kannada_ambiguous",
+          "output": "kaluhisuttare",
+          "candidates": [
+            "kaluhisuttare",
+            "kaluhisutthaare",
+            "kaluhisuttaare"
+          ]
+        },
+        {
+          "token": "ಆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಇಮೇಲ್",
+          "type": "kannada_matched",
+          "output": "emel",
+          "candidates": [
+            "emel"
+          ]
+        },
+        {
+          "token": "ಸ್ವೀಕರಿಸಿದ",
+          "type": "kannada_ambiguous",
+          "output": "swikarisida",
+          "candidates": [
+            "swikarisida",
+            "svikarisida",
+            "sweekarisida"
+          ]
+        },
+        {
+          "token": "ನಾಳೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹದಿನೈದು",
+          "type": "kannada_matched",
+          "output": "hadinaidu",
+          "candidates": [
+            "hadinaidu"
+          ]
+        },
+        {
+          "token": "ನಿಮಿಷಗಳ",
+          "type": "kannada_ambiguous",
+          "output": "nimishagala",
+          "candidates": [
+            "nimishagala",
+            "nimisagala"
+          ]
+        },
+        {
+          "token": "ನಂತರ",
+          "type": "kannada_matched",
+          "output": "nantara",
+          "candidates": [
+            "nantara"
+          ]
+        },
+        {
+          "token": "ನೀವು",
+          "type": "kannada_matched",
+          "output": "neewu",
+          "candidates": [
+            "neewu"
+          ]
+        },
+        {
+          "token": "ದಯವಿಟ್ಟು",
+          "type": "kannada_ambiguous",
+          "output": "dayawittu",
+          "candidates": [
+            "dayawittu",
+            "dayavittu"
+          ]
+        },
+        {
+          "token": "ಅಲಾರಾಂ",
+          "type": "kannada_ambiguous",
+          "output": "alarm",
+          "candidates": [
+            "alarm",
+            "alaram",
+            "alaraam"
+          ]
+        },
+        {
+          "token": "ಅನ್ನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹೊಂದಿಸಬಹುದೇ",
+          "type": "kannada_matched",
+          "output": "hondisabahude",
+          "candidates": [
+            "hondisabahude"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00085",
+      "source_row_index": 85,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಅಮ್ಮಿ ಬಿರಿಯಾನಿ ಯಿಂದ ತೆಗೆಯಬಹುದೇ",
+      "english_reference": "can it takeaway from ammi biryani",
+      "romanized_diagnostic": "ammy <<AMB>>biriyani yinda tegeyabahude",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಅಮ್ಮಿ",
+          "type": "kannada_matched",
+          "output": "ammy",
+          "candidates": [
+            "ammy"
+          ]
+        },
+        {
+          "token": "ಬಿರಿಯಾನಿ",
+          "type": "kannada_ambiguous",
+          "output": "biriyani",
+          "candidates": [
+            "biriyani",
+            "biryani"
+          ]
+        },
+        {
+          "token": "ಯಿಂದ",
+          "type": "kannada_matched",
+          "output": "yinda",
+          "candidates": [
+            "yinda"
+          ]
+        },
+        {
+          "token": "ತೆಗೆಯಬಹುದೇ",
+          "type": "kannada_matched",
+          "output": "tegeyabahude",
+          "candidates": [
+            "tegeyabahude"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00086",
+      "source_row_index": 86,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ವರಾಂಡಾಲಿ ಒಂದ್‌ ಲೈಟ್‌ ಆಫ್‌ ಮಾಡು",
+      "english_reference": "turn off one light on porch",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> <<UNK>> maadu",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ವರಾಂಡಾಲಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಒಂದ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಲೈಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಆಫ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡು",
+          "type": "kannada_matched",
+          "output": "maadu",
+          "candidates": [
+            "maadu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00087",
+      "source_row_index": 87,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಕಳೆದ ತಿಂಗಳಿನಿಂದ ನೀವು ನನ್ನ ಶಾಪಿಂಗ್ ಪಟ್ಟಿಯನ್ನು ಅಳಿಸಬೇಕೆಂದು ನಾನು ಬಯಸುತ್ತೇನೆ",
+      "english_reference": "i want you to delete my shopping list from last month",
+      "romanized_diagnostic": "kaleda tingalininda neewu <<UNK>> <<AMB>>shaaping pattiyannu alisabekendu <<UNK>> bayasuttene",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಕಳೆದ",
+          "type": "kannada_matched",
+          "output": "kaleda",
+          "candidates": [
+            "kaleda"
+          ]
+        },
+        {
+          "token": "ತಿಂಗಳಿನಿಂದ",
+          "type": "kannada_matched",
+          "output": "tingalininda",
+          "candidates": [
+            "tingalininda"
+          ]
+        },
+        {
+          "token": "ನೀವು",
+          "type": "kannada_matched",
+          "output": "neewu",
+          "candidates": [
+            "neewu"
+          ]
+        },
+        {
+          "token": "ನನ್ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಶಾಪಿಂಗ್",
+          "type": "kannada_ambiguous",
+          "output": "shaaping",
+          "candidates": [
+            "shaaping",
+            "saping"
+          ]
+        },
+        {
+          "token": "ಪಟ್ಟಿಯನ್ನು",
+          "type": "kannada_matched",
+          "output": "pattiyannu",
+          "candidates": [
+            "pattiyannu"
+          ]
+        },
+        {
+          "token": "ಅಳಿಸಬೇಕೆಂದು",
+          "type": "kannada_matched",
+          "output": "alisabekendu",
+          "candidates": [
+            "alisabekendu"
+          ]
+        },
+        {
+          "token": "ನಾನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಬಯಸುತ್ತೇನೆ",
+          "type": "kannada_matched",
+          "output": "bayasuttene",
+          "candidates": [
+            "bayasuttene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00088",
+      "source_row_index": 88,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಫಿರಂಗಿ ಕ್ಯಾನನ್ ಕ್ಯಾಮೆರಾಗಳು ಎಲ್ಲಿ ಖರೀದಿಸಬೇಕು",
+      "english_reference": "where to buy cannon cameras",
+      "romanized_diagnostic": "<<AMB>>phirangi <<AMB>>cannon cameragalu ellie <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಫಿರಂಗಿ",
+          "type": "kannada_ambiguous",
+          "output": "phirangi",
+          "candidates": [
+            "phirangi",
+            "firangi"
+          ]
+        },
+        {
+          "token": "ಕ್ಯಾನನ್",
+          "type": "kannada_ambiguous",
+          "output": "cannon",
+          "candidates": [
+            "cannon",
+            "caanon",
+            "cannan"
+          ]
+        },
+        {
+          "token": "ಕ್ಯಾಮೆರಾಗಳು",
+          "type": "kannada_matched",
+          "output": "cameragalu",
+          "candidates": [
+            "cameragalu"
+          ]
+        },
+        {
+          "token": "ಎಲ್ಲಿ",
+          "type": "kannada_matched",
+          "output": "ellie",
+          "candidates": [
+            "ellie"
+          ]
+        },
+        {
+          "token": "ಖರೀದಿಸಬೇಕು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00089",
+      "source_row_index": 89,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಗೆ ವಿಮಾನ ಟಿಕೆಟ್ ಬುಕ್ ಮಾಡಿ",
+      "english_reference": "book a plane ticket to",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> <<AMB>>buq maadi",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಗೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವಿಮಾನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಟಿಕೆಟ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಬುಕ್",
+          "type": "kannada_ambiguous",
+          "output": "buq",
+          "candidates": [
+            "buq",
+            "booq"
+          ]
+        },
+        {
+          "token": "ಮಾಡಿ",
+          "type": "kannada_matched",
+          "output": "maadi",
+          "candidates": [
+            "maadi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00090",
+      "source_row_index": 90,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "olly ನಾಲ್ಕು ಮತ್ತು ಆರು ಎರಡು ಸಂಖ್ಯೆಗಳ ಮೊತ್ತ ಎಷ್ಟು",
+      "english_reference": "olly what's the sum of the two numbers four and six",
+      "romanized_diagnostic": "olly <<AMB>>naalku <<UNK>> <<UNK>> eradu <<UNK>> <<AMB>>motta <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "olly",
+          "type": "latin_preserved",
+          "output": "olly",
+          "candidates": []
+        },
+        {
+          "token": "ನಾಲ್ಕು",
+          "type": "kannada_ambiguous",
+          "output": "naalku",
+          "candidates": [
+            "naalku",
+            "nalku"
+          ]
+        },
+        {
+          "token": "ಮತ್ತು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಆರು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಎರಡು",
+          "type": "kannada_matched",
+          "output": "eradu",
+          "candidates": [
+            "eradu"
+          ]
+        },
+        {
+          "token": "ಸಂಖ್ಯೆಗಳ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮೊತ್ತ",
+          "type": "kannada_ambiguous",
+          "output": "motta",
+          "candidates": [
+            "motta",
+            "mottha"
+          ]
+        },
+        {
+          "token": "ಎಷ್ಟು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00091",
+      "source_row_index": 91,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಲೈಟ್ಸ್‌ನ ಆರ್ಸ್ಬಿಡು",
+      "english_reference": "discontinue use of lights",
+      "romanized_diagnostic": "<<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಲೈಟ್ಸ್‌ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಆರ್ಸ್ಬಿಡು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00092",
+      "source_row_index": 92,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಗೀತಾ ಳ ಹುಟ್ಟುಹಬ್ಬ ವನ್ನು ಇಪ್ಪತ್ತನಾಲ್ಕು ಗಂಟೆಗಳ ಮುಂಚಿತವಾಗಿ ನನಗೆ ನೆನಪಿಸಿ",
+      "english_reference": "remind me of rita's birthday twenty four hours in advance",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> <<UNK>> ippattanaalku <<UNK>> <<AMB>>munchitavagi nanage nenapisi",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಗೀತಾ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಳ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹುಟ್ಟುಹಬ್ಬ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ವನ್ನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಇಪ್ಪತ್ತನಾಲ್ಕು",
+          "type": "kannada_matched",
+          "output": "ippattanaalku",
+          "candidates": [
+            "ippattanaalku"
+          ]
+        },
+        {
+          "token": "ಗಂಟೆಗಳ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮುಂಚಿತವಾಗಿ",
+          "type": "kannada_ambiguous",
+          "output": "munchitavagi",
+          "candidates": [
+            "munchitavagi",
+            "muncitavagi",
+            "munchitawaagi"
+          ]
+        },
+        {
+          "token": "ನನಗೆ",
+          "type": "kannada_matched",
+          "output": "nanage",
+          "candidates": [
+            "nanage"
+          ]
+        },
+        {
+          "token": "ನೆನಪಿಸಿ",
+          "type": "kannada_matched",
+          "output": "nenapisi",
+          "candidates": [
+            "nenapisi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00093",
+      "source_row_index": 93,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನನ್ನ ಹೊಸ ಇಮೇಲ್‌ಗಳನ್ನು ನನಗೆ ತೋರಿಸು",
+      "english_reference": "show me my new emails",
+      "romanized_diagnostic": "<<UNK>> hosa <<UNK>> nanage torisu",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನನ್ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಹೊಸ",
+          "type": "kannada_matched",
+          "output": "hosa",
+          "candidates": [
+            "hosa"
+          ]
+        },
+        {
+          "token": "ಇಮೇಲ್‌ಗಳನ್ನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ನನಗೆ",
+          "type": "kannada_matched",
+          "output": "nanage",
+          "candidates": [
+            "nanage"
+          ]
+        },
+        {
+          "token": "ತೋರಿಸು",
+          "type": "kannada_matched",
+          "output": "torisu",
+          "candidates": [
+            "torisu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00094",
+      "source_row_index": 94,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "9435173602 ಈ ಫ಼ೋನ್‌ ನಂಬರಿನ ವ್ಯಾಕ್ಸೀನ್‍ ಸರ್ಟಿಫಿ಼ಕೇಟ್‌ ಡೌನ್‌ಲೋಡ್‌ ಮಾಡುವ ಸಲುವಾಗಿ ದಯವಿಟ್ಟು ಫಲಾನುಭವಿಯ ಹೆಸರನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.",
+      "english_reference": "Please choose the beneficiary's name in order to download the vaccination certificate for user with phone number 9435173602 .",
+      "romanized_diagnostic": "9435173602 <<UNK>> <<UNK>> nambarina <<UNK>> <<UNK>> <<UNK>> <<AMB>>maduva <<AMB>>saluvagi <<AMB>>dayawittu phalanubhaviya hesarannu <<UNK>> maadi.",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "9435173602",
+          "type": "numeric",
+          "output": "9435173602",
+          "candidates": []
+        },
+        {
+          "token": "ಈ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಫ಼ೋನ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ನಂಬರಿನ",
+          "type": "kannada_matched",
+          "output": "nambarina",
+          "candidates": [
+            "nambarina"
+          ]
+        },
+        {
+          "token": "ವ್ಯಾಕ್ಸೀನ್‍",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಸರ್ಟಿಫಿ಼ಕೇಟ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಡೌನ್‌ಲೋಡ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡುವ",
+          "type": "kannada_ambiguous",
+          "output": "maduva",
+          "candidates": [
+            "maduva",
+            "maaduva"
+          ]
+        },
+        {
+          "token": "ಸಲುವಾಗಿ",
+          "type": "kannada_ambiguous",
+          "output": "saluvagi",
+          "candidates": [
+            "saluvagi",
+            "saluvaagi"
+          ]
+        },
+        {
+          "token": "ದಯವಿಟ್ಟು",
+          "type": "kannada_ambiguous",
+          "output": "dayawittu",
+          "candidates": [
+            "dayawittu",
+            "dayavittu"
+          ]
+        },
+        {
+          "token": "ಫಲಾನುಭವಿಯ",
+          "type": "kannada_matched",
+          "output": "phalanubhaviya",
+          "candidates": [
+            "phalanubhaviya"
+          ]
+        },
+        {
+          "token": "ಹೆಸರನ್ನು",
+          "type": "kannada_matched",
+          "output": "hesarannu",
+          "candidates": [
+            "hesarannu"
+          ]
+        },
+        {
+          "token": "ಆಯ್ಕೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡಿ",
+          "type": "kannada_matched",
+          "output": "maadi",
+          "candidates": [
+            "maadi"
+          ]
+        },
+        {
+          "token": ".",
+          "type": "punct",
+          "output": ".",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00095",
+      "source_row_index": 95,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನನ್‌‌ ಪುಸ್ತ್ಕದಲ್ಲಿರೋ ಲಿಸ್ಟ್ಸ್‌ ಯಾವ್ಯಾವ್ದು",
+      "english_reference": "what lists are in my notebook",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> <<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನನ್‌‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಪುಸ್ತ್ಕದಲ್ಲಿರೋ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಲಿಸ್ಟ್ಸ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಯಾವ್ಯಾವ್ದು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00096",
+      "source_row_index": 96,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ವಾಲ್ಯೂಮ್‌ ಕಡ್ಮೆ ಮಾಡು",
+      "english_reference": "lower the volume",
+      "romanized_diagnostic": "<<UNK>> <<UNK>> maadu",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ವಾಲ್ಯೂಮ್‌",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕಡ್ಮೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡು",
+          "type": "kannada_matched",
+          "output": "maadu",
+          "candidates": [
+            "maadu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00097",
+      "source_row_index": 97,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ಐ ಕಪ್ ಆಫ್ ಜೋ ಇದೀಗ ಚೆನ್ನಾಗಿರುತ್ತದೆ",
+      "english_reference": "i cup of joe would be nice right now",
+      "romanized_diagnostic": "<<UNK>> kup <<UNK>> <<UNK>> <<AMB>>ideega <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ಐ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಕಪ್",
+          "type": "kannada_matched",
+          "output": "kup",
+          "candidates": [
+            "kup"
+          ]
+        },
+        {
+          "token": "ಆಫ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಜೋ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಇದೀಗ",
+          "type": "kannada_ambiguous",
+          "output": "ideega",
+          "candidates": [
+            "ideega",
+            "ediiga",
+            "idiga"
+          ]
+        },
+        {
+          "token": "ಚೆನ್ನಾಗಿರುತ್ತದೆ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00098",
+      "source_row_index": 98,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ದಯವಿಟ್ಟು ಲೈಟ್ ಆಫ್ ಮಾಡಿ",
+      "english_reference": "please switch off the light",
+      "romanized_diagnostic": "<<AMB>>dayawittu <<AMB>>lyt <<UNK>> maadi",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ದಯವಿಟ್ಟು",
+          "type": "kannada_ambiguous",
+          "output": "dayawittu",
+          "candidates": [
+            "dayawittu",
+            "dayavittu"
+          ]
+        },
+        {
+          "token": "ಲೈಟ್",
+          "type": "kannada_ambiguous",
+          "output": "lyt",
+          "candidates": [
+            "lyt",
+            "leite"
+          ]
+        },
+        {
+          "token": "ಆಫ್",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಮಾಡಿ",
+          "type": "kannada_matched",
+          "output": "maadi",
+          "candidates": [
+            "maadi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00099",
+      "source_row_index": 99,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನನಗೆ ಅಡುಗೆಗೆ ಒಳ್ಳೆಯ ಐಡಿಯಾಗಳು ಬೇಕು",
+      "english_reference": "i need good ideas for cooking",
+      "romanized_diagnostic": "nanage adugege olleya <<UNK>> beku",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನನಗೆ",
+          "type": "kannada_matched",
+          "output": "nanage",
+          "candidates": [
+            "nanage"
+          ]
+        },
+        {
+          "token": "ಅಡುಗೆಗೆ",
+          "type": "kannada_matched",
+          "output": "adugege",
+          "candidates": [
+            "adugege"
+          ]
+        },
+        {
+          "token": "ಒಳ್ಳೆಯ",
+          "type": "kannada_matched",
+          "output": "olleya",
+          "candidates": [
+            "olleya"
+          ]
+        },
+        {
+          "token": "ಐಡಿಯಾಗಳು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಬೇಕು",
+          "type": "kannada_matched",
+          "output": "beku",
+          "candidates": [
+            "beku"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPCC-CAND-00100",
+      "source_row_index": 100,
+      "source_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+      "original_kannada": "ನನ್ನ ಬೆಳಗ್ಗೆ ಆರು ಗಂಟೆಯ ಅಲಾರಾಂ ಅನ್ನು ಅಳಿಸಿ",
+      "english_reference": "delete my six am alarm",
+      "romanized_diagnostic": "<<UNK>> belagge <<UNK>> ganteya <<AMB>>alarm <<UNK>> <<UNK>>",
+      "generation_method": "machine_transliterated",
+      "review_status": "unreviewed",
+      "token_details": [
+        {
+          "token": "ನನ್ನ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಬೆಳಗ್ಗೆ",
+          "type": "kannada_matched",
+          "output": "belagge",
+          "candidates": [
+            "belagge"
+          ]
+        },
+        {
+          "token": "ಆರು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಗಂಟೆಯ",
+          "type": "kannada_matched",
+          "output": "ganteya",
+          "candidates": [
+            "ganteya"
+          ]
+        },
+        {
+          "token": "ಅಲಾರಾಂ",
+          "type": "kannada_ambiguous",
+          "output": "alarm",
+          "candidates": [
+            "alarm",
+            "alaram",
+            "alaraam"
+          ]
+        },
+        {
+          "token": "ಅನ್ನು",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        },
+        {
+          "token": "ಅಳಿಸಿ",
+          "type": "kannada_unknown",
+          "output": "<<UNK>>",
+          "candidates": []
+        }
+      ]
+    }
+  ]
+}

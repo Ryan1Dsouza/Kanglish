@@ -1,0 +1,48 @@
+{
+  "complete": true,
+  "processed": 100,
+  "expected": 100,
+  "finished_utc": "2026-10-19T12:48:39.952277+00:00",
+  "overall": {
+    "cases": 100,
+    "operational_failures": 0,
+    "chrf2": 33.2581,
+    "chrf_reference_rows": 100,
+    "dictionary_exact_matches": 0,
+    "dictionary_rows": 0,
+    "number_preserved": 0,
+    "number_eligible": 0,
+    "name_preserved": 0,
+    "name_eligible": 0,
+    "negation_polarity_errors": 19,
+    "negation_eligible": 100,
+    "negative_control_abstentions": 0,
+    "negative_controls": 0,
+    "false_abstentions_real": 0,
+    "real_inputs": 100
+  },
+  "by_suite": {
+    "benchmark_draft": {
+      "cases": 100,
+      "operational_failures": 0,
+      "chrf2": 33.2581,
+      "chrf_reference_rows": 100,
+      "dictionary_exact_matches": 0,
+      "dictionary_rows": 0,
+      "number_preserved": 0,
+      "number_eligible": 0,
+      "name_preserved": 0,
+      "name_eligible": 0,
+      "negation_polarity_errors": 19,
+      "negation_eligible": 100,
+      "negative_control_abstentions": 0,
+      "negative_controls": 0,
+      "false_abstentions_real": 0,
+      "real_inputs": 100
+    }
+  },
+  "predictions_sha256": "3ef81516aad0d5f3e34192b05f0e158de8ec0da6a151dd857b17949065fa1a18",
+  "inputs_unchanged": true,
+  "scoring_policy": "Failed generations are empty translations because Android rejects partial output.",
+  "raw_candidate_chrf2": 33.2581
+}

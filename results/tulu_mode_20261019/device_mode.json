@@ -1,0 +1,18 @@
+{
+  "tvQuickHeading": {
+    "text": "Tulu in. English out.",
+    "checked": "false"
+  },
+  "btnLanguageKannada": {
+    "text": "Kannada",
+    "checked": "false"
+  },
+  "btnLanguageTulu": {
+    "text": "Tulu",
+    "checked": "true"
+  },
+  "tvTuluModeHelp": {
+    "text": "New Tulu messages use the cloud teacher. Approved Tulu phrases work offline.",
+    "checked": "false"
+  }
+}

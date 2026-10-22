@@ -1,0 +1,7 @@
+# Only empty templates belong in Git. Keep contributed text and run outputs local.
+dev.csv
+eval.locked.csv
+eval.lock.json
+indicxlit.csv
+runs/
+consent/

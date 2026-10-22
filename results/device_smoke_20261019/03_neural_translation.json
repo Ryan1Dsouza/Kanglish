@@ -1,0 +1,15 @@
+{
+  "input": "naale college ge barthira?",
+  "actual": "Are you coming to college?",
+  "observations": [
+    {
+      "elapsed_seconds": 2.97,
+      "result": "Translating on your phone..."
+    },
+    {
+      "elapsed_seconds": 5.61,
+      "result": "Are you coming to college?"
+    }
+  ],
+  "timing_note": "Includes ADB and UIAutomator polling overhead; not a throughput benchmark."
+}

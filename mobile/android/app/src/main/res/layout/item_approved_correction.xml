@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="@color/surface_dark"
+    app:cardCornerRadius="12dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+        <TextView android:id="@+id/tvApprovedOriginal" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="@color/text_secondary" android:textIsSelectable="true" android:paddingBottom="8dp" />
+        <TextView android:id="@+id/tvApprovedTranslation" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="@color/text_primary" android:textIsSelectable="true" android:paddingBottom="8dp" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnEditApprovedCorrection" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.MaterialComponents.Button.TextButton" android:text="Edit meaning" android:textAllCaps="false" android:minHeight="48dp" android:textColor="@color/action_text" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnForgetApprovedCorrection" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.MaterialComponents.Button.TextButton" android:text="@string/forget_correction" android:textAllCaps="false" android:textSize="14sp" android:minHeight="48dp" app:cornerRadius="12dp" android:letterSpacing="0" android:textColor="@color/action_text" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

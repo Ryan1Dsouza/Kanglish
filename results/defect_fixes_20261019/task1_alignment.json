@@ -1,0 +1,9 @@
+{
+  "load_segments": [
+    "LOAD           0x000000 0x0000000000000000 0x0000000000000000 0x5eb4e0 0x5eb4e0 R E 0x4000",
+    "LOAD           0x5eb4e0 0x00000000005ef4e0 0x00000000005ef4e0 0x01fb38 0x020b20 RW  0x4000",
+    "LOAD           0x60b018 0x0000000000613018 0x0000000000613018 0x000b78 0x084a88 RW  0x4000"
+  ],
+  "zipalign_pass": true,
+  "apk_sha256": "ebbdefabece3a95861c86f9096f070341577e2e1b278140b481c4bb51ca90e20"
+}

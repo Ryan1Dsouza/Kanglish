@@ -1,0 +1,6 @@
+{
+  "cloud_review_before": "true",
+  "cloud_review_after": "false",
+  "app_was_force_stopped_before_change": true,
+  "unexpected_review_result_observed": true
+}

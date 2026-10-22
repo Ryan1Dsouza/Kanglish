@@ -1,0 +1,159 @@
+--- a/app/src/main/AndroidManifest.xml
++++ b/app/src/main/AndroidManifest.xml
+@@ -51,10 +51,11 @@
+                 android:resource="@xml/accessibility_service_config" />
+         </service>
+ 
+-        <!-- Transparent Activity to read clipboard with real window focus on Android 10-15 -->
++        <!-- Separate transient task: clipboard focus must not raise the main app task. -->
+         <activity
+             android:name=".overlay.ClipboardTrampolineActivity"
+-            android:theme="@android:style/Theme.Translucent.NoTitleBar"
++            android:theme="@style/Theme.Kanglish.Clipboard"
++            android:taskAffinity=""
+             android:excludeFromRecents="true"
+             android:noHistory="true"
+             android:exported="false" />
+--- a/app/src/main/java/org/kanglish/app/overlay/ClipboardTrampolineActivity.kt
++++ b/app/src/main/java/org/kanglish/app/overlay/ClipboardTrampolineActivity.kt
+@@ -3,11 +3,21 @@
+ import android.app.Activity
+ import android.content.ClipboardManager
+ import android.content.Context
++import android.content.Intent
+ import android.os.Bundle
++import android.util.Log
+ import android.widget.FrameLayout
+ import android.widget.Toast
+ 
+ class ClipboardTrampolineActivity : Activity() {
++
++    companion object {
++        private const val TAG = "KanglishClipboard"
++
++        fun captureIntent(context: Context) = Intent(context, ClipboardTrampolineActivity::class.java).apply {
++            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_NO_ANIMATION)
++        }
++    }
+ 
+     private var hasDispatched = false
+ 
+@@ -16,10 +26,12 @@
+         overridePendingTransition(0, 0)
+         // A resumed activity may not yet own clipboard access. Wait for window focus.
+         setContentView(FrameLayout(this))
++        Log.d(TAG, "capture created task=$taskId; waiting for window focus")
+     }
+ 
+     override fun onWindowFocusChanged(hasFocus: Boolean) {
+         super.onWindowFocusChanged(hasFocus)
++        Log.d(TAG, "capture focus=$hasFocus dispatched=$hasDispatched")
+         if (hasFocus && !hasDispatched) {
+             readAndDispatchClipboard()
+         }
+@@ -33,17 +45,22 @@
+             if (clip != null && clip.itemCount > 0) {
+                 val text = clip.getItemAt(0).text?.toString()?.trim() ?: ""
+                 if (text.isNotBlank()) {
++                    // Log the path, never the copied message.
++                    Log.d(TAG, "capture succeeded chars=${text.length}; dispatching to overlay")
+                     FloatingSidebarService.translateAndShow(this, text)
+-                    finish()
+-                    overridePendingTransition(0, 0)
+                     return
+                 }
+             }
++            Log.d(TAG, "capture empty or non-text clipboard")
+             Toast.makeText(this, "Copy a text message in WhatsApp, then tap the Kanglish bubble.", Toast.LENGTH_LONG).show()
+         } catch (e: Exception) {
++            Log.w(TAG, "capture failed: ${e.javaClass.simpleName}")
+             Toast.makeText(this, "Could not read copied text. Open Kanglish and use Paste instead.", Toast.LENGTH_LONG).show()
++        } finally {
++            // Always remove only this transient task and reveal the source app immediately.
++            finish()
++            overridePendingTransition(0, 0)
++            Log.d(TAG, "capture finished task=$taskId")
+         }
+-        finish()
+-        overridePendingTransition(0, 0)
+     }
+ }
+--- a/app/src/main/java/org/kanglish/app/overlay/FloatingSidebarService.kt
++++ b/app/src/main/java/org/kanglish/app/overlay/FloatingSidebarService.kt
+@@ -23,6 +23,7 @@
+ import android.widget.ProgressBar
+ import android.widget.TextView
+ import android.widget.Toast
++import android.util.Log
+ import androidx.core.app.NotificationCompat
+ import androidx.core.content.ContextCompat
+ import kotlinx.coroutines.CoroutineScope
+@@ -383,10 +384,10 @@
+     private fun triggerClipboardPaste() {
+         collapsePanel()
+         try {
+-            startActivity(Intent(this, ClipboardTrampolineActivity::class.java).apply {
+-                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_NO_ANIMATION)
+-            })
+-        } catch (_: RuntimeException) {
++            Log.d("KanglishClipboard", "bubble requested focused clipboard capture")
++            startActivity(ClipboardTrampolineActivity.captureIntent(this))
++        } catch (e: RuntimeException) {
++            Log.w("KanglishClipboard", "capture launch failed: ${e.javaClass.simpleName}")
+             Toast.makeText(this, "Use Paste copied text in the Kanglish notification, or open the app and tap Paste.", Toast.LENGTH_LONG).show()
+         }
+     }
+@@ -480,7 +481,7 @@
+             .setSmallIcon(android.R.drawable.ic_dialog_info)
+             .setContentIntent(pendingIntent)
+             .addAction(android.R.drawable.ic_menu_edit, "Paste copied text", PendingIntent.getActivity(
+-                this, 1, Intent(this, ClipboardTrampolineActivity::class.java),
++                this, 1, ClipboardTrampolineActivity.captureIntent(this),
+                 PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
+             ))
+             .setOngoing(true)
+--- a/app/src/main/res/values/themes.xml
++++ b/app/src/main/res/values/themes.xml
+@@ -1,5 +1,13 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
++    <style name="Theme.Kanglish.Clipboard" parent="android:style/Theme.Translucent.NoTitleBar">
++        <item name="android:windowIsTranslucent">true</item>
++        <item name="android:windowBackground">@android:color/transparent</item>
++        <item name="android:colorBackgroundCacheHint">@null</item>
++        <item name="android:backgroundDimEnabled">false</item>
++        <item name="android:windowAnimationStyle">@null</item>
++        <item name="android:windowDisablePreview">true</item>
++    </style>
+     <style name="Theme.Kanglish" parent="Theme.MaterialComponents.NoActionBar">
+         <item name="colorPrimary">@color/primary</item>
+         <item name="colorPrimaryVariant">@color/primary_dark</item>
+--- a/app/src/test/java/org/kanglish/app/ClipboardEntryTest.kt
++++ b/app/src/test/java/org/kanglish/app/ClipboardEntryTest.kt
+@@ -4,6 +4,8 @@
+ import android.content.ClipData
+ import android.content.ClipboardManager
+ import android.content.Intent
++import android.content.ComponentName
++import android.content.pm.ActivityInfo
+ import org.junit.Assert.*
+ import org.junit.Before
+ import org.junit.Test
+@@ -25,6 +27,17 @@
+     private val app get() = RuntimeEnvironment.getApplication()
+ 
+     @Before fun setup() { ShadowSettings.setCanDrawOverlays(true) }
++
++    @Test fun clipboardCaptureUsesAnUnrelatedTransientTask() {
++        val info = app.packageManager.getActivityInfo(ComponentName(app, ClipboardTrampolineActivity::class.java), 0)
++        assertTrue(info.taskAffinity.isNullOrEmpty())
++        assertTrue(info.flags and ActivityInfo.FLAG_EXCLUDE_FROM_RECENTS != 0)
++        assertTrue(info.flags and ActivityInfo.FLAG_NO_HISTORY != 0)
++        val launch = ClipboardTrampolineActivity.captureIntent(app)
++        assertTrue(launch.flags and Intent.FLAG_ACTIVITY_NEW_TASK != 0)
++        assertTrue(launch.flags and Intent.FLAG_ACTIVITY_NO_ANIMATION != 0)
++        assertEquals(ClipboardTrampolineActivity::class.java.name, launch.component?.className)
++    }
+ 
+     @Test fun resumeDoesNotConsumeClipboardBeforeFocusAndFocusDispatchesOnce() {
+         val text = "Copied message\nSecond line 🙂"

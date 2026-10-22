@@ -1,0 +1,7 @@
+--------- beginning of main
+10-19 17:58:38.426 D/KanglishClipboard(31059): bubble requested focused clipboard capture
+10-19 17:58:38.484 D/KanglishClipboard(31059): capture created task=4091; waiting for window focus
+10-19 17:58:38.547 D/KanglishClipboard(31059): capture focus=true dispatched=false
+10-19 17:58:38.555 D/KanglishClipboard(31059): capture succeeded chars=15; dispatching to overlay
+10-19 17:58:38.568 D/KanglishClipboard(31059): capture finished task=4091
+10-19 17:58:38.627 D/KanglishClipboard(31059): capture focus=false dispatched=true

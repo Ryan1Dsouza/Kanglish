@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.kanglish.app.PrivacyDefaultsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-19T12:44:18" hostname="RYAN" time="0.095">
+  <properties/>
+  <testcase name="freshInstallHasNoBundledCredentialsOrCloudOptIn" classname="org.kanglish.app.PrivacyDefaultsTest" time="0.036"/>
+  <testcase name="oldEnabledSettingDoesNotImplyConsentToNewCloudMode" classname="org.kanglish.app.PrivacyDefaultsTest" time="0.059"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

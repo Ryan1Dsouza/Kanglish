@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp"
+    app:cardBackgroundColor="@color/surface_dark"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/surface_card"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Header: Sender & Time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tvSender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sender"
+                android:textColor="@color/badge_sender"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvTimestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:15"
+                android:textColor="@color/text_muted"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Original Kanglish Box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/surface_card"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KANGLISH ORIGINAL"
+                android:textColor="@color/accent"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvOriginalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Original Kanglish text"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:lineSpacingExtra="2dp" />
+
+            <TextView
+                android:id="@+id/tvGlossaryHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hints: guru -> bro"
+                android:textColor="@color/primary_light"
+                android:textSize="11sp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Translated English Box -->
+        <LinearLayout
+            android:id="@+id/boxTranslation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/translated_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENGLISH MEANING"
+                android:textColor="@color/translated_border"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvTranslatedText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap Translate to generate meaning"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:lineSpacingExtra="2dp" />
+
+            <ProgressBar
+                android:id="@+id/pbTranslating"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Teacher AI Verification Box -->
+        <LinearLayout
+            android:id="@+id/boxTeacherVerification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/teacher_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/tvTeacherBadge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🎓 TEACHER AI SUGGESTION"
+                    android:textColor="@color/teacher_badge"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTeachModel"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Save meaning"
+                    android:textColor="@color/bg_dark"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/teacher_learn"
+                    app:cornerRadius="6dp"
+                    android:paddingHorizontal="10dp"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTeacherText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teacher suggestion"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:lineSpacingExtra="2dp" />
+        </LinearLayout>
+
+        <!-- Flagged Note (if user submitted feedback) -->
+        <TextView
+            android:id="@+id/tvUserCorrection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flagged correction: ..."
+            android:textColor="@color/flag_wrong"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+
+        <!-- Actions Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTranslateItem"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/btn_translate"
+                android:textColor="@color/primary_light"
+                android:textSize="12sp"
+                android:paddingHorizontal="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCopyItem"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/btn_copy"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:paddingHorizontal="10dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnWrongMeaning"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/btn_wrong_meaning"
+                android:textColor="@color/flag_wrong"
+                android:textSize="11sp"
+                android:paddingHorizontal="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

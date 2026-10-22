@@ -1,0 +1,10 @@
+{
+  "direct_process_text_intent_pass": true,
+  "input": "sakkath aagide",
+  "actual": "It's awesome / great.",
+  "scope": "Direct ADB intent only; source-app selection-menu discovery not tested.",
+  "compatibility_warning_reappeared": true,
+  "bubble_close_pass": true,
+  "app_fatal_anr_markers": [],
+  "pid": "25078"
+}

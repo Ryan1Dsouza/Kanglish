@@ -1,0 +1,9 @@
+{
+  "input": "Hey guru scene enu ivattu?",
+  "visible_outputs": [
+    "Hey, what's the plan?",
+    "Tap Translate to generate English meaning"
+  ],
+  "quality_graded": false,
+  "row_completed": true
+}

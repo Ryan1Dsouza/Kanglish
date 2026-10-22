@@ -1,0 +1,18 @@
+{
+  "built_utc": "2026-10-19T13:04:40.756038+00:00",
+  "apk": "results\\audio_captions_20261019\\kanglish-audio-debug.apk",
+  "apk_sha256": "780e57e81caf071a93f5ee6b9564a85a2041913f60222c706ec3380e0ac4f54e",
+  "apk_bytes": 26252775,
+  "tests_passed": 51,
+  "tests_failed": 0,
+  "ui_preview": "mobile/android/app/build/outputs/ui-preview/audio-captions.png",
+  "speech_models": "Android provider-managed; exact model not exposed",
+  "configured_phone_provider": "com.google.android.tts/com.google.android.apps.speech.tts.googletts.service.GoogleTTSRecognitionService",
+  "online_default": false,
+  "external_model_api_calls_during_implementation": 0,
+  "real_microphone_accuracy_tested": false,
+  "training_candidates_unchanged": true,
+  "training_started": false,
+  "installed_on_s23_fe": true,
+  "install_command": "adb -s 192.168.1.36:34679 install -r mobile/android/app/build/outputs/apk/debug/app-debug.apk"
+}

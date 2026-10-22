@@ -1,0 +1,338 @@
+--------- beginning of system
+10-19 17:13:58.491 D/ActivityThread(25078): org.kanglish.app will use render engine as VK
+10-19 17:13:58.495 I/DisplayManager(25078): Choreographer implicitly registered for the refresh rate.
+10-19 17:15:27.074 D/InsetsController(25078): hide(ime())
+10-19 17:17:28.836 D/InsetsController(25078): hide(ime())
+10-19 17:17:54.095 D/InsetsController(25078): hide(ime())
+10-19 17:18:45.220 D/InsetsController(25078): show(ime())
+10-19 17:18:45.220 D/InsetsController(25078): Setting requestedVisibleTypes to 511 (was 503)
+10-19 17:18:46.366 D/InsetsController(25078): hide(ime())
+10-19 17:18:46.369 D/InsetsController(25078): Setting requestedVisibleTypes to 503 (was 511)
+10-19 17:18:46.372 D/Activity(25078): onKeyUp(KEYCODE_BACK) isTracking()=false isCanceled()=true hasCallback=false
+10-19 17:19:31.949 D/InsetsController(25078): show(ime())
+10-19 17:19:31.950 D/InsetsController(25078): Setting requestedVisibleTypes to 511 (was 503)
+10-19 17:19:32.959 D/InsetsController(25078): hide(ime())
+10-19 17:19:32.962 D/InsetsController(25078): Setting requestedVisibleTypes to 503 (was 511)
+10-19 17:19:32.965 D/Activity(25078): onKeyUp(KEYCODE_BACK) isTracking()=false isCanceled()=true hasCallback=false
+10-19 17:19:48.837 D/InsetsController(25078): show(ime())
+10-19 17:19:48.837 D/InsetsController(25078): Setting requestedVisibleTypes to 511 (was 503)
+10-19 17:19:49.623 D/InsetsController(25078): hide(ime())
+10-19 17:19:49.627 D/InsetsController(25078): Setting requestedVisibleTypes to 503 (was 511)
+10-19 17:19:49.629 D/Activity(25078): onKeyUp(KEYCODE_BACK) isTracking()=false isCanceled()=true hasCallback=false
+10-19 17:22:28.513 D/InsetsController(25078): show(ime())
+10-19 17:22:28.514 D/InsetsController(25078): Setting requestedVisibleTypes to 511 (was 503)
+10-19 17:22:29.785 D/InsetsController(25078): hide(ime())
+10-19 17:22:29.786 D/InsetsController(25078): Setting requestedVisibleTypes to 503 (was 511)
+10-19 17:22:29.788 D/Activity(25078): onKeyUp(KEYCODE_BACK) isTracking()=false isCanceled()=true hasCallback=false
+--------- beginning of main
+10-19 17:29:26.943 I/VRI[]@5a367be(25078): ViewPostIme pointer 0
+10-19 17:29:26.951 I/VRI[]@5a367be(25078): call setFrameRateCategory for touch hint category=high hint, reason=touch, vri=VRI[]@5a367be
+10-19 17:29:26.955 I/VRI[]@5a367be(25078): ViewPostIme pointer 1
+10-19 17:29:26.992 I/BLASTBufferQueue_Java(25078): update, w= 147 h= 147 mName = VRI[]@5a367be mNativeObject= 0xb4000072e0e9e9a0 sc.mNativeObject= 0xb400007390d27d50 format= -3 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3592 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 
+10-19 17:29:26.992 I/VRI[]@5a367be(25078): Relayout returned: old=(897,1162,1044,1309) new=(897,1162,1044,1309) relayoutAsync=true req=(147,147)0 dur=1 res=0x0 s={true 0xb400007280d8ffc0} ch=false seqId=0
+10-19 17:29:26.994 I/VRI[]@5a367be(25078): registerCallbackForPendingTransactions
+10-19 17:29:26.997 I/VRI[]@5a367be(25078): mWNT: t=0xb400007340d36410 mBlastBufferQueue=0xb4000072e0e9e9a0 fn= 14 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$10.onFrameDraw:6615 android.view.ViewRootImpl$4.onFrameDraw:2485 android.view.ThreadedRenderer$1.onFrameDraw:751 
+10-19 17:29:27.001 I/VRI[MainActivity]@b8dc34d(25078): handleAppVisibility mAppVisible = false visible = true
+10-19 17:29:27.007 D/BBA2    (25078): setIsFg isFg = true
+10-19 17:29:27.008 D/ActivityThread(25078): org.kanglish.app will use render engine as VK
+10-19 17:29:27.059 I/DecorView(25078): setWindowBackground: isPopOver=false color=0 d=android.graphics.drawable.ColorDrawable@735e356
+10-19 17:29:27.067 D/ViewRootImpl(25078): desktopMode is false
+10-19 17:29:27.067 I/ViewRootImpl(25078): dVRR is disabled
+10-19 17:29:27.068 D/NativeCustomFrequencyManager(25078): [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+10-19 17:29:27.075 D/InputTransport(25078): Input channel constructed: 'a2a92fe', fd=131
+10-19 17:29:27.076 I/InsetsController(25078): onStateChanged: host=org.kanglish.app/org.kanglish.app.overlay.ClipboardTrampolineActivity, from=android.view.ViewRootImpl.onInsetsStateChanged:3038, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2340), mDisplayCutout=DisplayCutout{insets=Rect(0, 82 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(511, 24 - 569, 82), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2340 physicalDisplayWidth=1080 physicalDisplayHeight=2340 density={2.8125} cutoutSpec={M 0,0 M 0,8.533333333333333 a 10.31111111111111â€¬,10.31111111111111â€¬ 0 1,0 0,20.62222222222222â€¬ a 10.31111111111111â€¬,10.31111111111111â€¬ 0 1,0 0,-20.62222222222222â€¬ Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}} sideOverrides={}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=105, center=Point(105, 105)}, RoundedCorner{position=TopRight, radius=105, center=Point(975, 105)}, RoundedCorner{position=BottomRight, radius=105, center=Point(975, 2235)}, RoundedCorner{position=BottomLeft, radius=105, center=Point(105, 2235)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2340), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(964, 0 - 1080, 97) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2340 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {af850001 mType=navigationBars mFrame=[0,2301][1080,2340] mAttachedInsets=null mVisible=true mFlags=SUPPRESS_SCRIM mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {af850004 mType=systemGestures mFrame=[0,0][78,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=LEFT mBoundingRects=null}, InsetsSource: {af850005 mType=mandatorySystemGestures mFrame=[0,2256][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {af850006 mType=tappableElement mFrame=[0,0][0,0] mAttachedInsets=null mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {af850024 mType=systemGestures mFrame=[1002,0][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=RIGHT mBoundingRects=null}, InsetsSource: {db110000 mType=statusBars mFrame=[0,0][1080,97] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {db110005 mType=mandatorySystemGestures mFrame=[0,0][1080,114] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {db110006 mType=tappableElement mFrame=[0,0][1080,97] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mAttachedInsets=null mVisible=false mFlags=INVALID mSideHint=NONE mBoundingRects=null}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,82] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null} }
+10-19 17:29:27.076 I/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): synced displayState. AttachInfo displayState=2
+10-19 17:29:27.077 I/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): setView = com.android.internal.policy.DecorView@e3db5a9 IsHRR=false mFlingFrameRateChange=0 TM=true
+10-19 17:29:27.078 D/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): WindowInsets changed: 1080x2340 statusBars:[0,97,0,0] navigationBars:[0,0,0,39] mandatorySystemGestures:[0,114,0,84] 
+10-19 17:29:27.079 D/WindowOnBackDispatcher(25078): setTopOnBackInvokedCallback (unwrapped): android.view.ViewRootImpl$$ExternalSyntheticLambda16@756072e
+10-19 17:29:27.089 W/libc    (25078): Access denied finding property "vendor.perf.ems.egg"
+10-19 17:29:27.090 I/BLASTBufferQueue_Java(25078): new BLASTBufferQueue, mName= VRI[ClipboardTrampolineActivity]@7ba2fd7 mNativeObject= 0xb4000072e0d8b880 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3603 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 android.view.Choreographer$CallbackRecord.run:1970 android.view.Choreographer.doCallbacks:1423 android.view.Choreographer.doFrame:1348 android.view.Choreographer$FrameDisplayEventReceiver.run:1930 
+10-19 17:29:27.090 I/BLASTBufferQueue_Java(25078): update, w= 1080 h= 2340 mName = VRI[ClipboardTrampolineActivity]@7ba2fd7 mNativeObject= 0xb4000072e0d8b880 sc.mNativeObject= 0xb400007390d0c810 format= -2 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3608 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 
+10-19 17:29:27.091 W/libc    (25078): Access denied finding property "vendor.perf.ems.egg"
+10-19 17:29:27.091 I/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) relayoutAsync=false req=(1080,2340)0 dur=8 res=0x3 s={true 0xb400007280d7eaf0} ch=true seqId=0
+10-19 17:29:27.091 I/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): performConfigurationChange setNightDimText nightDimLevel=0
+10-19 17:29:27.092 D/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): mThreadedRenderer.initialize() mSurface={isValid=true 0xb400007280d7eaf0} hwInitialized=true
+10-19 17:29:27.092 D/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): reportNextDraw android.view.ViewRootImpl.performTraversals:5507 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 android.view.Choreographer$CallbackRecord.run:1970 
+10-19 17:29:27.092 D/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): Setup new sync=wmsSync-VRI[ClipboardTrampolineActivity]@7ba2fd7#16
+10-19 17:29:27.092 I/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): Creating new active sync group VRI[ClipboardTrampolineActivity]@7ba2fd7#17
+10-19 17:29:27.093 D/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): registerCallbacksForSync syncBuffer=false
+10-19 17:29:27.094 D/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): Received frameDrawingCallback syncResult=0 frameNum=1.
+10-19 17:29:27.094 I/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): mWNT: t=0xb400007340d58a70 mBlastBufferQueue=0xb4000072e0d8b880 fn= 1 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$12.onFrameDraw:15561 android.view.ThreadedRenderer$1.onFrameDraw:751 <bottom of call stack> 
+10-19 17:29:27.094 I/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): Setting up sync and frameCommitCallback
+10-19 17:29:27.097 I/BLASTBufferQueue(25078): [VRI[ClipboardTrampolineActivity]@7ba2fd7#6](f:0,a:0,s:0) onFrameAvailable the first frame is available
+10-19 17:29:27.099 I/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+10-19 17:29:27.100 D/HWUI    (25078): CFMS:: SetUp Pid : 25078    Tid : 25094
+10-19 17:29:27.100 D/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): reportDrawFinished seqId=0
+10-19 17:29:27.101 I/VRI[MainActivity]@b8dc34d(25078): stopped(false) old = true
+10-19 17:29:27.101 D/VRI[MainActivity]@b8dc34d(25078): WindowStopped on org.kanglish.app/org.kanglish.app.ui.MainActivity set to false
+10-19 17:29:27.102 D/ViewRootImpl(25078): Skipping stats log for color mode
+10-19 17:29:27.114 D/HWUI    (25078): HWUI - treat SMPTE_170M as sRGB
+10-19 17:29:27.117 D/AutofillManager(25078): view not autofillable - has multiline input type
+10-19 17:29:27.129 I/InsetsController(25078): onStateChanged: host=org.kanglish.app/org.kanglish.app.ui.MainActivity, from=android.view.ViewRootImpl.onInsetsStateChanged:3038, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2340), mDisplayCutout=DisplayCutout{insets=Rect(0, 82 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(511, 24 - 569, 82), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2340 physicalDisplayWidth=1080 physicalDisplayHeight=2340 density={2.8125} cutoutSpec={M 0,0 M 0,8.533333333333333 a 10.31111111111111â€¬,10.31111111111111â€¬ 0 1,0 0,20.62222222222222â€¬ a 10.31111111111111â€¬,10.31111111111111â€¬ 0 1,0 0,-20.62222222222222â€¬ Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}} sideOverrides={}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=105, center=Point(105, 105)}, RoundedCorner{position=TopRight, radius=105, center=Point(975, 105)}, RoundedCorner{position=BottomRight, radius=105, center=Point(975, 2235)}, RoundedCorner{position=BottomLeft, radius=105, center=Point(105, 2235)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2340), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(964, 0 - 1080, 97) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2340 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {af850001 mType=navigationBars mFrame=[0,2301][1080,2340] mAttachedInsets=null mVisible=true mFlags=SUPPRESS_SCRIM mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {af850004 mType=systemGestures mFrame=[0,0][78,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=LEFT mBoundingRects=null}, InsetsSource: {af850005 mType=mandatorySystemGestures mFrame=[0,2256][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {af850006 mType=tappableElement mFrame=[0,0][0,0] mAttachedInsets=null mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {af850024 mType=systemGestures mFrame=[1002,0][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=RIGHT mBoundingRects=null}, InsetsSource: {db110000 mType=statusBars mFrame=[0,0][1080,97] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {db110005 mType=mandatorySystemGestures mFrame=[0,0][1080,114] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {db110006 mType=tappableElement mFrame=[0,0][1080,97] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mAttachedInsets=null mVisible=false mFlags=INVALID mSideHint=NONE mBoundingRects=null}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,82] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null} }
+10-19 17:29:27.129 W/libc    (25078): Access denied finding property "vendor.perf.ems.egg"
+10-19 17:29:27.131 I/BLASTBufferQueue_Java(25078): new BLASTBufferQueue, mName= VRI[MainActivity]@b8dc34d mNativeObject= 0xb4000072e0de5e20 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3603 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 android.view.Choreographer$CallbackRecord.run:1970 android.view.Choreographer.doCallbacks:1423 android.view.Choreographer.doFrame:1348 android.view.Choreographer$FrameDisplayEventReceiver.run:1930 
+10-19 17:29:27.131 I/BLASTBufferQueue_Java(25078): update, w= 1080 h= 2340 mName = VRI[MainActivity]@b8dc34d mNativeObject= 0xb4000072e0de5e20 sc.mNativeObject= 0xb400007390d0c450 format= -1 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3608 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 
+10-19 17:29:27.133 W/libc    (25078): Access denied finding property "vendor.perf.ems.egg"
+10-19 17:29:27.133 I/VRI[MainActivity]@b8dc34d(25078): Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) relayoutAsync=false req=(1080,2340)0 dur=12 res=0x3 s={true 0xb400007280d98d60} ch=true seqId=0
+10-19 17:29:27.134 D/VRI[MainActivity]@b8dc34d(25078): mThreadedRenderer.initialize() mSurface={isValid=true 0xb400007280d98d60} hwInitialized=true
+10-19 17:29:27.134 D/VRI[MainActivity]@b8dc34d(25078): reportNextDraw android.view.ViewRootImpl.performTraversals:5507 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 android.view.Choreographer$CallbackRecord.run:1970 
+10-19 17:29:27.135 D/VRI[MainActivity]@b8dc34d(25078): Setup new sync=wmsSync-VRI[MainActivity]@b8dc34d#18
+10-19 17:29:27.135 I/VRI[MainActivity]@b8dc34d(25078): Creating new active sync group VRI[MainActivity]@b8dc34d#19
+10-19 17:29:27.135 D/VRI[MainActivity]@b8dc34d(25078): Start draw after previous draw not visible
+10-19 17:29:27.135 D/VRI[MainActivity]@b8dc34d(25078): registerCallbacksForSync syncBuffer=false
+10-19 17:29:27.154 D/VRI[MainActivity]@b8dc34d(25078): Received frameDrawingCallback syncResult=0 frameNum=1.
+10-19 17:29:27.155 I/VRI[MainActivity]@b8dc34d(25078): mWNT: t=0xb400007340d38470 mBlastBufferQueue=0xb4000072e0de5e20 fn= 1 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$12.onFrameDraw:15561 android.view.ThreadedRenderer$1.onFrameDraw:751 <bottom of call stack> 
+10-19 17:29:27.155 I/VRI[MainActivity]@b8dc34d(25078): Setting up sync and frameCommitCallback
+10-19 17:29:27.155 I/BLASTBufferQueue(25078): [VRI[MainActivity]@b8dc34d#7](f:0,a:0,s:0) onFrameAvailable the first frame is available
+10-19 17:29:27.157 I/VRI[MainActivity]@b8dc34d(25078): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+10-19 17:29:27.159 D/VRI[MainActivity]@b8dc34d(25078): reportDrawFinished seqId=0
+10-19 17:29:29.995 I/VRI[]@5a367be(25078): call setFrameRateCategory for touch hint category=no preference, reason=boost timeout, vri=VRI[]@5a367be
+10-19 17:30:43.809 I/InsetsSourceConsumer(25078): applyRequestedVisibilityToControl: visible=true, type=statusBars, host=org.kanglish.app/org.kanglish.app.overlay.ClipboardTrampolineActivity
+10-19 17:30:43.814 I/InsetsSourceConsumer(25078): applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=org.kanglish.app/org.kanglish.app.overlay.ClipboardTrampolineActivity
+10-19 17:30:43.815 D/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb400007280d7eaf0}
+10-19 17:30:43.837 D/InputMethodManagerUtils(25078): startInputInner - Id : 0
+10-19 17:30:43.838 I/InputMethodManager(25078): startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+10-19 17:30:43.851 D/InputTransport(25078): Input channel constructed: 'ClientS', fd=196
+10-19 17:30:43.888 D/InsetsController(25078): hide(ime())
+10-19 17:30:43.888 I/ImeTracker(25078): org.kanglish.app:e1df8a78: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-19 17:30:43.903 I/InsetsController(25078): onStateChanged: host=, from=android.view.ViewRootImpl.onInsetsStateChanged:3038, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2340), mDisplayCutout=DisplayCutout{insets=Rect(0, 82 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(511, 24 - 569, 82), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2340 physicalDisplayWidth=1080 physicalDisplayHeight=2340 density={2.8125} cutoutSpec={M 0,0 M 0,8.533333333333333 a 10.31111111111111â€¬,10.31111111111111â€¬ 0 1,0 0,20.62222222222222â€¬ a 10.31111111111111â€¬,10.31111111111111â€¬ 0 1,0 0,-20.62222222222222â€¬ Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}} sideOverrides={}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=105, center=Point(105, 105)}, RoundedCorner{position=TopRight, radius=105, center=Point(975, 105)}, RoundedCorner{position=BottomRight, radius=105, center=Point(975, 2235)}, RoundedCorner{position=BottomLeft, radius=105, center=Point(105, 2235)}]}  mRoundedCornerFrame=Rect(0, 0 - 0, 0), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(964, 0 - 1080, 97) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2340 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {af850001 mType=navigationBars mFrame=[0,2301][1080,2340] mAttachedInsets=null mVisible=true mFlags=SUPPRESS_SCRIM mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {af850004 mType=systemGestures mFrame=[0,0][78,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=LEFT mBoundingRects=null}, InsetsSource: {af850005 mType=mandatorySystemGestures mFrame=[0,2256][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {af850006 mType=tappableElement mFrame=[0,0][0,0] mAttachedInsets=null mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {af850024 mType=systemGestures mFrame=[1002,0][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=RIGHT mBoundingRects=null}, InsetsSource: {db110000 mType=statusBars mFrame=[0,0][1080,97] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {db110005 mType=mandatorySystemGestures mFrame=[0,0][1080,114] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {db110006 mType=tappableElement mFrame=[0,0][1080,97] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,82] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null} }
+10-19 17:30:43.904 I/BLASTBufferQueue_Java(25078): update, w= 903 h= 1303 mName = VRI[]@5a367be mNativeObject= 0xb4000072e0e9e9a0 sc.mNativeObject= 0xb400007390d29f10 format= -3 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3592 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 
+10-19 17:30:43.904 I/VRI[]@5a367be(25078): Relayout returned: old=(897,1162,1044,1309) new=(146,998,1049,2301) relayoutAsync=false req=(903,1303)0 dur=11 res=0x0 s={true 0xb400007280d8ffc0} ch=false seqId=0
+10-19 17:30:43.905 D/VRI[]@5a367be(25078): mThreadedRenderer.updateSurface() mSurface={isValid=true 0xb400007280d8ffc0}
+10-19 17:30:43.907 D/ScrollView(25078):  onsize change changed 
+10-19 17:30:43.907 I/VRI[]@5a367be(25078): registerCallbackForPendingTransactions
+10-19 17:30:43.911 I/VRI[]@5a367be(25078): mWNT: t=0xb400007340d50b40 mBlastBufferQueue=0xb4000072e0e9e9a0 fn= 18 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$10.onFrameDraw:6615 android.view.ViewRootImpl$4.onFrameDraw:2485 android.view.ThreadedRenderer$1.onFrameDraw:751 
+10-19 17:30:43.913 I/ImeFocusController(25078): onPreWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+10-19 17:30:43.913 I/ImeFocusController(25078): onPostWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+10-19 17:30:43.928 D/AutofillManager(25078): view not autofillable - has multiline input type
+10-19 17:30:43.931 I/VRI[]@5a367be(25078): handleResized, frames=ClientWindowFrames{frame=[146,998][1049,2301] display=[0,97][1080,2301] parentFrame=[0,0][0,0]} displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false dragResizingChanged=false
+10-19 17:30:43.951 I/InsetsSourceConsumer(25078): applyRequestedVisibilityToControl: visible=true, type=statusBars, host=org.kanglish.app/org.kanglish.app.ui.MainActivity
+10-19 17:30:43.951 I/InsetsSourceConsumer(25078): applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=org.kanglish.app/org.kanglish.app.ui.MainActivity
+10-19 17:30:43.952 I/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): handleAppVisibility mAppVisible = true visible = false
+10-19 17:30:43.952 D/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): visibilityChanged oldVisibility=true newVisibility=false
+10-19 17:30:43.952 D/VRI[MainActivity]@b8dc34d(25078): mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb400007280d98d60}
+10-19 17:30:43.970 D/InputMethodManagerUtils(25078): startInputInner - Id : 0
+10-19 17:30:43.970 I/InputMethodManager(25078): startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+10-19 17:30:43.977 I/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): stopped(true) old = false
+10-19 17:30:43.977 D/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): WindowStopped on org.kanglish.app/org.kanglish.app.overlay.ClipboardTrampolineActivity set to true
+10-19 17:30:43.979 D/WindowOnBackDispatcher(25078): setTopOnBackInvokedCallback (unwrapped): null
+10-19 17:30:43.981 D/InputTransport(25078): Input channel constructed: 'ClientS', fd=132
+10-19 17:30:43.983 D/ViewRootImpl(25078): Skipping stats log for color mode
+10-19 17:30:43.984 I/VRI[ClipboardTrampolineActivity]@7ba2fd7(25078): dispatchDetachedFromWindow
+10-19 17:30:43.992 D/InputTransport(25078): Input channel destroyed: 'a2a92fe', fd=131
+10-19 17:31:44.823 I/VRI[]@5a367be(25078): ViewPostIme pointer 0
+10-19 17:31:44.824 I/VRI[]@5a367be(25078): call setFrameRateCategory for touch hint category=high hint, reason=touch, vri=VRI[]@5a367be
+10-19 17:31:44.833 I/VRI[]@5a367be(25078): ViewPostIme pointer 1
+10-19 17:31:44.865 I/Toast   (25078): show: caller = org.kanglish.app.overlay.FloatingSidebarService.bindViews$lambda$7:268 
+10-19 17:31:44.868 I/Toast   (25078): show: contextDispId = 0 mCustomDisplayId = -1 focusedDisplayId = 0 isActivityContext = false
+10-19 17:31:44.977 I/VRI[]@5a367be(25078): ViewPostIme pointer 0
+10-19 17:31:44.981 I/VRI[]@5a367be(25078): ViewPostIme pointer 1
+10-19 17:31:44.995 I/BLASTBufferQueue_Java(25078): update, w= 147 h= 147 mName = VRI[]@5a367be mNativeObject= 0xb4000072e0e9e9a0 sc.mNativeObject= 0xb400007390d2c190 format= -3 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3592 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 
+10-19 17:31:44.995 I/VRI[]@5a367be(25078): Relayout returned: old=(146,998,1049,2301) new=(897,1009,1044,1156) relayoutAsync=false req=(147,147)0 dur=5 res=0x0 s={true 0xb400007280d8ffc0} ch=false seqId=0
+10-19 17:31:44.996 D/VRI[]@5a367be(25078): mThreadedRenderer.updateSurface() mSurface={isValid=true 0xb400007280d8ffc0}
+10-19 17:31:44.998 I/VRI[]@5a367be(25078): registerCallbackForPendingTransactions
+10-19 17:31:45.001 I/VRI[]@5a367be(25078): mWNT: t=0xb400007340d57c90 mBlastBufferQueue=0xb4000072e0e9e9a0 fn= 364 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$10.onFrameDraw:6615 android.view.ViewRootImpl$4.onFrameDraw:2485 android.view.ThreadedRenderer$1.onFrameDraw:751 
+10-19 17:31:45.002 I/VRI[]@5a367be(25078): handleResized, frames=ClientWindowFrames{frame=[897,1009][1044,1156] display=[0,97][1080,2301] parentFrame=[0,0][0,0]} displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false dragResizingChanged=false
+10-19 17:31:45.611 D/AutofillManager(25078): view not autofillable - has multiline input type
+10-19 17:31:45.613 D/AutofillManager(25078): view not autofillable - has multiline input type
+10-19 17:31:47.983 I/VRI[]@5a367be(25078): call setFrameRateCategory for touch hint category=no preference, reason=boost timeout, vri=VRI[]@5a367be
+10-19 17:31:48.424 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 0
+10-19 17:31:48.426 I/VRI[MainActivity]@b8dc34d(25078): call setFrameRateCategory for touch hint category=high hint, reason=touch, vri=VRI[MainActivity]@b8dc34d
+10-19 17:31:48.428 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 1
+10-19 17:31:51.269 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 0
+10-19 17:31:51.271 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 1
+10-19 17:31:51.291 I/InputMethodManager(25078): invalidateInput: scheduleInvalidateInput isRestartingfalse
+10-19 17:31:51.301 D/InputMethodManagerUtils(25078): doInvalidateInput - Id : 0
+10-19 17:31:51.305 W/RemoteInputConnectionImpl(25078): Session id mismatch header.sessionId: 0 currentSessionId: 1 while calling android.view.inputmethod.RemoteInputConnectionImpl.lambda$getExtractedText$15:641
+10-19 17:31:54.093 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 0
+10-19 17:31:54.096 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 1
+10-19 17:31:54.118 I/InputMethodManager(25078): invalidateInput: scheduleInvalidateInput isRestartingfalse
+10-19 17:31:54.123 D/InputMethodManagerUtils(25078): doInvalidateInput - Id : 0
+10-19 17:31:54.127 W/RemoteInputConnectionImpl(25078): Session id mismatch header.sessionId: 1 currentSessionId: 2 while calling android.view.inputmethod.RemoteInputConnectionImpl.lambda$getExtractedText$15:641
+10-19 17:31:57.103 I/VRI[MainActivity]@b8dc34d(25078): call setFrameRateCategory for touch hint category=no preference, reason=boost timeout, vri=VRI[MainActivity]@b8dc34d
+10-19 17:31:59.496 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 0
+10-19 17:31:59.497 I/VRI[MainActivity]@b8dc34d(25078): call setFrameRateCategory for touch hint category=high hint, reason=touch, vri=VRI[MainActivity]@b8dc34d
+10-19 17:31:59.503 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 1
+10-19 17:31:59.521 I/InputMethodManager(25078): invalidateInput: scheduleInvalidateInput isRestartingfalse
+10-19 17:31:59.530 D/InputMethodManagerUtils(25078): doInvalidateInput - Id : 0
+10-19 17:31:59.533 W/RemoteInputConnectionImpl(25078): Session id mismatch header.sessionId: 2 currentSessionId: 3 while calling android.view.inputmethod.RemoteInputConnectionImpl.lambda$getExtractedText$15:641
+10-19 17:32:02.398 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 0
+10-19 17:32:02.404 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 1
+10-19 17:32:02.426 D/AutofillManager(25078): view not autofillable - has multiline input type
+10-19 17:32:02.432 D/AutofillManager(25078): view not autofillable - has multiline input type
+10-19 17:32:05.407 I/VRI[MainActivity]@b8dc34d(25078): call setFrameRateCategory for touch hint category=no preference, reason=boost timeout, vri=VRI[MainActivity]@b8dc34d
+10-19 17:32:14.749 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 0
+10-19 17:32:15.002 I/ImeFocusController(25078): onPreWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+10-19 17:32:15.018 I/ImeFocusController(25078): onPostWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+10-19 17:32:15.788 I/VRI[MainActivity]@b8dc34d(25078): handleAppVisibility mAppVisible = true visible = false
+10-19 17:32:15.788 D/VRI[MainActivity]@b8dc34d(25078): visibilityChanged oldVisibility=true newVisibility=false
+10-19 17:32:15.826 I/VRI[MainActivity]@b8dc34d(25078): Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) relayoutAsync=false req=(1080,2340)8 dur=6 res=0x2 s={false 0x0} ch=true seqId=0
+10-19 17:32:15.827 D/VRI[MainActivity]@b8dc34d(25078): Not drawing due to not visible. Reason=!mAppVisible && !mForceDecorViewVisibility
+10-19 17:32:15.827 I/VRI[MainActivity]@b8dc34d(25078): stopped(true) old = false
+10-19 17:32:15.827 D/VRI[MainActivity]@b8dc34d(25078): WindowStopped on org.kanglish.app/org.kanglish.app.ui.MainActivity set to true
+10-19 17:32:15.830 I/AutofillManager(25078): onInvisibleForAutofill(): expiringResponse
+10-19 17:32:15.834 D/InputTransport(25078): Input channel destroyed: 'ClientS', fd=196
+10-19 17:32:15.861 D/BBA2    (25078): setIsFg isFg = false; delayValue 3999ms
+10-19 17:32:29.931 I/VRI[]@5a367be(25078): handleResized, frames=ClientWindowFrames{frame=[897,1009][1044,1156] display=[0,97][1080,2301] parentFrame=[0,0][0,0]} displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false dragResizingChanged=false
+10-19 17:32:30.099 I/VRI[MainActivity]@b8dc34d(25078): onDisplayChanged oldDisplayState=2 newDisplayState=1
+10-19 17:32:30.100 I/VRI[]@5a367be(25078): onDisplayChanged oldDisplayState=2 newDisplayState=1
+10-19 17:33:01.295 I/VRI[MainActivity]@b8dc34d(25078): onDisplayChanged oldDisplayState=1 newDisplayState=2
+10-19 17:33:01.303 I/VRI[]@5a367be(25078): onDisplayChanged oldDisplayState=1 newDisplayState=2
+10-19 17:38:48.920 I/VRI[MainActivity]@b8dc34d(25078): handleAppVisibility mAppVisible = false visible = true
+10-19 17:38:48.925 I/VRI[MainActivity]@b8dc34d(25078): stopped(false) old = true
+10-19 17:38:48.925 D/VRI[MainActivity]@b8dc34d(25078): WindowStopped on org.kanglish.app/org.kanglish.app.ui.MainActivity set to false
+10-19 17:38:48.926 D/ViewRootImpl(25078): Skipping stats log for color mode
+10-19 17:38:48.927 D/BBA2    (25078): setIsFg isFg = true
+10-19 17:38:48.977 W/libc    (25078): Access denied finding property "vendor.perf.ems.egg"
+10-19 17:38:48.978 I/BLASTBufferQueue_Java(25078): new BLASTBufferQueue, mName= VRI[MainActivity]@b8dc34d mNativeObject= 0xb4000072e0de5e20 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3603 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 android.view.Choreographer$CallbackRecord.run:1970 android.view.Choreographer.doCallbacks:1423 android.view.Choreographer.doFrame:1348 android.view.Choreographer$FrameDisplayEventReceiver.run:1930 
+10-19 17:38:48.978 I/BLASTBufferQueue_Java(25078): update, w= 1080 h= 2340 mName = VRI[MainActivity]@b8dc34d mNativeObject= 0xb4000072e0de5e20 sc.mNativeObject= 0xb400007390d0c450 format= -1 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3608 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 
+10-19 17:38:48.979 W/libc    (25078): Access denied finding property "vendor.perf.ems.egg"
+10-19 17:38:48.980 I/VRI[MainActivity]@b8dc34d(25078): Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) relayoutAsync=false req=(1080,2340)0 dur=12 res=0x3 s={true 0xb400007280d97a10} ch=true seqId=0
+10-19 17:38:48.983 D/VRI[MainActivity]@b8dc34d(25078): mThreadedRenderer.initialize() mSurface={isValid=true 0xb400007280d97a10} hwInitialized=true
+10-19 17:38:48.984 D/VRI[MainActivity]@b8dc34d(25078): reportNextDraw android.view.ViewRootImpl.performTraversals:5507 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 android.view.Choreographer$CallbackRecord.run:1970 
+10-19 17:38:48.984 D/VRI[MainActivity]@b8dc34d(25078): Setup new sync=wmsSync-VRI[MainActivity]@b8dc34d#20
+10-19 17:38:48.984 I/VRI[MainActivity]@b8dc34d(25078): Creating new active sync group VRI[MainActivity]@b8dc34d#21
+10-19 17:38:48.984 D/VRI[MainActivity]@b8dc34d(25078): Start draw after previous draw not visible
+10-19 17:38:48.985 D/VRI[MainActivity]@b8dc34d(25078): registerCallbacksForSync syncBuffer=false
+10-19 17:38:49.002 D/VRI[MainActivity]@b8dc34d(25078): Received frameDrawingCallback syncResult=0 frameNum=1.
+10-19 17:38:49.002 I/VRI[MainActivity]@b8dc34d(25078): mWNT: t=0xb400007340d42400 mBlastBufferQueue=0xb4000072e0de5e20 fn= 1 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$12.onFrameDraw:15561 android.view.ThreadedRenderer$1.onFrameDraw:751 <bottom of call stack> 
+10-19 17:38:49.003 I/VRI[MainActivity]@b8dc34d(25078): Setting up sync and frameCommitCallback
+10-19 17:38:49.004 I/BLASTBufferQueue(25078): [VRI[MainActivity]@b8dc34d#8](f:0,a:0,s:0) onFrameAvailable the first frame is available
+10-19 17:38:49.005 I/VRI[MainActivity]@b8dc34d(25078): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+10-19 17:38:49.008 D/VRI[MainActivity]@b8dc34d(25078): reportDrawFinished seqId=0
+10-19 17:38:49.009 I/InsetsSourceConsumer(25078): applyRequestedVisibilityToControl: visible=true, type=statusBars, host=org.kanglish.app/org.kanglish.app.ui.MainActivity
+10-19 17:38:49.010 I/InsetsSourceConsumer(25078): applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=org.kanglish.app/org.kanglish.app.ui.MainActivity
+10-19 17:38:49.035 D/VRI[MainActivity]@b8dc34d(25078): mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb400007280d97a10}
+10-19 17:38:49.051 D/InputMethodManagerUtils(25078): startInputInner - Id : 0
+10-19 17:38:49.051 I/InputMethodManager(25078): startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+10-19 17:38:49.056 D/InsetsController(25078): hide(ime())
+10-19 17:38:49.056 I/ImeTracker(25078): org.kanglish.app:a0e8a04e: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-19 17:38:49.057 D/InputTransport(25078): Input channel constructed: 'ClientS', fd=185
+10-19 17:39:16.270 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 0
+10-19 17:39:16.279 I/VRI[MainActivity]@b8dc34d(25078): call setFrameRateCategory for touch hint category=high hint, reason=touch, vri=VRI[MainActivity]@b8dc34d
+10-19 17:39:16.286 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 1
+10-19 17:39:16.351 I/Toast   (25078): show: caller = org.kanglish.app.ui.MainActivity.loadParsedText:251 
+10-19 17:39:16.353 I/Toast   (25078): show: contextDispId = 0 mCustomDisplayId = -1 focusedDisplayId = 0 isActivityContext = true
+10-19 17:39:19.287 I/VRI[MainActivity]@b8dc34d(25078): call setFrameRateCategory for touch hint category=no preference, reason=boost timeout, vri=VRI[MainActivity]@b8dc34d
+10-19 17:39:23.970 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 0
+10-19 17:39:23.972 I/VRI[MainActivity]@b8dc34d(25078): call setFrameRateCategory for touch hint category=high hint, reason=touch, vri=VRI[MainActivity]@b8dc34d
+10-19 17:39:24.163 I/ImeFocusController(25078): onPreWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+10-19 17:39:24.178 I/ImeFocusController(25078): onPostWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+10-19 17:39:24.488 I/VRI[MainActivity]@b8dc34d(25078): handleAppVisibility mAppVisible = true visible = false
+10-19 17:39:24.488 D/VRI[MainActivity]@b8dc34d(25078): visibilityChanged oldVisibility=true newVisibility=false
+10-19 17:39:24.508 I/VRI[MainActivity]@b8dc34d(25078): Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) relayoutAsync=false req=(1080,2340)8 dur=3 res=0x2 s={false 0x0} ch=true seqId=0
+10-19 17:39:24.508 D/VRI[MainActivity]@b8dc34d(25078): Not drawing due to not visible. Reason=!mAppVisible && !mForceDecorViewVisibility
+10-19 17:39:24.509 I/VRI[MainActivity]@b8dc34d(25078): stopped(true) old = false
+10-19 17:39:24.509 D/VRI[MainActivity]@b8dc34d(25078): WindowStopped on org.kanglish.app/org.kanglish.app.ui.MainActivity set to true
+10-19 17:39:24.511 I/AutofillManager(25078): onInvisibleForAutofill(): expiringResponse
+10-19 17:39:24.518 D/InputTransport(25078): Input channel destroyed: 'ClientS', fd=185
+10-19 17:39:24.542 D/BBA2    (25078): setIsFg isFg = false; delayValue 3999ms
+10-19 17:39:26.327 I/VRI[MainActivity]@b8dc34d(25078): handleAppVisibility mAppVisible = false visible = true
+10-19 17:39:26.330 I/VRI[MainActivity]@b8dc34d(25078): stopped(false) old = true
+10-19 17:39:26.330 D/VRI[MainActivity]@b8dc34d(25078): WindowStopped on org.kanglish.app/org.kanglish.app.ui.MainActivity set to false
+10-19 17:39:26.331 D/ViewRootImpl(25078): Skipping stats log for color mode
+10-19 17:39:26.353 W/libc    (25078): Access denied finding property "vendor.perf.ems.egg"
+10-19 17:39:26.353 I/BLASTBufferQueue_Java(25078): new BLASTBufferQueue, mName= VRI[MainActivity]@b8dc34d mNativeObject= 0xb4000072e0de5e20 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3603 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 android.view.Choreographer$CallbackRecord.run:1970 android.view.Choreographer.doCallbacks:1423 android.view.Choreographer.doFrame:1348 android.view.Choreographer$FrameDisplayEventReceiver.run:1930 
+10-19 17:39:26.353 I/BLASTBufferQueue_Java(25078): update, w= 1080 h= 2340 mName = VRI[MainActivity]@b8dc34d mNativeObject= 0xb4000072e0de5e20 sc.mNativeObject= 0xb400007390d0c450 format= -1 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3608 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 
+10-19 17:39:26.354 W/libc    (25078): Access denied finding property "vendor.perf.ems.egg"
+10-19 17:39:26.355 I/VRI[MainActivity]@b8dc34d(25078): Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) relayoutAsync=false req=(1080,2340)0 dur=16 res=0x3 s={true 0xb400007280d9b400} ch=true seqId=0
+10-19 17:39:26.355 D/VRI[MainActivity]@b8dc34d(25078): mThreadedRenderer.initialize() mSurface={isValid=true 0xb400007280d9b400} hwInitialized=true
+10-19 17:39:26.356 D/VRI[MainActivity]@b8dc34d(25078): reportNextDraw android.view.ViewRootImpl.performTraversals:5507 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 android.view.Choreographer$CallbackRecord.run:1970 
+10-19 17:39:26.356 D/VRI[MainActivity]@b8dc34d(25078): Setup new sync=wmsSync-VRI[MainActivity]@b8dc34d#22
+10-19 17:39:26.356 I/VRI[MainActivity]@b8dc34d(25078): Creating new active sync group VRI[MainActivity]@b8dc34d#23
+10-19 17:39:26.356 D/VRI[MainActivity]@b8dc34d(25078): Start draw after previous draw not visible
+10-19 17:39:26.357 D/VRI[MainActivity]@b8dc34d(25078): registerCallbacksForSync syncBuffer=false
+10-19 17:39:26.389 D/VRI[MainActivity]@b8dc34d(25078): Received frameDrawingCallback syncResult=0 frameNum=1.
+10-19 17:39:26.389 I/VRI[MainActivity]@b8dc34d(25078): mWNT: t=0xb400007340d64cb0 mBlastBufferQueue=0xb4000072e0de5e20 fn= 1 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$12.onFrameDraw:15561 android.view.ThreadedRenderer$1.onFrameDraw:751 <bottom of call stack> 
+10-19 17:39:26.389 I/VRI[MainActivity]@b8dc34d(25078): Setting up sync and frameCommitCallback
+10-19 17:39:26.389 I/BLASTBufferQueue(25078): [VRI[MainActivity]@b8dc34d#9](f:0,a:0,s:0) onFrameAvailable the first frame is available
+10-19 17:39:26.390 I/VRI[MainActivity]@b8dc34d(25078): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+10-19 17:39:26.392 D/VRI[MainActivity]@b8dc34d(25078): reportDrawFinished seqId=0
+10-19 17:39:26.401 I/InsetsSourceConsumer(25078): applyRequestedVisibilityToControl: visible=true, type=statusBars, host=org.kanglish.app/org.kanglish.app.ui.MainActivity
+10-19 17:39:26.402 I/InsetsSourceConsumer(25078): applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=org.kanglish.app/org.kanglish.app.ui.MainActivity
+10-19 17:39:26.447 D/VRI[MainActivity]@b8dc34d(25078): mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb400007280d9b400}
+10-19 17:39:26.462 D/InputMethodManagerUtils(25078): startInputInner - Id : 0
+10-19 17:39:26.462 I/InputMethodManager(25078): startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+10-19 17:39:26.467 D/InsetsController(25078): hide(ime())
+10-19 17:39:26.468 I/ImeTracker(25078): org.kanglish.app:47e221d6: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-19 17:39:26.469 D/InputTransport(25078): Input channel constructed: 'ClientS', fd=178
+10-19 17:39:27.053 I/VRI[MainActivity]@b8dc34d(25078): call setFrameRateCategory for touch hint category=no preference, reason=boost timeout, vri=VRI[MainActivity]@b8dc34d
+10-19 17:39:58.695 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 0
+10-19 17:39:58.697 I/VRI[MainActivity]@b8dc34d(25078): call setFrameRateCategory for touch hint category=high hint, reason=touch, vri=VRI[MainActivity]@b8dc34d
+10-19 17:39:58.704 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 1
+10-19 17:40:01.711 I/VRI[MainActivity]@b8dc34d(25078): call setFrameRateCategory for touch hint category=no preference, reason=boost timeout, vri=VRI[MainActivity]@b8dc34d
+10-19 17:40:29.231 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 0
+10-19 17:40:29.239 I/VRI[MainActivity]@b8dc34d(25078): call setFrameRateCategory for touch hint category=high hint, reason=touch, vri=VRI[MainActivity]@b8dc34d
+10-19 17:40:29.246 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 1
+10-19 17:40:29.261 I/Toast   (25078): show: caller = org.kanglish.app.ui.MainActivity.clearAll:261 
+10-19 17:40:29.262 I/Toast   (25078): show: contextDispId = 0 mCustomDisplayId = -1 focusedDisplayId = 0 isActivityContext = true
+10-19 17:40:32.103 D/ActivityThread(25078): org.kanglish.app will use render engine as VK
+10-19 17:40:32.126 I/DecorView(25078): setWindowBackground: isPopOver=false color=0 d=android.graphics.drawable.ColorDrawable@eff5878
+10-19 17:40:32.150 I/BLASTBufferQueue_Java(25078): update, w= 903 h= 1303 mName = VRI[]@5a367be mNativeObject= 0xb4000072e0e9e9a0 sc.mNativeObject= 0xb400007390d37410 format= -3 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3592 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 
+10-19 17:40:32.150 I/VRI[]@5a367be(25078): Relayout returned: old=(897,1009,1044,1156) new=(146,998,1049,2301) relayoutAsync=false req=(903,1303)0 dur=5 res=0x0 s={true 0xb400007280d8ffc0} ch=false seqId=0
+10-19 17:40:32.150 D/VRI[]@5a367be(25078): mThreadedRenderer.updateSurface() mSurface={isValid=true 0xb400007280d8ffc0}
+10-19 17:40:32.152 I/VRI[]@5a367be(25078): registerCallbackForPendingTransactions
+10-19 17:40:32.155 I/VRI[]@5a367be(25078): mWNT: t=0xb400007340d4d3c0 mBlastBufferQueue=0xb4000072e0e9e9a0 fn= 366 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$10.onFrameDraw:6615 android.view.ViewRootImpl$4.onFrameDraw:2485 android.view.ThreadedRenderer$1.onFrameDraw:751 
+10-19 17:40:32.166 I/VRI[]@5a367be(25078): handleResized, frames=ClientWindowFrames{frame=[146,998][1049,2301] display=[0,97][1080,2301] parentFrame=[0,0][0,0]} displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false dragResizingChanged=false
+10-19 17:40:32.173 I/BLASTBufferQueue_Java(25078): update, w= 1080 h= 2340 mName = VRI[MainActivity]@b8dc34d mNativeObject= 0xb4000072e0de5e20 sc.mNativeObject= 0xb400007390d0c450 format= -1 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3592 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 
+10-19 17:40:32.173 I/VRI[MainActivity]@b8dc34d(25078): Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) relayoutAsync=true req=(1080,2340)0 dur=0 res=0x0 s={true 0xb400007280d9b400} ch=false seqId=0
+10-19 17:40:32.174 I/VRI[MainActivity]@b8dc34d(25078): registerCallbackForPendingTransactions
+10-19 17:40:32.175 D/VRI[MainActivity]@b8dc34d(25078): mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb400007280d9b400}
+10-19 17:40:32.175 I/VRI[MainActivity]@b8dc34d(25078): mWNT: t=0xb400007340d6c4f0 mBlastBufferQueue=0xb4000072e0de5e20 fn= 524 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$10.onFrameDraw:6615 android.view.ViewRootImpl$4.onFrameDraw:2485 android.view.ThreadedRenderer$1.onFrameDraw:751 
+10-19 17:40:32.182 D/InputMethodManagerUtils(25078): startInputInner - Id : 0
+10-19 17:40:32.182 I/InputMethodManager(25078): startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+10-19 17:40:32.197 D/InsetsController(25078): hide(ime())
+10-19 17:40:32.197 I/ImeTracker(25078): org.kanglish.app:abb18e83: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-19 17:40:32.203 D/InputTransport(25078): Input channel constructed: 'ClientS', fd=138
+10-19 17:40:32.238 I/ImeFocusController(25078): onPreWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+10-19 17:40:32.242 I/ImeFocusController(25078): onPostWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+10-19 17:40:32.246 I/VRI[MainActivity]@b8dc34d(25078): call setFrameRateCategory for touch hint category=no preference, reason=boost timeout, vri=VRI[MainActivity]@b8dc34d
+10-19 17:41:17.240 I/InsetsSourceConsumer(25078): applyRequestedVisibilityToControl: visible=true, type=statusBars, host=org.kanglish.app/org.kanglish.app.ui.MainActivity
+10-19 17:41:17.243 I/InsetsSourceConsumer(25078): applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=org.kanglish.app/org.kanglish.app.ui.MainActivity
+10-19 17:41:17.252 D/VRI[MainActivity]@b8dc34d(25078): mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb400007280d9b400}
+10-19 17:41:17.262 D/InputMethodManagerUtils(25078): startInputInner - Id : 0
+10-19 17:41:17.263 I/InputMethodManager(25078): startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+10-19 17:41:17.266 D/InsetsController(25078): hide(ime())
+10-19 17:41:17.266 I/ImeTracker(25078): org.kanglish.app:5bd134b0: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-19 17:41:17.268 D/InputTransport(25078): Input channel constructed: 'ClientS', fd=135
+10-19 17:42:03.254 I/VRI[]@5a367be(25078): ViewPostIme pointer 0
+10-19 17:42:03.254 I/VRI[]@5a367be(25078): call setFrameRateCategory for touch hint category=high hint, reason=touch, vri=VRI[]@5a367be
+10-19 17:42:03.257 I/VRI[]@5a367be(25078): ViewPostIme pointer 1
+10-19 17:42:03.265 I/WindowManager(25078): WindowManagerGlobal#removeView, ty=2038, view=android.widget.FrameLayout{278fe79 V.E...... ........ 0,0-903,1303}, caller=android.view.WindowManagerGlobal.removeView:654 android.view.WindowManagerImpl.removeView:249 org.kanglish.app.overlay.FloatingSidebarService.onDestroy:490 
+10-19 17:42:03.267 D/WindowOnBackDispatcher(25078): setTopOnBackInvokedCallback (unwrapped): null
+10-19 17:42:03.285 I/VRI[]@5a367be(25078): dispatchDetachedFromWindow
+10-19 17:42:03.293 D/InputTransport(25078): Input channel destroyed: '28a411e', fd=170
+10-19 17:42:06.550 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 0
+10-19 17:42:06.555 I/VRI[MainActivity]@b8dc34d(25078): call setFrameRateCategory for touch hint category=high hint, reason=touch, vri=VRI[MainActivity]@b8dc34d
+10-19 17:42:06.563 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 1
+10-19 17:42:06.569 D/AutofillManager(25078): view not autofillable - has multiline input type
+10-19 17:42:09.524 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 0
+10-19 17:42:09.532 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme pointer 1
+10-19 17:42:09.771 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme key 0
+10-19 17:42:09.771 D/Activity(25078): onKeyDown(KEYCODE_BACK), activity=org.kanglish.app.ui.MainActivity@1266ffc
+10-19 17:42:09.777 I/VRI[MainActivity]@b8dc34d(25078): ViewPostIme key 1
+10-19 17:42:09.781 D/Activity(25078): onBackInvoked, activity=org.kanglish.app.ui.MainActivity@1266ffc, caller=android.app.Activity.onBackPressed:4615 androidx.activity.ComponentActivity.access$onBackPressed$s1027565324:112 androidx.activity.ComponentActivity$onBackPressedDispatcher$2.invoke$lambda$0:627 
+10-19 17:42:09.860 I/ImeFocusController(25078): onPreWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+10-19 17:42:09.869 I/ImeFocusController(25078): onPostWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+10-19 17:42:09.965 D/InputTransport(25078): Input channel destroyed: 'ClientS', fd=178
+10-19 17:42:09.992 W/rg.kanglish.app(25078): Cleared Reference was only reachable from finalizer (only reported once)
+10-19 17:42:10.081 W/rg.kanglish.app(25078): Reducing the number of considered missed Gc histogram windows from 124 to 100
+10-19 17:42:10.121 D/InputTransport(25078): Input channel destroyed: 'ClientS', fd=132
+10-19 17:42:10.146 D/InputTransport(25078): Input channel destroyed: 'ClientS', fd=138
+10-19 17:42:10.146 D/InputTransport(25078): Input channel destroyed: 'ClientS', fd=135
+10-19 17:42:10.727 I/VRI[MainActivity]@b8dc34d(25078): handleAppVisibility mAppVisible = true visible = false
+10-19 17:42:10.728 D/VRI[MainActivity]@b8dc34d(25078): visibilityChanged oldVisibility=true newVisibility=false
+10-19 17:42:10.738 D/AutofillManager(25078): view not autofillable - has multiline input type
+10-19 17:42:10.750 D/HWUI    (25078): CacheManager::trimMemory(20)
+10-19 17:42:10.765 I/VRI[MainActivity]@b8dc34d(25078): Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) relayoutAsync=false req=(1080,2340)8 dur=7 res=0x2 s={false 0x0} ch=true seqId=0
+10-19 17:42:10.766 D/VRI[MainActivity]@b8dc34d(25078): Not drawing due to not visible. Reason=!mAppVisible && !mForceDecorViewVisibility
+10-19 17:42:10.767 D/HWUI    (25078): CacheManager::trimMemory(40)
+10-19 17:42:10.770 I/VRI[MainActivity]@b8dc34d(25078): stopped(true) old = false
+10-19 17:42:10.770 D/VRI[MainActivity]@b8dc34d(25078): WindowStopped on org.kanglish.app/org.kanglish.app.ui.MainActivity set to true
+10-19 17:42:10.802 I/AutofillManager(25078): onInvisibleForAutofill(): expiringResponse
+10-19 17:42:10.820 D/WindowOnBackDispatcher(25078): setTopOnBackInvokedCallback (unwrapped): null
+10-19 17:42:10.835 D/AutofillManager(25078): view not autofillable - has multiline input type
+10-19 17:42:10.853 D/ViewRootImpl(25078): Skipping stats log for color mode
+10-19 17:42:10.853 I/VRI[MainActivity]@b8dc34d(25078): dispatchDetachedFromWindow
+10-19 17:42:10.858 D/InputTransport(25078): Input channel destroyed: '7fb928c', fd=120
+10-19 17:42:10.863 D/BBA2    (25078): setIsFg isFg = false; delayValue 3999ms

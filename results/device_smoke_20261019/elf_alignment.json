@@ -1,0 +1,20 @@
+{
+  "elf_load_segments": [
+    {
+      "offset": 0,
+      "virtual_address": 0,
+      "alignment": 4096
+    },
+    {
+      "offset": 6206688,
+      "virtual_address": 6210784,
+      "alignment": 4096
+    },
+    {
+      "offset": 6336536,
+      "virtual_address": 6344728,
+      "alignment": 4096
+    }
+  ],
+  "device_page_size": "4096"
+}

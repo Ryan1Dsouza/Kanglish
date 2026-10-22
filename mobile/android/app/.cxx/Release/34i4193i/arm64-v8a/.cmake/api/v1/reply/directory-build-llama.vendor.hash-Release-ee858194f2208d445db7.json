@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "build-llama/vendor/hash",
+		"source" : "C:/Users/ryan1/kanglish-foss/mobile/android/third_party/llama.cpp/vendor/hash"
+	}
+}

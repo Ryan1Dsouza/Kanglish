@@ -1,0 +1,22 @@
+{
+  "before": [
+    "mCurrentFocus=Window{a1ea05c u0 com.whatsapp/com.whatsapp.Conversation}",
+    "mFocusedApp=ActivityRecord{235688731 u0 com.whatsapp/.Conversation t4082}"
+  ],
+  "after_samples": [
+    [
+      "mCurrentFocus=Window{a1ea05c u0 com.whatsapp/com.whatsapp.Conversation}",
+      "mFocusedApp=ActivityRecord{235688731 u0 com.whatsapp/.Conversation t4082}"
+    ],
+    [
+      "mCurrentFocus=Window{a1ea05c u0 com.whatsapp/com.whatsapp.Conversation}",
+      "mFocusedApp=ActivityRecord{235688731 u0 com.whatsapp/.Conversation t4082}"
+    ],
+    [
+      "mCurrentFocus=Window{a1ea05c u0 com.whatsapp/com.whatsapp.Conversation}",
+      "mFocusedApp=ActivityRecord{235688731 u0 com.whatsapp/.Conversation t4082}"
+    ]
+  ],
+  "capture_log": "--------- beginning of main\n10-19 17:58:38.426 D/KanglishClipboard(31059): bubble requested focused clipboard capture\n10-19 17:58:38.484 D/KanglishClipboard(31059): capture created task=4091; waiting for window focus\n10-19 17:58:38.547 D/KanglishClipboard(31059): capture focus=true dispatched=false\n10-19 17:58:38.555 D/KanglishClipboard(31059): capture succeeded chars=15; dispatching to overlay\n10-19 17:58:38.568 D/KanglishClipboard(31059): capture finished task=4091\n10-19 17:58:38.627 D/KanglishClipboard(31059): capture focus=false dispatched=true\n",
+  "main_task_foreground_observed": false
+}

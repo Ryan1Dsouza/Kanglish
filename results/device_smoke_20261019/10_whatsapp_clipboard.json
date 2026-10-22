@@ -1,0 +1,9 @@
+{
+  "whatsapp_message_captured_exactly": true,
+  "overlay_produced_output": true,
+  "overlay_copy_pasted_back_into_app": "Yenk is doing well",
+  "overlay_copy_pass": true,
+  "meaning_verified": false,
+  "warning": "Android 16 KB ELF alignment warning delayed trampoline focus until dismissed",
+  "navigation_issue": "Trampoline brought MainActivity to foreground underneath the overlay"
+}

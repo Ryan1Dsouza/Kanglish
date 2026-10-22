@@ -1,0 +1,11 @@
+{
+  "input": "yenu guru ivattu plan?",
+  "actual": "What is the plan bro?",
+  "observations": [
+    {
+      "elapsed_seconds": 3.74,
+      "result": "What is the plan bro?"
+    }
+  ],
+  "timing_note": "Includes ADB and UIAutomator polling overhead; not a throughput benchmark."
+}

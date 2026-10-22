@@ -1,0 +1,2 @@
+FROM C:/Users/ryan1/kanglish-foss/mobile/android/app/build/outputs/apk/debug/kanglish_qwen_0.5b_v3.gguf
+PARAMETER num_ctx 1024

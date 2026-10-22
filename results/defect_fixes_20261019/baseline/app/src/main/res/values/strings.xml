@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kanglish Translator</string>
+    <string name="tab_chat">Messages</string>
+    <string name="tab_import">Import / Paste</string>
+    <string name="tab_model">Offline Model</string>
+    <string name="tab_feedback">Feedback</string>
+
+    <string name="paste_hint">Paste a WhatsApp message or chat export here...\n\nExample:\n18/10/2026, 10:15 - Ramesh: Hey guru scene enu ivattu?\n18/10/2026, 10:16 - You: oota aaytha modlu?</string>
+    <string name="btn_parse_paste">Parse &amp; Load Messages</string>
+    <string name="btn_import_file">Import .txt Export</string>
+    <string name="btn_load_sample">Load Sample WhatsApp Chat</string>
+    <string name="btn_clear_chat">Clear All</string>
+
+    <string name="btn_translate">Translate</string>
+    <string name="btn_translate_all">Translate All Messages</string>
+    <string name="btn_wrong_meaning">Wrong Meaning?</string>
+    <string name="btn_copy">Copy</string>
+
+    <string name="model_title">On-Device LLM (llama.cpp)</string>
+    <string name="model_desc">Runs a Kanglish Qwen2.5 0.5B GGUF locally on your phone.</string>
+    <string name="btn_pick_model">Choose .gguf Model File</string>
+    <string name="model_status_unloaded">Model Status: Offline Rules &amp; Glossary Active (Fast)</string>
+    <string name="model_status_loaded">Model Status: Llama.cpp Engine Loaded &amp; Active</string>
+    <string name="feedback_dialog_title">Report Translation Nuance</string>
+    <string name="feedback_correction_hint">What did this really mean? (e.g. slang, context, sarcasm)</string>
+    <string name="btn_save_feedback">Save Local Feedback</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <string name="accessibility_service_desc">Optional experimental detection of deliberately held or selected messages in WhatsApp and Telegram while the Kanglish bubble is running. Copy and tap works without this permission.</string>
+    <string name="sidebar_overlay_title">Floating Sidebar Extension</string>
+    <string name="sidebar_overlay_desc">Copy a text message in WhatsApp, then tap the Kanglish bubble to translate it on screen.</string>
+</resources>

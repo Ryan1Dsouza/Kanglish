@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "benchmark": 100,
+  "in22": 1503,
+  "dictionary": 100,
+  "negative_and_failure_probes": 54,
+  "romanization_cache_sha256": "2350401c94b5d071e18af820cb47c85b56f05dfcb5ad404199c95c7bc09461cc",
+  "input_sha256": {
+    "data\\benchmark_test_v1_draft.csv": "78e0de52e230abd4e457f3cb1d5dad23d1cb8a21423868e6c27534d0a9a32998",
+    "data\\raw\\in22_conv\\in22_conv_mteb_default_test.parquet": "0440a84cbbe1958b2873ed383ba8fd54a96a60ae6d46256d9c42f36b850c339f",
+    "data\\trusted\\lexicon_alar.csv": "7bf38e784f6b721c33c256f85cb99159be51fc4f0e30e3a3a8c2fbda26ecaddc"
+  },
+  "status": "frozen_evaluation_only_never_training"
+}

@@ -1,0 +1,16 @@
+{
+  "stage": "task5",
+  "diff": [
+    {
+      "file": "GLOSSARY_ALTERNATIVES_REVIEW.md",
+      "added": 170,
+      "removed": 0
+    }
+  ],
+  "unit_tests": {
+    "tests": 39,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "candidate_rows": 4995,
+  "traceable_source_rows_verified": 4995,
+  "invalid_english_targets": 0,
+  "cross_split_input_family_overlap": 0,
+  "cross_split_answer_family_overlap": 0,
+  "cross_split_source_group_overlap": 0,
+  "historical_data_and_protected_hashes_unchanged": true,
+  "all_candidate_review_statuses": "raw",
+  "manifest_counts": {
+    "train": 4491,
+    "validation": 504,
+    "review_queue": 2195,
+    "train_source_types": {
+      "conversational": 2246,
+      "lexicon": 2245
+    },
+    "validation_source_types": {
+      "conversational": 249,
+      "lexicon": 255
+    }
+  },
+  "excluded_and_replaced": {
+    "lexicon_kannada_in_english_target": 2275,
+    "lexicon_unresolved_dictionary_reference": 39683,
+    "lexicon_no_english_letters": 12,
+    "lexicon_reserved_input": 14,
+    "legacy_conversation_resampled": 2500,
+    "legacy_lexicon_replaced": 1802,
+    "legacy_pair_without_traceable_semantic_source": 1405,
+    "unresolved_dictionary_reference": 467,
+    "legacy_reserved_input": 24,
+    "kannada_in_english_target": 30,
+    "teacher_pair_needs_semantic_review": 264
+  }
+}

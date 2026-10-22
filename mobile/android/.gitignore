@@ -1,0 +1,9 @@
+.gradle/
+.tools/
+local.properties
+**/build/
+third_party/llama.cpp/
+artifacts/
+*.iml
+.idea/
+__pycache__/

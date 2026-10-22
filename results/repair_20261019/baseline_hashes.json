@@ -1,0 +1,11 @@
+{
+  "data/test.csv": "5ba9dc36f69218987f3968ceb24d3970277d3e17d05bdabdee61f2af5f4654ad",
+  "data/dev.csv": null,
+  "data/glossary.csv": "95f6aaf1a34417e25e737aebac479d6013d052fc7166cae8a3044a33c0ae76cf",
+  "data/benchmark_test_v1_draft.csv": "78e0de52e230abd4e457f3cb1d5dad23d1cb8a21423868e6c27534d0a9a32998",
+  "data/representation_v1/dev.csv": "80b9b8ca44168139fb37ef1ea4ebc4d4bce5d6c6700f39d489b0526a3f91a1ec",
+  "data/representation_v1/eval.locked.csv": "80b9b8ca44168139fb37ef1ea4ebc4d4bce5d6c6700f39d489b0526a3f91a1ec",
+  "data/processed/kanglish_v3_train.jsonl": "328c7ffb56f3f79f936d8373e88536a6503d4e2dc829ffb1d75ca97886208147",
+  "data/processed/kanglish_clean_train.jsonl": "aa5fd4dfb362e98c307c7e803c9c49a9d82300519d6dc351a6fa27d0ae998506",
+  "data/processed/gemini_teacher_dataset.jsonl": "5b6a710796d9c07e8c57877bf4e5a797619cea5d75e0e292b537d8709ef31e5c"
+}

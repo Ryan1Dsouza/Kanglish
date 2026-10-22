@@ -1,0 +1,19 @@
+{
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "tokenizers": "0.23.3",
+    "pyarrow": "26.0.0",
+    "transformers": "5.20.1",
+    "datasets": "5.1.0",
+    "peft": "0.21.2",
+    "trl": "1.16.0"
+  },
+  "tokenizer_sha256": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+  "models_used": [
+    "kanglish-gate-v3-q8:latest (Qwen2.5 0.5B v3 Q8_0)",
+    "AI4Bharat/IndicXlit indic-en v1.0"
+  ],
+  "seed": 42,
+  "spend_cap": 0,
+  "external_model_api_calls": 0
+}

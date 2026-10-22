@@ -1,0 +1,726 @@
+{
+  "created_utc": "2026-10-19T11:17:44.284664+00:00",
+  "scope": "Structural audit and diagnostic sampling, not an accuracy benchmark.",
+  "normalization": "NFKC, casefold, whitespace collapse; loose overlap additionally removes punctuation.",
+  "protected_sha256": {
+    "data/test.csv": "5ba9dc36f69218987f3968ceb24d3970277d3e17d05bdabdee61f2af5f4654ad",
+    "data/dev.csv": null,
+    "data/glossary.csv": "95f6aaf1a34417e25e737aebac479d6013d052fc7166cae8a3044a33c0ae76cf",
+    "data/benchmark_test_v1_draft.csv": "78e0de52e230abd4e457f3cb1d5dad23d1cb8a21423868e6c27534d0a9a32998",
+    "data/representation_v1/dev.csv": "80b9b8ca44168139fb37ef1ea4ebc4d4bce5d6c6700f39d489b0526a3f91a1ec",
+    "data/representation_v1/eval.locked.csv": "80b9b8ca44168139fb37ef1ea4ebc4d4bce5d6c6700f39d489b0526a3f91a1ec"
+  },
+  "processed": {
+    "gemini_teacher_dataset.jsonl": {
+      "sha256": "5b6a710796d9c07e8c57877bf4e5a797619cea5d75e0e292b537d8709ef31e5c",
+      "rows": 265,
+      "unique_normalized_inputs": 265,
+      "duplicate_input_extras": 0,
+      "duplicate_pair_extras": 0,
+      "multiple_target_inputs": 0,
+      "multiple_target_examples": [],
+      "empty_pair_rows": 0,
+      "input_contains_kannada": 0,
+      "input_contains_non_ascii_latin": 1,
+      "top_level_keys": {
+        "kanglish": 265,
+        "english": 265,
+        "topic": 265,
+        "teacher": 136,
+        "source": 129
+      }
+    },
+    "kanglish_clean_train.jsonl": {
+      "sha256": "aa5fd4dfb362e98c307c7e803c9c49a9d82300519d6dc351a6fa27d0ae998506",
+      "rows": 6227,
+      "unique_normalized_inputs": 5977,
+      "duplicate_input_extras": 250,
+      "duplicate_pair_extras": 0,
+      "multiple_target_inputs": 194,
+      "multiple_target_examples": [
+        [
+          "ಅಚತುರ (acatura)",
+          [
+            "an inept man.",
+            "not skilled; lacking the required adeptness."
+          ]
+        ],
+        [
+          "akutōbhaya",
+          [
+            "not threatened from any quarter; free from any danger or fear.",
+            "the final beatitude; final emancipation from the cycle of the birth and death."
+          ]
+        ],
+        [
+          "antargata",
+          [
+            "an opinion, feeling or thought that is not expressed.",
+            "gone within; entered into or under the surface.; residing, being inside."
+          ]
+        ],
+        [
+          "ಅಂಗು (anggu)",
+          [
+            "a debt of gratitude; obligation.",
+            "a kind of sweet dish."
+          ]
+        ],
+        [
+          "aghōra",
+          [
+            "name of one of the five faces of śiva; a euphemistic title of śiva.",
+            "not frightening; not terrific.; of the nature of causing fright; terrific."
+          ]
+        ],
+        [
+          "ambari",
+          [
+            "a piece of cloth used to write on.",
+            "the plant gossypium herbaceum of molvaceae family; the cotton plant."
+          ]
+        ],
+        [
+          "ಅಂತರ್ಮಲಿನ (antarmalina)",
+          [
+            "having impurity inside; defiled within.; (the mind) being impure, ill-thinking.",
+            "inner impurities; evil thought; wickedness.; an evil natured, wicked man."
+          ]
+        ],
+        [
+          "ಅಜಯ (ajaya)",
+          [
+            "defeated; failed.",
+            "non-victory; defeat.; an invincible, unsurpassed man."
+          ]
+        ],
+        [
+          "ಅಕೃತಘ್ನ (akřtaghna)",
+          [
+            "a man who is not ungrateful; a thankful man.",
+            "being grateful."
+          ]
+        ],
+        [
+          "accu",
+          [
+            "a horse from pegu city in burma (myanmar).",
+            "a payment forced to be made unjustly, as undue tax, a bribe etc.",
+            "a printing house; a press.",
+            "discharged waste matter from the anus of a bird; excrement.",
+            "the axle of a wheel.; a central pole around which anything revolves.",
+            "the edge; the border of anything.",
+            "to grasp; to hold; to seize.; to be impressed on one's mind.",
+            "to pay unjustly, owing to force, as rent, revenue etc."
+          ]
+        ]
+      ],
+      "empty_pair_rows": 0,
+      "input_contains_kannada": 3652,
+      "input_contains_non_ascii_latin": 321,
+      "top_level_keys": {
+        "messages": 6227
+      }
+    },
+    "kanglish_comprehensive_train.jsonl": {
+      "sha256": "dd4e6d7ebee620980466667a81028ae78698ce2feeda8ddfcb72ad894a27e189",
+      "rows": 7915,
+      "unique_normalized_inputs": 7501,
+      "duplicate_input_extras": 414,
+      "duplicate_pair_extras": 0,
+      "multiple_target_inputs": 344,
+      "multiple_target_examples": [
+        [
+          "bekku haalu kudithide",
+          [
+            "the cat is drinking milk",
+            "the cat is drinking milk."
+          ]
+        ],
+        [
+          "a",
+          [
+            "a termination of the infinitive (as in ಎಸಗು+ಅ=ಎಸಗ for ಎಸಗಲು).",
+            "an indeclinable to verbs to make it interrogative.",
+            "any of the hindu trinity, brahma, viṣṇu and śiva.",
+            "the first of the three syllables that make the sacred compound-syllable 'ಓಂ'."
+          ]
+        ],
+        [
+          "ಅ (a)",
+          [
+            "a termination of the infinitive (as in ಎಸಗು+ಅ=ಎಸಗ for ಎಸಗಲು).",
+            "an indeclinable to verbs to make it interrogative.",
+            "any of the hindu trinity, brahma, viṣṇu and śiva.",
+            "the first of the three syllables that make the sacred compound-syllable 'ಓಂ'."
+          ]
+        ],
+        [
+          "angku",
+          [
+            "(dial.) a distinctive main section of a play; an act.",
+            "the state of being crooked.",
+            "to become crooked; to lose straightness in shape."
+          ]
+        ],
+        [
+          "ಅಂಕು (angku)",
+          [
+            "(dial.) a distinctive main section of a play; an act.",
+            "the state of being crooked.",
+            "to become crooked; to lose straightness in shape."
+          ]
+        ],
+        [
+          "angke",
+          [
+            "an order; a command; a behest.; authority; control; restrraint.",
+            "the act of smearing with an ointment or oil; anointment."
+          ]
+        ],
+        [
+          "ಅಂಕೆ (angke)",
+          [
+            "an order; a command; a behest.; authority; control; restrraint.",
+            "the act of smearing with an ointment or oil; anointment."
+          ]
+        ],
+        [
+          "anggaja",
+          [
+            "produced from or on the body;",
+            "that which is produced from or on the body.; the hair grown on the body."
+          ]
+        ],
+        [
+          "anggadikāṛa",
+          [
+            "= ಅಂಗಡಿಕಾಱ.",
+            "one who keeps a shop of his own; a shop-keeper."
+          ]
+        ],
+        [
+          "anggata",
+          [
+            "= ಅಂಗತ್ತ.",
+            "the fellow-feeling or genuine concern for other's well being; compassion."
+          ]
+        ]
+      ],
+      "empty_pair_rows": 0,
+      "input_contains_kannada": 5000,
+      "input_contains_non_ascii_latin": 3021,
+      "top_level_keys": {
+        "messages": 7915
+      }
+    },
+    "kanglish_master_train.jsonl": {
+      "sha256": "7e64b1e9fe9bbda41057d2a44f362ab3de7e8a64b8b628de154cac25cd636d23",
+      "rows": 1749,
+      "unique_normalized_inputs": 1609,
+      "duplicate_input_extras": 140,
+      "duplicate_pair_extras": 140,
+      "multiple_target_inputs": 0,
+      "multiple_target_examples": [],
+      "empty_pair_rows": 0,
+      "input_contains_kannada": 8,
+      "input_contains_non_ascii_latin": 0,
+      "top_level_keys": {
+        "messages": 1749
+      }
+    },
+    "kanglish_synthetic_augmented.jsonl": {
+      "sha256": "19017ef843b16085eb2b35c5d969efda7e91642119d43cccee5ecdb8863aee06",
+      "rows": 979,
+      "unique_normalized_inputs": 919,
+      "duplicate_input_extras": 60,
+      "duplicate_pair_extras": 60,
+      "multiple_target_inputs": 0,
+      "multiple_target_examples": [],
+      "empty_pair_rows": 0,
+      "input_contains_kannada": 8,
+      "input_contains_non_ascii_latin": 0,
+      "top_level_keys": {
+        "messages": 979
+      }
+    },
+    "kanglish_train.jsonl": {
+      "sha256": "b7b747dc5fa7efb1ff6e3477daaab780d585ae1962ae60e8af7e1148c8b8c32f",
+      "rows": 770,
+      "unique_normalized_inputs": 690,
+      "duplicate_input_extras": 80,
+      "duplicate_pair_extras": 80,
+      "multiple_target_inputs": 0,
+      "multiple_target_examples": [],
+      "empty_pair_rows": 0,
+      "input_contains_kannada": 0,
+      "input_contains_non_ascii_latin": 0,
+      "top_level_keys": {
+        "messages": 770
+      }
+    },
+    "kanglish_v3_train.jsonl": {
+      "sha256": "328c7ffb56f3f79f936d8373e88536a6503d4e2dc829ffb1d75ca97886208147",
+      "rows": 6492,
+      "unique_normalized_inputs": 6242,
+      "duplicate_input_extras": 250,
+      "duplicate_pair_extras": 0,
+      "multiple_target_inputs": 194,
+      "multiple_target_examples": [
+        [
+          "ಅಚತುರ (acatura)",
+          [
+            "an inept man.",
+            "not skilled; lacking the required adeptness."
+          ]
+        ],
+        [
+          "akutōbhaya",
+          [
+            "not threatened from any quarter; free from any danger or fear.",
+            "the final beatitude; final emancipation from the cycle of the birth and death."
+          ]
+        ],
+        [
+          "antargata",
+          [
+            "an opinion, feeling or thought that is not expressed.",
+            "gone within; entered into or under the surface.; residing, being inside."
+          ]
+        ],
+        [
+          "ಅಂಗು (anggu)",
+          [
+            "a debt of gratitude; obligation.",
+            "a kind of sweet dish."
+          ]
+        ],
+        [
+          "aghōra",
+          [
+            "name of one of the five faces of śiva; a euphemistic title of śiva.",
+            "not frightening; not terrific.; of the nature of causing fright; terrific."
+          ]
+        ],
+        [
+          "ambari",
+          [
+            "a piece of cloth used to write on.",
+            "the plant gossypium herbaceum of molvaceae family; the cotton plant."
+          ]
+        ],
+        [
+          "ಅಂತರ್ಮಲಿನ (antarmalina)",
+          [
+            "having impurity inside; defiled within.; (the mind) being impure, ill-thinking.",
+            "inner impurities; evil thought; wickedness.; an evil natured, wicked man."
+          ]
+        ],
+        [
+          "ಅಜಯ (ajaya)",
+          [
+            "defeated; failed.",
+            "non-victory; defeat.; an invincible, unsurpassed man."
+          ]
+        ],
+        [
+          "ಅಕೃತಘ್ನ (akřtaghna)",
+          [
+            "a man who is not ungrateful; a thankful man.",
+            "being grateful."
+          ]
+        ],
+        [
+          "accu",
+          [
+            "a horse from pegu city in burma (myanmar).",
+            "a payment forced to be made unjustly, as undue tax, a bribe etc.",
+            "a printing house; a press.",
+            "discharged waste matter from the anus of a bird; excrement.",
+            "the axle of a wheel.; a central pole around which anything revolves.",
+            "the edge; the border of anything.",
+            "to grasp; to hold; to seize.; to be impressed on one's mind.",
+            "to pay unjustly, owing to force, as rent, revenue etc."
+          ]
+        ]
+      ],
+      "empty_pair_rows": 0,
+      "input_contains_kannada": 3652,
+      "input_contains_non_ascii_latin": 322,
+      "top_level_keys": {
+        "messages": 6492
+      }
+    }
+  },
+  "v3_composition": {
+    "clean_base_is_prefix": true,
+    "base_rows": 6227,
+    "appended_teacher_rows": 265,
+    "teacher_models": {
+      "gemini-flash-latest": 136,
+      "gemini-flash-lite": 129
+    },
+    "teacher_review_statuses": {
+      "missing": 265
+    },
+    "sequential_split_train_rows": 6362,
+    "sequential_split_validation_rows": 130,
+    "validation_is_all_appended_teacher": true,
+    "validation_exact_input_overlap": 0,
+    "validation_punctuation_normalized_overlap": 4
+  },
+  "evaluation": {
+    "data/test.csv": {
+      "rows": 3,
+      "review_statuses": {
+        "not_recorded": 3
+      },
+      "exact_v3_overlap": [
+        "sakkath aagide"
+      ],
+      "punctuation_normalized_v3_overlap": [
+        "sakkath aagide"
+      ]
+    },
+    "data/benchmark_test_v1_draft.csv": {
+      "rows": 100,
+      "review_statuses": {
+        "unreviewed": 100
+      },
+      "exact_v3_overlap": [],
+      "punctuation_normalized_v3_overlap": []
+    },
+    "data/representation_v1/dev.csv": {
+      "rows": 0,
+      "review_statuses": {},
+      "exact_v3_overlap": [],
+      "punctuation_normalized_v3_overlap": []
+    },
+    "data/representation_v1/eval.locked.csv": {
+      "rows": 0,
+      "review_statuses": {},
+      "exact_v3_overlap": [],
+      "punctuation_normalized_v3_overlap": []
+    },
+    "data/representation_v1/synthetic_dev_v1.csv": {
+      "rows": 20,
+      "review_statuses": {
+        "unreviewed": 20
+      },
+      "exact_v3_overlap": [],
+      "punctuation_normalized_v3_overlap": []
+    }
+  },
+  "trusted_catalog": {
+    "rows": 172140,
+    "data_types": {
+      "lexicon": 156620,
+      "transliteration": 7025,
+      "conversational": 8484,
+      "slang_profanity": 11
+    },
+    "review_statuses": {
+      "raw": 172129,
+      "human-verified": 10,
+      "needs-human-review": 1
+    },
+    "sources": {
+      "alar_kannada_english_dict": 156620,
+      "aksharantar_transliteration": 7025,
+      "bpcc_h_daily_conversational": 8484,
+      "curated_street_slang_gold": 11
+    },
+    "schema_errors": {},
+    "provenance_gaps": {
+      "non_sha256_source_checksum": 11
+    },
+    "human_verified_reviewer_labels": {
+      "reviewer_kannada_1": 10,
+      "reviewer_kannada_2": 10
+    },
+    "note": "Schema success cannot authenticate reviewer identities or translation correctness."
+  },
+  "heldout_dictionary_sampling": {
+    "seed": 20261019,
+    "eligible_rows": 13566,
+    "method": "Single-sense ASCII headwords, 3-20 letters, definition <=70 characters without semicolon; exact headword/native form absent from v3 examples and whitespace/punctuation vocabulary. Does not establish absence from model pretraining or related word families."
+  },
+  "probe_cases": [
+    {
+      "group": "existing_owner_test",
+      "input": "naale college ge barthira?",
+      "reference": "Are you coming to college tomorrow?",
+      "reference_path": "data/test.csv",
+      "case_id": "diagnostic-01",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "existing_owner_test",
+      "input": "yenu guru ivattu plan?",
+      "reference": "What's the plan today bro?",
+      "reference_path": "data/test.csv",
+      "case_id": "diagnostic-02",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "existing_owner_test",
+      "input": "sakkath aagide",
+      "reference": "It's awesome",
+      "reference_path": "data/test.csv",
+      "case_id": "diagnostic-03",
+      "exact_v3_input_seen": true
+    },
+    {
+      "group": "unreviewed_synthetic_draft",
+      "input": "bandru avru",
+      "reference": "They came",
+      "reference_id": "KANG-TEST-00076",
+      "reference_path": "data/benchmark_test_v1_draft.csv",
+      "review_status": "unreviewed",
+      "case_id": "diagnostic-04",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "unreviewed_synthetic_draft",
+      "input": "notes share madtiya naavige?",
+      "reference": "Will you share the notes with us?",
+      "reference_id": "KANG-TEST-00042",
+      "reference_path": "data/benchmark_test_v1_draft.csv",
+      "review_status": "unreviewed",
+      "case_id": "diagnostic-05",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "unreviewed_synthetic_draft",
+      "input": "class cancel aagilla naale",
+      "reference": "Class has not been cancelled tomorrow",
+      "reference_id": "KANG-TEST-00093",
+      "reference_path": "data/benchmark_test_v1_draft.csv",
+      "review_status": "unreviewed",
+      "case_id": "diagnostic-06",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "unreviewed_synthetic_draft",
+      "input": "machha scene enu ivattu?",
+      "reference": "What is the scene today buddy?",
+      "reference_id": "KANG-TEST-00016",
+      "reference_path": "data/benchmark_test_v1_draft.csv",
+      "review_status": "unreviewed",
+      "case_id": "diagnostic-07",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "unreviewed_synthetic_draft",
+      "input": "full on attitude avnu",
+      "reference": "He has got a lot of attitude",
+      "reference_id": "KANG-TEST-00028",
+      "reference_path": "data/benchmark_test_v1_draft.csv",
+      "review_status": "unreviewed",
+      "case_id": "diagnostic-08",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "unreviewed_synthetic_draft",
+      "input": "naanu baralla ivattu",
+      "reference": "I will not come today",
+      "reference_id": "KANG-TEST-00061",
+      "reference_path": "data/benchmark_test_v1_draft.csv",
+      "review_status": "unreviewed",
+      "case_id": "diagnostic-09",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_original_kanglish",
+      "input": "bidugal",
+      "reference": "= ಬಿದುಗಲ್ಲು.",
+      "reference_id": "KANG-ALAR-109998",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-10",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_kannada_script",
+      "input": "ಬಿದುಗಲ್",
+      "reference": "= ಬಿದುಗಲ್ಲು.",
+      "reference_id": "KANG-ALAR-109998",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-11",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_original_kanglish",
+      "input": "cagate",
+      "reference": "= ಚಗಚೆ.",
+      "reference_id": "KANG-ALAR-061622",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-12",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_kannada_script",
+      "input": "ಚಗತೆ",
+      "reference": "= ಚಗಚೆ.",
+      "reference_id": "KANG-ALAR-061622",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-13",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_original_kanglish",
+      "input": "sampade",
+      "reference": "a rich, wealthy woman.",
+      "reference_id": "KANG-ALAR-139922",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-14",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_kannada_script",
+      "input": "ಸಂಪದೆ",
+      "reference": "a rich, wealthy woman.",
+      "reference_id": "KANG-ALAR-139922",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-15",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_original_kanglish",
+      "input": "edegadi",
+      "reference": "to cut at the centre (as to render into two pieces).",
+      "reference_id": "KANG-ALAR-026448",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-16",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_kannada_script",
+      "input": "ಎಡೆಗಡಿ",
+      "reference": "to cut at the centre (as to render into two pieces).",
+      "reference_id": "KANG-ALAR-026448",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-17",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_original_kanglish",
+      "input": "kavval",
+      "reference": "a strong or bad smell.",
+      "reference_id": "KANG-ALAR-038140",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-18",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_kannada_script",
+      "input": "ಕವ್ವಲ್",
+      "reference": "a strong or bad smell.",
+      "reference_id": "KANG-ALAR-038140",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-19",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_original_kanglish",
+      "input": "navile",
+      "reference": "= ನವಿಲು.",
+      "reference_id": "KANG-ALAR-086224",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-20",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_kannada_script",
+      "input": "ನವಿಲೆ",
+      "reference": "= ನವಿಲು.",
+      "reference_id": "KANG-ALAR-086224",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-21",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_original_kanglish",
+      "input": "pulivate",
+      "reference": "= ಪುಲಿವೆಟ್ಟು.",
+      "reference_id": "KANG-ALAR-100712",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-22",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_kannada_script",
+      "input": "ಪುಲಿವಟೆ",
+      "reference": "= ಪುಲಿವೆಟ್ಟು.",
+      "reference_id": "KANG-ALAR-100712",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-23",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_original_kanglish",
+      "input": "gargarike",
+      "reference": "= ಗರ್ಗರ1 -1.",
+      "reference_id": "KANG-ALAR-055692",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-24",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "heldout_dictionary_kannada_script",
+      "input": "ಗರ್ಗರಿಕೆ",
+      "reference": "= ಗರ್ಗರ1 -1.",
+      "reference_id": "KANG-ALAR-055692",
+      "reference_path": "data/trusted/trusted_master.jsonl",
+      "review_status": "raw",
+      "case_id": "diagnostic-25",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "artificial_unknown_input",
+      "input": "zqxvpl",
+      "reference": null,
+      "note": "Artificial negative control; no gold translation asserted.",
+      "case_id": "diagnostic-26",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "artificial_unknown_input",
+      "input": "blorptaka",
+      "reference": null,
+      "note": "Artificial negative control; no gold translation asserted.",
+      "case_id": "diagnostic-27",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "artificial_unknown_input",
+      "input": "zzkrrmppo",
+      "reference": null,
+      "note": "Artificial negative control; no gold translation asserted.",
+      "case_id": "diagnostic-28",
+      "exact_v3_input_seen": false
+    },
+    {
+      "group": "artificial_unknown_input",
+      "input": "qzxv nplk",
+      "reference": null,
+      "note": "Artificial negative control; no gold translation asserted.",
+      "case_id": "diagnostic-29",
+      "exact_v3_input_seen": false
+    }
+  ]
+}

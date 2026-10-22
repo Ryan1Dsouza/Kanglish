@@ -1,0 +1,12 @@
+{
+  "launch_observations": [
+    {
+      "compatibility_dialog": false,
+      "engine_status": "On-device model ready"
+    },
+    {
+      "compatibility_dialog": false,
+      "engine_status": "On-device model ready"
+    }
+  ]
+}

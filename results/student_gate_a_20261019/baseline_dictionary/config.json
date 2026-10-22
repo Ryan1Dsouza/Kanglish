@@ -1,0 +1,31 @@
+{
+  "model": "kanglish-gate-v3-q8:latest",
+  "gguf_sha256": "ce172bdd5f50f6a65547c7b05268ea982674efb33795a2fbcd21f2d73e75ea1a",
+  "options": {
+    "temperature": 0.1,
+    "seed": 42,
+    "num_ctx": 1024,
+    "num_predict": 192,
+    "top_k": 0,
+    "top_p": 1.0,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0
+  },
+  "input_sha256": {
+    "cases": "4e36aea28bf9156bd8ea99c37db4b11725feded3132f40593b4569d14012c3d1",
+    "prompt": "38942163eb1e650f75806461cb6fdf45ea7b1c146708fe468cc9763d339ab803",
+    "glossary": "245896448dcc79568f35d60d6ece247c5c6149435a3bb464866cbd6327f8693d",
+    "contract": "df62b71ea16bcf4b9ddf92457f5a8f2e5cf0bae0e29d47f1b031d6881a8c41ed",
+    "evaluator": "0d3dac52e66c36ee6c614622c4ca60a0b87cac643766d33641dd03f86ef63f2c"
+  },
+  "history": [],
+  "learned_glossary": [],
+  "spend_cap": 0,
+  "external_model_calls": 0,
+  "ollama_version": {
+    "version": "0.23.2"
+  },
+  "prompt_contract_sha256": "38942163eb1e650f75806461cb6fdf45ea7b1c146708fe468cc9763d339ab803",
+  "metrics": "chrF2 n=6 beta=2 case-sensitive no whitespace; dictionary exact ignores case/outer whitespace; names and negation are rule-based diagnostics",
+  "runtime_limitation": "Desktop Ollama, not Android runtime or phone latency; matching prompt/glossary and configured sampler."
+}

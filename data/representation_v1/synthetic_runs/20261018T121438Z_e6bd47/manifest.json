@@ -1,0 +1,22 @@
+{
+  "schema_version": "synthetic-pilot-v1",
+  "script": "synthetic_pilot.py",
+  "input_csv": "C:\\Users\\ryan1\\kanglish-foss\\data\\representation_v1\\synthetic_dev_v1.csv",
+  "input_sha256": "502278359942e187bbb2ab2df4009b4ab060aab2799fc5fdf5ddd01b75aaebbb",
+  "model": "qwen2.5:3b",
+  "representations": [
+    "original",
+    "ai_hint"
+  ],
+  "temperature": 0,
+  "seed": 17,
+  "num_ctx": 2048,
+  "num_predict": 64,
+  "rows": 20,
+  "glossary_entries": 61,
+  "disclaimer": "\nWARNING: Inputs and Kannada hints are AI-generated and unreviewed. Do not interpret these results as evidence of real-world translation quality.",
+  "complete": true,
+  "run_id": "20261018T121438Z_e6bd47",
+  "total_cases": 40,
+  "errors": 0
+}

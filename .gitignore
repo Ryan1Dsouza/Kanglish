@@ -1,0 +1,53 @@
+# ── Raw dataset downloads (large, never committed to git) ─────────────────
+data/raw/
+data/processed/*.parquet
+
+# ── Archives ──────────────────────────────────────────────────────────────
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.gz
+
+# ── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+pip-log.txt
+
+# ── OS / Editor ───────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# ── Results (large run artefacts — keep summaries, not full CSVs) ─────────
+results/benchmark_run_*.csv
+
+# ── Secrets & Local Config ────────────────────────────────────────────────
+.env
+*.env
+
+build/
+.gradle/
+.idea/
+local.properties
+*.gguf
+*.apk
+*.aab
+*.jks
+*.keystore
+.env
+models/
+
+*.a
+*.so
+*.jsonl
+*.csv

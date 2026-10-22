@@ -1,0 +1,31 @@
+{
+  "stage": "task6",
+  "diff": [
+    {
+      "file": "app/src/main/java/org/kanglish/app/overlay/FloatingSidebarService.kt",
+      "added": 16,
+      "removed": 2
+    },
+    {
+      "file": "app/src/main/java/org/kanglish/app/overlay/MaxHeightScrollView.kt",
+      "added": 20,
+      "removed": 0
+    },
+    {
+      "file": "app/src/main/res/layout/layout_floating_sidebar.xml",
+      "added": 7,
+      "removed": 7
+    },
+    {
+      "file": "app/src/test/java/org/kanglish/app/OverlayLayoutTest.kt",
+      "added": 61,
+      "removed": 0
+    }
+  ],
+  "unit_tests": {
+    "tests": 41,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}

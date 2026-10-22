@@ -1,0 +1,45 @@
+{
+  "python_tests_passed": 48,
+  "android_tests": {
+    "tests": 27,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "apk": "mobile\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+  "apk_sha256": "2cfd82f1ed05fbe3382ea2160e9b835956b5c4dec52afaa090a9836ab2bffc01",
+  "apk_bytes": 26252606,
+  "v3_model_sha256": "ce172bdd5f50f6a65547c7b05268ea982674efb33795a2fbcd21f2d73e75ea1a",
+  "candidate_manifest_sha256": "2724bb35cfd6c28dbf755d975d7b2f7051c5eb1047d130130ce07352d9551558",
+  "review_queue_counts": {
+    "legacy_pair_without_traceable_semantic_source": 1405,
+    "unresolved_dictionary_reference": 467,
+    "legacy_reserved_input": 24,
+    "kannada_in_english_target": 30,
+    "teacher_pair_needs_semantic_review": 264,
+    "multiple_targets_require_context": 5
+  },
+  "historical_data_and_model_unchanged": true,
+  "modified_source_files": [
+    "mobile/android/app/src/main/java/org/kanglish/app/data/ChatMessage.kt",
+    "mobile/android/app/src/main/java/org/kanglish/app/inference/TeacherService.kt",
+    "mobile/android/app/src/main/java/org/kanglish/app/inference/TranslationService.kt",
+    "mobile/android/app/src/main/java/org/kanglish/app/overlay/FloatingSidebarService.kt",
+    "mobile/android/app/src/main/java/org/kanglish/app/ui/MainActivity.kt",
+    "mobile/android/app/src/main/java/org/kanglish/app/ui/MessageAdapter.kt",
+    "scripts/autonomous_train_v3.py",
+    "scripts/build_comprehensive_train_corpus.py",
+    "scripts/finetune_v3.py",
+    "scripts/prepare_v3_dataset.py",
+    "scripts/trusted_pipeline/importers/alar_importer.py",
+    "scripts/trusted_pipeline/importers/slang_importer.py",
+    "scripts/trusted_pipeline/schema.py"
+  ],
+  "added_source_files": [
+    "scripts/trusted_pipeline/quality.py",
+    "scripts/prepare_quality_dataset.py",
+    "tests/test_training_quality.py",
+    "mobile/android/app/src/main/java/org/kanglish/app/inference/TeacherResponseParser.kt",
+    "mobile/android/app/src/test/java/org/kanglish/app/TeacherResponseTest.kt"
+  ]
+}
