@@ -44,10 +44,18 @@ local.properties
 *.aab
 *.jks
 *.keystore
-.env
 models/
+
+# ── Android build artifacts and logs ─────────────────────────────────────────
+mobile/android/app/.cxx/
+mobile/android/.tools-setup.log
+mobile/android/app/build/
+mobile/android/.gradle/
 
 *.a
 *.so
 *.jsonl
 *.csv
+
+# Allow curated corpus files
+!data/corpus/*.jsonl

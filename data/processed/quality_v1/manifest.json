@@ -22,7 +22,8 @@
     "data/trusted/lexicon_alar.csv": "7bf38e784f6b721c33c256f85cb99159be51fc4f0e30e3a3a8c2fbda26ecaddc",
     "data/trusted/conversational_bpcc.csv": "89f3d3943041b9ae422600823be46dcfdc91e142f8f9474b61ea2212146c9915",
     "data/processed/kanglish_v3_train.jsonl": "328c7ffb56f3f79f936d8373e88536a6503d4e2dc829ffb1d75ca97886208147",
-    "data/processed/gemini_teacher_dataset.jsonl": "5b6a710796d9c07e8c57877bf4e5a797619cea5d75e0e292b537d8709ef31e5c"
+    "data/processed/gemini_teacher_dataset.jsonl": "5b6a710796d9c07e8c57877bf4e5a797619cea5d75e0e292b537d8709ef31e5c",
+    "data/corpus/mangalore_chat_corpus.jsonl": "53378f492493fd385b9b4635ce4fb43398aae68c2474e0fc5a25f32e3d597749"
   },
   "reserved_input_families": 170,
   "selection": {
@@ -53,12 +54,13 @@
     "requested_sentence_rows": 2500
   },
   "counts": {
-    "train": 4491,
+    "train": 4719,
     "validation": 504,
     "review_queue": 2195,
     "train_source_types": {
       "conversational": 2246,
-      "lexicon": 2245
+      "lexicon": 2245,
+      "mangalore_chat": 228
     },
     "validation_source_types": {
       "conversational": 249,
@@ -82,9 +84,10 @@
   "split_policy": "Connected groups by source ID, normalized spelling family and normalized answer. Seeded hash assignment; no tail-only split.",
   "human_accuracy": null,
   "output_sha256": {
-    "train_candidates.jsonl": "60804f927f7df2257cedcf971db30e4548ff8df78e1560cc3101f9b05873a471",
+    "train_candidates.jsonl": "3a88b4509364a634c457078df036d64ae23b401df1b81ebd94e6683bd2389883",
     "validation_candidates.jsonl": "600ce0b796d01f5a26c62c50cb8dc4e23395b224c770eed2e5884dc477ddc184",
-    "review_queue.jsonl": "aa14c98d2d7dd8099fa27141dd133ffe6d4c7cc645d7b75669305f16a8def03d"
+    "review_queue.jsonl": "aa14c98d2d7dd8099fa27141dd133ffe6d4c7cc645d7b75669305f16a8def03d",
+    "mangalore_trilingual_qwen_sft.jsonl": "8f29b0ab0b0eb3931e1a19e29097053f54199a2a8dd9d06a4e0d449b601b9306"
   },
   "generator_sha256": {
     "scripts/prepare_quality_dataset.py": "c789781cffed5860efb2ada73242e44ead9a848505765e41e237fe517b53d636",

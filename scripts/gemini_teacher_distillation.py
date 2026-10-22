@@ -2,8 +2,9 @@
 scripts/gemini_teacher_distillation.py
 Teacher-Student Knowledge Distillation using Gemini 2.5 Flash.
 
-Uses Gemini as the "Teacher" to generate pristine, authentic Kanglish-to-English
-conversational pairs across real Karnataka slang, WhatsApp chats, and daily usage.
+Uses Gemini as the "Teacher" to generate pristine, authentic Kanglish, Tulu,
+and Konkani-to-English conversational pairs across real Karnataka slang,
+WhatsApp chats, and daily usage.
 """
 import os
 import json
@@ -26,12 +27,53 @@ if not API_KEY:
 MODEL_NAME = "gemini-flash-latest"
 API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent?key={API_KEY}"
 OUTPUT_FILE = "data/processed/gemini_teacher_dataset.jsonl"
+GLOSSARY_FILE = "data/corpus/mangalore_glossary.json"
 os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
+
+# Load Trilingual Glossary Context
+MANGALORE_GLOSSARY_CONTEXT = ""
+if os.path.exists(GLOSSARY_FILE):
+    try:
+        with open(GLOSSARY_FILE, "r", encoding="utf-8") as f:
+            glossary_data = json.load(f)
+            lines = []
+            for category, items in glossary_data.items():
+                cat_title = category.replace("_", " ").title()
+                terms = [f"{k} = {v}" for k, v in items.items()]
+                lines.append(f"[{cat_title}]: " + "; ".join(terms))
+            MANGALORE_GLOSSARY_CONTEXT = "\n".join(lines)
+    except Exception as e:
+        print(f"Warning: Could not load glossary: {e}")
+
+MORPHOLOGY_GUIDE = """
+COASTAL KARNATAKA (TULU, KONKANI, KANGLISH) MORPHOLOGICAL GROUNDING:
+1. Tulu Verb Suffixes:
+   - '-ondh ulle' / '-ondundu' = present continuous (e.g. 'tuvondh ulle' = I am watching, 'avondh undu' = is happening)
+   - '-odchi' / '-podchi' = negative imperative ('malpodchi' = don't do, 'panodchi' = don't say, 'bejar malpodchi' = don't feel bad)
+   - '-odu' / '-podu' = obligation / necessity ('malpodu' = must do, 'paadodu' = must put/post, 'kalpod' = must study)
+   - '-uji' / '-puji' = negative present/future ('barpuje' = won't come, 'kenuji' = not audible, 'deppuji' = won't remove)
+   - '-naga' = temporal marker 'when' ('thikkinaga' = when found, 'ponnaga' = when going, 'lakenaga' = when waking up)
+   - 'ge' = evidential marker 'apparently / it seems / they say' ('lepuver ge' = apparently they call, 'bolla ge' = it seems there's flooding)
+2. Mangalorean Konkani Markers:
+   - 'asa' (is/exists), 'zale' (done/happened), 'zavna' (couldn't/didn't happen), 'gal' (put), 'dhad' (send), 'sang' (tell), 'naka' (don't want).
+"""
 
 TOPICS = [
     (
         "Bangalore Street Slang & Youth Banter",
         "Generate realistic chats using terms like macha, maga, guru, scene illa, bombat, bekitha, bevarsi, saaku, chindi, sakkat, kirik, meter illa, thale thinbeda, scene aaythu, full tight, swalpa adjust maadi."
+    ),
+    (
+        "Mangalore Coastal College Chat & Slang (Tulu, Konkani, Kanglish)",
+        "Generate authentic Mangalore code-switched chats using terms like marre, mandebeccha, banga, malpu, bala, popini, vanas, onas, proxy, clg g, bokka, itte, pokkade, malpodchi, andh marre."
+    ),
+    (
+        "Tulu Daily Greetings & Inquiries",
+        "Generate natural Tulu conversations in Latin script: yan ushar ulle, yencha ulla, onas aanda, yenna pudar, dada avondh undu, ninna pudar dada, elle last day atha, yer pura uller."
+    ),
+    (
+        "Mangalorean Catholic Konkani Code-Switched Chat",
+        "Generate authentic Mangalorean Konkani WhatsApp chats in Latin script: koso asai, hav boro asa, jevan zale, kale karya, thuka, maka, classik yetai re, zaina anga thavn, salt return evka re."
     ),
     (
         "Food, Darshini, Filter Coffee & Dinner",
@@ -47,7 +89,7 @@ TOPICS = [
     ),
     (
         "WhatsApp / Instagram Daily Conversations with Friends",
-        "Generate casual WhatsApp texting among close Kannada friends: plans, catching up, teasing, laughing, asking where they are, checking in (elli idiya, yavaga barthiya, phone ethu, ondh nimsha iru, photos kalso, call cut aaythu)."
+        "Generate casual WhatsApp texting among close Kannada/Mangalorean friends: plans, catching up, teasing, laughing, asking where they are, checking in (elli idiya, yavaga barthiya, phone ethu, ondh nimsha iru, photos kalso, call cut aaythu)."
     ),
     (
         "College, Exams, Bunking & Hostel Life",
@@ -79,14 +121,19 @@ TOPICS = [
     )
 ]
 
-SYSTEM_PROMPT = """You are a native Kannada speaker and an expert linguist specializing in Kanglish (Kannada written in Latin/English alphabet as used in WhatsApp, SMS, and casual chat across Karnataka).
-Your task is to generate natural, realistic Kanglish sentences paired with their accurate, natural English translations.
+SYSTEM_PROMPT = f"""You are a native linguist specializing in Karnataka languages: Kanglish (Kannada in Latin alphabet), Tulu (in Latin alphabet), and Mangalorean Konkani (in Latin alphabet) as used in WhatsApp, SMS, and casual chat.
+Your task is to generate natural, realistic Romanized conversational sentences paired with their accurate, natural English translations.
 
 STRICT GUIDELINES:
-1. 'kanglish': Must be written ONLY in Latin/English script (e.g. "nanna hesaru ryan", NOT Kannada script, NOT pure English).
+1. 'kanglish': Must be written ONLY in Latin/English script (e.g. "nanna hesaru ryan", "yencha ulla marre", "koso asai re", NOT Kannada script, NOT pure English).
 2. 'english': Direct, natural, raw English translation capturing the exact intent, colloquial tone, slang, or emotion.
-3. Include real chat abbreviations, expressive particles (marre, guru, macha, da, pa, re), and colloquial verb endings.
+3. Include real chat abbreviations, expressive particles (marre, guru, macha, da, pa, re), and accurate verb endings.
 4. Output ONLY valid JSON containing a list of objects with keys: "kanglish" and "english".
+
+{MORPHOLOGY_GUIDE}
+
+REFERENCE GLOSSARY:
+{MANGALORE_GLOSSARY_CONTEXT}
 """
 
 
@@ -94,9 +141,9 @@ def generate_batch(topic_name, topic_prompt, count=8):
     prompt_text = f"""Topic: {topic_name}
 Context instruction: {topic_prompt}
 
-Generate exactly {count} distinct, diverse Kanglish-to-English translation pairs.
+Generate exactly {count} distinct, diverse Romanized-to-English translation pairs.
 Include short phrases (2-4 words), medium sentences (5-10 words), and conversational questions.
-Ensure 100% natural, authentic spoken Kannada in Roman script.
+Ensure 100% natural, authentic spoken language in Roman script.
 
 Output format (MUST BE RAW JSON ARRAY OF OBJECTS, NO MARKDOWN, NO CODEBLOCKS):
 [
@@ -138,8 +185,6 @@ Output format (MUST BE RAW JSON ARRAY OF OBJECTS, NO MARKDOWN, NO CODEBLOCKS):
     return []
 
 
-
-
 def main(rounds=4):
     print("=" * 60)
     print("GEMINI TEACHER DISTILLATION ENGINE")
@@ -149,7 +194,7 @@ def main(rounds=4):
     print(f"Output File   : {OUTPUT_FILE}")
     print("=" * 60)
 
-    # Load existing to avoid duplicate kanglish sentences
+    # Load existing to avoid duplicate sentences
     existing_kanglish = set()
     if os.path.exists(OUTPUT_FILE):
         with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
@@ -192,7 +237,6 @@ def main(rounds=4):
 
             print(f" +{len(new_pairs_for_batch)} pairs (Total new: {total_new})", flush=True)
             time.sleep(5)  # Stay strictly under 15 RPM free tier limit
-
 
     print("\n" + "=" * 60)
     print(f"[COMPLETE] Distillation finished! Generated {total_new} new pairs.")

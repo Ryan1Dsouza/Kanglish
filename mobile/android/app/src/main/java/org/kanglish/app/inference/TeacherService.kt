@@ -111,9 +111,11 @@ class TeacherService(
         }
         val languageRule = if (language == SourceLanguage.TULU) {
             "The source language is Tulu, not Kannada. Handle informal Romanized Tulu and spelling variations. " +
-                "Do not substitute a Kannada meaning for an unfamiliar Tulu word."
+                "Do not substitute a Kannada meaning for an unfamiliar Tulu word. " +
+                "Ground in Tulu morphology: -ondh ulle (present continuous), -odchi (negative imperative 'don't do'), -odu (must/should), -uji (negative present/future), -naga (temporal 'when'), ge (reported speech 'apparently/it seems')."
         } else if (language == SourceLanguage.MIXED) {
-            "Identify Tulu, Kannada and English spans separately. Preserve code-switching meaning, emoji tone and informal spellings. Do not force Tulu words into Kannada."
+            "Identify Tulu, Konkani, Kannada and English spans separately. Preserve code-switching meaning, emoji tone and informal spellings. Do not force Tulu words into Kannada. " +
+                "Recognize Tulu morphology (-ondh ulle, -odchi, -odu, -uji, -naga, ge) and Mangalorean Konkani markers (asa = is/exists, zale = done, zavna = couldn't, gal = put, dhad = send, sang = tell, naka = don't want)."
         } else ""
         return """
             $task

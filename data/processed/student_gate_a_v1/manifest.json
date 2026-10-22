@@ -4,7 +4,7 @@
   "status": "WAITING_FOR_HUMAN_REVIEW_AND_USER_CONFIRMATION",
   "training_allowed": false,
   "training_started": false,
-  "train_rows": 7605,
+  "train_rows": 7833,
   "validation_rows": 781,
   "train_source_groups": 2491,
   "validation_source_groups": 259,
@@ -39,7 +39,8 @@
   "train_by_source": {
     "bpcc_h_daily_conversational": 6473,
     "alar_kannada_english_dict": 910,
-    "seeded_verified_absence": 222
+    "seeded_verified_absence": 222,
+    "mangalore_chat_corpus": 228
   },
   "train_by_category": {
     "conversation": 6473,
@@ -80,8 +81,9 @@
     "config.json": "3a82234ad63a691d38d107900106fcbb1b487795e3a3cb58e41f6a69fe48ac40",
     "review_queue.csv": "24ce5f990409c7f3c17fdc40141fb3ed42038c216ee5a6863ec6ce6e021621fd",
     "review_sample.csv": "1ab587cbf6ab368ac45a86847d3a0b2fc7615618df7cbea1b2536879677a07c9",
-    "train_candidates.jsonl": "dc2fb9510210e0390d54a630ee662dd53a56985c4330ab84cddb6abd44a25bf5",
-    "validation_candidates.jsonl": "fced417906d7aa26e6586d3bc1316684c906d9bca6eaac0355bd4edbeecf6262"
+    "train_candidates.jsonl": "6f7d07900fb317ce930df733ad4adf4b9ef038fa5e0b8ca6a5fffb21fb133d03",
+    "validation_candidates.jsonl": "fced417906d7aa26e6586d3bc1316684c906d9bca6eaac0355bd4edbeecf6262",
+    "mangalore_trilingual_qwen_sft.jsonl": "8f29b0ab0b0eb3931e1a19e29097053f54199a2a8dd9d06a4e0d449b601b9306"
   },
   "limitations": [
     "Automatic checks are conservative heuristics, not Kannada-speaker validation.",

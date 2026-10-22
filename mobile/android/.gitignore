@@ -1,7 +1,15 @@
 .gradle/
 .tools/
+.tools-setup.log
+.kotlin/
 local.properties
 **/build/
+app/.cxx/
+app/build/
+mobile/android/app/.cxx/
+mobile/android/.tools-setup.log
+mobile/android/app/build/
+mobile/android/.gradle/
 third_party/llama.cpp/
 artifacts/
 *.iml
